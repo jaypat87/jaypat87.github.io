@@ -1,8 +1,8 @@
 ---
 title: "Jay M. Patel"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +24,7 @@ PDF Version: http://www.jaympatel.com/assets/CV.pdf
 
 **PROFESSIONAL EXPERIENCE:**  
 
-- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA [12/2015 – Present]  
+- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA \hfill (12/2015 – Present)      
 Office of Research and Development (ORD)  
 **Data Scientist (ORISE Fellow)**  
 
@@ -34,14 +34,14 @@ Office of Research and Development (ORD)
   
     + Work with external stakeholders in development on best standard practices on regression and statistical modeling by being an official voting member on ASTM Committee E11 on Quality and Statistics
   
-- PMGB LTD. CO., ATHENS, GA, USA						[05/2013 – 11/2015]  
+- PMGB LTD. CO., ATHENS, GA, USA \hfill (05/2013 – 11/2015)    
 **Data Scientist**  
 
     + Directed development of a predictive machine learning based model [(more info)](http://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $100,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA “Patel, Jay”).
   
     + Led two data analysts for development of decision analytics dashboard to generate regulatory intelligence insights to guide quality management systems required for continued cGMP compliance as per ICH/US FDA guidelines by text mining data from US FDA warning letters and a custom Form 483 database.
   
-- THE UNIVERSITY OF GEORGIA				[08/2010 – 05/2013]  
+- THE UNIVERSITY OF GEORGIA \hfill (08/2010 – 05/2013)      
 Franklin College of Arts and Sciences  
 **Research Associate**  
 
@@ -62,10 +62,10 @@ Franklin College of Arts and Sciences
 **EDUCATION:**  
 
 - THE UNIVERSITY OF GEORGIA, ATHENS, GA, USA  					
-M.S. (Chemistry) 								05/2013.    
+M.S., Chemistry \hfill (05/2013)        
   
 - INSTITUTE OF CHEMICAL TECHNOLOGY (FORMERLY UICT/UDCT), MUMBAI, INDIA	 
-B.Tech (Chemical Engineering)	 					06/2010.    
+B.Tech, Chemical Engineering \hfill (06/2010)    
   
 **SELECT PUBLICATIONS:**  
 
