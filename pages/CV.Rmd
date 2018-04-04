@@ -1,8 +1,8 @@
 ---
 title: "Jay M. Patel"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -11,8 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 jay@jaympatel.com | jaypatel87@gmail.com  
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg  
-HOMEPAGE: https://www.jaympatel.com  
-PDF Version: https://www.jaympatel.com/assets/CV.pdf
+HOMEPAGE: http://www.jaympatel.com  
+PDF Version: http://www.jaympatel.com/assets/CV.pdf
   
 **PROFILE:**  
 
@@ -37,7 +37,7 @@ Office of Research and Development (ORD)
 - PMGB LTD. CO., ATHENS, GA, USA						[05/2013 – 11/2015]  
 **Data Scientist**  
 
-    + Directed development of a predictive machine learning based model [(more info)](https://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $100,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA “Patel, Jay”).
+    + Directed development of a predictive machine learning based model [(more info)](http://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $100,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA “Patel, Jay”).
   
     + Led two data analysts for development of decision analytics dashboard to generate regulatory intelligence insights to guide quality management systems required for continued cGMP compliance as per ICH/US FDA guidelines by text mining data from US FDA warning letters and a custom Form 483 database.
   
