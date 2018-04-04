@@ -1,0 +1,84 @@
+---
+title: "Jay M. Patel"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+jay@jaympatel.com | jaypatel87@gmail.com  
+LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg  
+HOMEPAGE: https://www.jaympatel.com  
+PDF Version: https://www.jaympatel.com/assets/CV.pdf
+  
+**PROFILE:**  
+
+- Data scientist with over five years’ experience in data analytics, machine learning, statistics and text mining.  
+  
+- I have coauthored 1 book, 10 papers, 26 conference presentations and am passionate about explaining data science to non-technical business audiences. 
+  
+- Frequent speaker at data science events hosted by Federal community of practice (CoP) as part of DigitalGov initiative.
+
+**PROFESSIONAL EXPERIENCE:**  
+
+- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA [12/2015 – Present]  
+Office of Research and Development (ORD)  
+**Data Scientist (ORISE Fellow)**  
+
+    + Fulfill all the data science duties for US EPA’s and US FDA’s joint Tox21 program and chemistry safety for sustainability (CSS) program.
+  
+    + Compile and curate data from various sources and use that to develop machine learning based classification and regression models.
+  
+    + Work with external stakeholders in development on best standard practices on regression and statistical modeling by being an official voting member on ASTM Committee E11 on Quality and Statistics
+  
+- PMGB LTD. CO., ATHENS, GA, USA						[05/2013 – 11/2015]  
+**Data Scientist**  
+
+    + Directed development of a predictive machine learning based model [(more info)](https://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $100,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA “Patel, Jay”).
+  
+    + Led two data analysts for development of decision analytics dashboard to generate regulatory intelligence insights to guide quality management systems required for continued cGMP compliance as per ICH/US FDA guidelines by text mining data from US FDA warning letters and a custom Form 483 database.
+  
+- THE UNIVERSITY OF GEORGIA				[08/2010 – 05/2013]  
+Franklin College of Arts and Sciences  
+**Research Associate**  
+
+    + Designed and applied a virtual screening workflow based on machine learning classification model to identify high activity enzyme mutations (virtual screening) and validated it experimentally using site saturation mutagenesis.
+  
+    + In a separate project, developed a partial least square model for predicting solvation energies for a enzyme mutation and experimentally validated it.
+  
+    + Project resulted in four peer reviewed papers in top international journals (Impact factor ~10).
+  
+**TECHNICAL SKILLS:**  
+
+- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering.
+  
+- **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
+  
+- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
+  
+**EDUCATION:**  
+
+- THE UNIVERSITY OF GEORGIA, ATHENS, GA, USA  					
+M.S. (Chemistry) 								05/2013.    
+  
+- INSTITUTE OF CHEMICAL TECHNOLOGY (FORMERLY UICT/UDCT), MUMBAI, INDIA	 
+B.Tech (Chemical Engineering)	 					06/2010.    
+  
+**SELECT PUBLICATIONS:**  
+
+- Stevens, C.T., Patel, J. M., Koopmans, M., Olmstead, J., Hilal, S.M., Pope, N., Weber, E. J. & Wolfe, K. (2018) Demonstration of a consensus approach for the calculation of physicochemical properties required for environmental fate assessments. Chemosphere.194, 94-106. 
+  
+- Stevens, C.T., Patel, J. M., Jones, W. J. & Weber, E. J. (2017) Prediction of hydrolysis products of organic chemicals under environmental pH conditions. Environ. Sci. Tech., 51(9), 5008-5016.  
+  
+- Patel J.M., Phillips R.S. (2014) Effects of hydrostatic pressure on stereospecificity of secondary alcohol dehydrogenase from Thermoanaerobacter ethanolicus support the role of solvation in enantiospecificity. ACS Catalysis. 4, 692-694.  
+
+- Patel J.M. (2009) Biocatalytic synthesis of atorvastatin intermediates. J. Mol. Catal. B: Enzym.. 61, 123-128.  
+
+**SELECT PRESENTATIONS:**  
+
+- Patel, J. M., Stevens, C.T., Weber, E. J. Estimation of hydrolysis rate constants for carbamates. American Chemical Society (ACS) Annual Spring Meeting 2017, San Francisco, CA, April 02 - 06, 2017.  
+
+- Weber, E. J., Card, M. Patel, J. M., Stevens, C.T. Cheminformatics applications and physicochemical property calculators: a powerful combination for the encoding of process science. Gordon Research Conference: Water, NH, Holderness, June 26 - July 01, 2016.  
