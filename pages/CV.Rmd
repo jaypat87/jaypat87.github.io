@@ -1,9 +1,9 @@
 ---
 title: "Jay M. Patel"
 output:
-  word_document: default
-  pdf_document: default
   html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 jay@jaympatel.com | jaypatel87@gmail.com  
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg  
 HOMEPAGE: http://www.jaympatel.com  
-PDF Version: http://www.jaympatel.com/assets/CV.pdf
+[Click here for PDF version](http://www.jaympatel.com/assets/CV.pdf)
   
 **PROFILE:**  
 
