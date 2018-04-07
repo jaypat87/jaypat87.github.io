@@ -21,8 +21,16 @@ HOMEPAGE: http://www.jaympatel.com
   
 - I have coauthored 1 book, 10 papers, 26 conference presentations and am passionate about explaining data science to non-technical business audiences. 
   
-- Frequent speaker at data science events hosted by Federal community of practice (CoP) as part of DigitalGov initiative.
+- Frequent speaker at data science events hosted by Federal community of practice (CoP) as part of DigitalGov initiative.  
 
+**TECHNICAL SKILLS:**  
+
+- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering.
+  
+- **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
+  
+- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
+  
 **PROFESSIONAL EXPERIENCE:**  
 
 - US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA \hfill (12/2015 – Present)      
@@ -51,14 +59,6 @@ Franklin College of Arts and Sciences
     + In a separate project, developed a partial least square model for predicting solvation energies for a enzyme mutation and experimentally validated it.
   
     + Project resulted in four peer reviewed papers in top international journals (Impact factor ~10).
-  
-**TECHNICAL SKILLS:**  
-
-- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering.
-  
-- **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
-  
-- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
   
 **EDUCATION:**  
 
