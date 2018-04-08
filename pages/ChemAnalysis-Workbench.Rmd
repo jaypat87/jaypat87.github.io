@@ -56,6 +56,18 @@ knitr::include_graphics(rep("fig3.1.png", 1))
 
 ```
   
+### Settings Window  
+
+```{r echo=FALSE}
+knitr::include_graphics(rep("fig3.3.png", 1))
+
+```
+  
+```{r echo=FALSE}
+knitr::include_graphics(rep("table3.1.png", 1))
+
+```
+  
 ### Intensity Mode   
 
 Intensity mode is the default mode for CAW. The x-axis is pixels, and y-axis reads the relative intensity as a count of number of photons hitting the detector for a given integration time. 
