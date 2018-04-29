@@ -1,0 +1,313 @@
+---
+title: "Python Data Objects (Incl. NumPy and Pandas) in 10 Minutes"
+author: "Jay M. Patel"
+date: "April 11, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Native Python Data Structures
+
+Python has numerical types such as `int` for whole integers and `float` for decimals. It has also strings which can be written using single quotes **'**. While, `int` and `float` are mutable, string are immutable data types. Note that Index numbers in python start from 0 like other programming languages except R, where it starts from 1. 
+
+```{python}
+x = 'hello, python'
+print(x)
+```
+  
+**Strings** are immutable and can be enclosed in single quotes ' or double quotes "" and give the same result. A sting has to quoted in double quote if it contains a single quote as part of text and vice versa. Strings can also be indexed such as
+
+```{python eval=TRUE}
+word='analytics'
+print (word[0])
+```
+
+**Tuple** are immutable data types which can be accessed by index number. Parentheses are not necassary but should be used for extra clarity. For initializing a tuple with no elements, `()` is used and for creating a tuple with one element, a trailing comma is used. The length of the tuple is given by `len()` function.
+
+```{python eval=TRUE}
+SampleTuple=(1,2,3,4,5)
+print (SampleTuple)
+print (SampleTuple[2])
+SampleOneTuple=8,
+print (len(SampleOneTuple))
+```
+
+  
+**List** are mutable data types which are initialized by using square brackets `[]`, it can contain items of different types like dicts but usually has ones of same type only. Like all built in data types, List can be indexed and sliced too, and negative index numbers mean that you slice data from left instead of right and all slice operations return new list.
+
+```{python eval=TRUE}
+SampleList=[1,2,3,4,5]
+print (SampleList)
+print (SampleList[1])
+print (SampleList[2:])
+print (SampleList[-2:])
+print (SampleList[:-2])
+```
+
+
+**Dictionaries or Dicts** are associative arrays or hash maps which are initialized by curly brackets "{}" and colons are used to separate keys and values. Unlike sequences which are indexed by a range of numbers, dicts are indexed by keys which are immutable type such as strings or numbers or even tuples (if they only contain strings and numbers).
+
+```{python eval=TRUE}
+SampleDict={'a' : [1,2,3], 'b':[4,5]}
+print (SampleDict)
+```
+
+**Set** is an unordered collection of unique elements, like a dict but with keys ony. It can be created by either curly braces or by `set()` function.
+
+```{python eval=TRUE}
+testset=set([2, 2, 2, 1, 1, 3, 3])
+print (testset)
+```
+
+### Further Reading on Python Data Structures
+
+Check out the following resources for more information on basic data structures in python. 
+
+- [An informal introduction to python](https://docs.python.org/3/tutorial/introduction.html)
+  
+- [Data structures](https://docs.python.org/3/tutorial/datastructures.html)
+  
+### NumPy 
+  
+NumPy is the fundamental package for scientific computing with Python to support powerful N-dimensional array object. It is fixed in size and holds data of same datatype.
+
+The attributes of array are
+
+- ndim: number of dimensions or axes of array
+- shape: a tuple of integers indicating the size of the array in each dimensions; for example, a matrix of n rows and m columns will have shape of (n,m) and a length equal of ndim.
+- size: total number of elements in each array
+- dtype: type of element in the array
+  
+Since numpy codebase is large and and many functions names conflict with built-in python ones and hence it is reccomended that you explicitly denote numpy functions like below.
+  
+```{python eval=TRUE}
+
+import numpy as np
+randomnumber = np.random.randn(2,4)
+print (randomnumber)
+```
+
+You can  create an array from a python list or a tuple using array function.
+
+```{python eval=TRUE}
+import numpy as np
+NewArray=np.array([1,2,3])
+print (NewArray)
+```
+
+We can also create a array with zeros or empty to to have ones containing random values. by default the created array's dtype is `float64`.
+
+```{python eval=TRUE}
+import numpy as np
+print (np.zeros(shape=(3,4)))
+#same as np.zeros((3,4))
+```
+
+In order to generate a range of values, numpy has a function similar to `range` and is called `numpy.arange()`
+
+```{r eval=FALSE}
+import numpy as np
+np.arange([start, ]stop, [step, ]dtype=None)
+```
+
+where,
+- start indicates start of interval  
+- stop is end of interval  
+- step is spacing between values  
+- dtype is spacing between values. Note: if you use floating point arguments here than its not possible to predict the number of elements obtained due to finite floating pointing precision. for this reason its better to use linspace
+
+```{r eval=FALSE}
+import numpy as np
+np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None
+
+```
+
+Let us look at the example below to see an example of both functions.
+
+```{python eval=TRUE}
+import numpy as np
+print (np.arange(1,3,.5))
+print (np.linspace(1,3,num=6))
+
+```
+
+### Further Reading on Numpy
+
+- Check out the official [Numpy v1.14 user manual](https://docs.scipy.org/doc/numpy-1.14.0/user/index.html) for more information on indexing and slicing as well as performing arthmetics and other basic math operations are performed on mumpy array on elementwise basis.
+  
+### Pandas
+  
+There are two basic types of Pandas data structures series and dataframes. NaN (not a number) is the standard missing data  marker used. 
+  
+**Series**
+
+A general function to create a series (one dimensional array) is shown below. 
+
+The `data` can be hold data types such as scalars- integers, strings, floating point numbers, python objects such as ndarray, dict etc and axis labels are referred as `index`. 
+
+Unlike R, Pandas supports non unique index values however expecption is raised if a operation is attempted which requires unique index values. `dtype` is inferred and the name is also assigned automatically in many cases.
+
+
+```{python eval=FALSE}
+NewSeries=pd.Series(data=None, index=None, dtype=None, name=None)
+
+```
+  
+If data is ndarray, than index must be same length as data; if no explicit index is passed than one will automatically be created with values 0....len(data)-1.  
+
+If data is a dict than the values in data corresponding to keys is pulled out; otherwise, an index is constructed from sorted keys of the dict.
+
+```{python eval=TRUE}
+import numpy as np
+import pandas as pd
+SampleDict={'a' : [1,2,3], 'b':[4,5]}
+print (pd.Series(SampleDict))
+SampleDict2={0 : 'p', 1 : 'a', 2 : 'n'}
+print (pd.Series(SampleDict2))
+print (pd.Series(SampleDict2, index=[0,1,2,3,4]))
+```
+
+**DataFrame**
+
+DataFrame is a 2-dimensional size mutable labeled data structure with columns of potentially different types. It is analogous to R's dataframe and is intuitively similar to a SQL table or a dict of the pandas series objects. DataFrame is not intended to work exactly as a 2D ndarray.
+
+```{python eval=FALSE}
+NewDataframe = pa.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
+
+```
+
+`data` can be:
+  
+- 2-D numpy ndarray (structured or homogenous) 
+- Dict of 1D ndarrays, lists, dicts or Series  
+- List of dicts, Series etc.
+- A pandas Series
+- Another DataFrame
+  
+`index` will default to np.arange(n) if no indexing information is provided. similarly, if no column labels are provided then `columns` will default to np.arange(n).
+  
+When a DataFrame is created by combining series, the resulting index will be union of both Series. In case of nested dicts, it will be first converted to a series.
+  
+You will get a value error if you try to create a **Dataframe from a dict** without specifying an index. Also, passing column labels in **DataFrame** will override the keys in the dict and will create a dataframe with NaN values if it cant match column name with keys in the dict.
+
+```{python eval=TRUE}
+import numpy as np
+import pandas as pd
+SampleDict3={0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'}
+# this will give an error : print (pd.DataFrame(SampleDict3))
+print (pd.DataFrame(SampleDict3, index=[0]))
+```
+
+Alternately, you can either create a **list of one dict** and pass it or use a series
+
+```{python eval=TRUE}
+import pandas as pd
+SampleDict3={0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'}
+print (pd.DataFrame([SampleDict3]))
+```
+
+Create a Dataframe from a **list of dicts**:
+
+```{python eval=TRUE}
+import pandas as pd
+SampleDict2={0 : 'p', 1 : 'a', 2 : 'n'}
+SampleDict3={0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'}
+print (pd.DataFrame([SampleDict2,SampleDict3]))
+```
+
+Create a dataframe from a **list of Series**:
+
+
+```{python eval=FALSE}
+import pandas as pd
+SampleDict2={0 : 'p', 1 : 'a', 2 : 'n'}
+x=pd.Series({0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'})
+print (pd.DataFrame([pd.Series(SampleDict2),x]))
+
+```
+
+Create a dataframe from **list of one series**:
+
+```{python eval=TRUE}
+import pandas as pd
+x=pd.Series({0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'})
+print (pd.DataFrame([x]))
+
+```
+
+Just to reiterate that this is conceptually very different from creating a **DataFrame with only one Series** where the values get read in the column with index number 0. The output is practically same as one series except that the column gets an index numer of 0.
+
+```{python eval=TRUE}
+import pandas as pd
+
+x=pd.Series({0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'})
+print (x)
+print (pd.DataFrame(x))
+```
+
+### Pandas DataFrame
+  
+**Selection and slicing by position**  
+
+We can select specific value in a dataFrame solely by position by using the `.iloc` and the numbers can be specified as [rows, columns]. Slicing is performed by using the `:` operator.
+  
+**when slicing by position, start bounds are included while upper bound is excluded.** [More details in the official documentation](https://pandas.pydata.org/pandas-docs/stable/indexing.html#selection-by-position)
+  
+[:1,3] means that we want the row before 1 but not including 1 (aka 0) and column 3. So this is equivalent to picking value at [0,3] the the former is not a scalar. To specify the full range, use [0:1, 0:6]
+
+```{python eval=TRUE}
+import pandas as pd
+x=pd.Series({0 : 'n', 1 : 'u', 2 : 'n', 3 : 'm',4 : 'p', 5 : 'y'})
+y=pd.Series({0 : 'p', 1 : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'})
+NewPandasFrame=pd.DataFrame([x,y])
+print (NewPandasFrame)
+print (NewPandasFrame.iloc[1,1])
+print (NewPandasFrame.iloc[:1,3])
+print (NewPandasFrame.iloc[0,3])
+print (NewPandasFrame.iloc[0:2,0:6])
+
+```
+
+
+**Selection and slicing by label**
+
+We can select data by label using `.loc`, but for clarity, lets change our example by having some keys as strings so now our column names are composed of letters and integers.   
+
+Having only integers are valid labels too, however the refer to label in this case and not to the position.
+
+when using `:` to slice by label, **both start and stop are included contrary to usual python slices**. [read the official documentation for more information](https://pandas.pydata.org/pandas-docs/stable/indexing.html#selection-by-label).
+
+You can also pass a array of labels ['a','b'..]  
+
+It throws an error if you try to slice data by columns using ":" and the integer label (note that here we have mixed labels here).
+
+```{python eval=TRUE}
+import pandas as pd
+x=pd.Series({'A' : 'n', 'B' : 'u', 2 : 'm', 3 : 'p', 4 : 'y'})
+y=pd.Series({'A' : 'p', 'B' : 'a', 2 : 'n', 3 : 'd',4 : 'a', 5 : 's'})
+NewPandasFrame=pd.DataFrame([x,y])
+print (NewPandasFrame)
+print (NewPandasFrame.loc[1,'A'])
+print (NewPandasFrame.loc[:1,:])
+print (NewPandasFrame.loc[:,['A','B',3]])
+# this statment: print (NewPandasFrame.loc[:1,'A':4])
+# throws an error: TypeError: cannot do slice indexing on <class #'pandas.core.indexes.base.Index'> with these indexers [4] of <class 'int'>
+print (NewPandasFrame.loc[:1,'A':])
+print (NewPandasFrame.loc[:1,4])
+
+```
+
+### Further Reading on Pandas
+
+- [10 mins intro to Pandas 0.22.0](https://pandas.pydata.org/pandas-docs/stable/10min.html)
+
+- [Intro to Data structures in Pandas 0.22.0](https://pandas.pydata.org/pandas-docs/stable/dsintro.html)
+
+- [Indexing and selecting data in Pandas 0.22.0](https://pandas.pydata.org/pandas-docs/stable/indexing.html)
+
+- [Working with texts and strings in Pandas 0.22.0](https://pandas.pydata.org/pandas-docs/stable/text.html)
+
+- [Export and import of files in Pandas 0.22.0](https://pandas.pydata.org/pandas-docs/stable/io.html)
