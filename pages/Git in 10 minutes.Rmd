@@ -1,0 +1,220 @@
+---
+title: "Git in 10 Minutes"
+author: "Jay M. Patel"
+date: "April 11, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it's strongly reccomended that you go through this section since lot of concepts from other systems dont directly translate to Git.
+
+### Git Basics
+
+You can create a local Git repository on your computer by either:
+
+- Clone an existing Git repository from a remote repository on internet (e.g. github.com)
+  
+- Designate  a local directory currently not under version control, and turn it into a Git repository. 
+
+```{r echo=FALSE, fig.cap = "Figure 1: Git operations"}
+knitr::include_graphics(rep("./git_images/Git_operations.png", 1))
+
+```
+  
+ 
+  
+This local git repository is the middle layer in above figure and is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
+  
+You are said to **"pull"** when bring (**"fetch"**) a file from git repo into your **working directory/file** which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will **fetch the changes and merge** it into a local branch of the same name.
+  
+Alternately, you can **checkout** from your local git directory into working directory which will **fetch** the changes but **doesnt merge** them (you can do it later if you want).
+  
+The **Stage** in the above figure refers to a file in your Git directory which stores information about what goes in your commits; it is also called a **staging area**.  
+
+A sample Git workflow is:
+
+- Modify files in your working directory and 
+
+- Selectively **"add"** the changes you want to be part of your next commit to the staging area.
+
+- **"Committ"**  the files in the staging area to store that snapshot permanently to your Git directory. You can use **commit -a** to automatically stage files that have been modified or deleted. It is customary to include a short commit message to briefly explain the changes you are committing.  
+
+- **"Push"** the changes from the local git directory to the remote repository hosted by your organization or to public git repos such as github.
+
+If a particular version of a file is in the Git directory, it is considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified. The figure below explains the lifecycle of a file in Git.
+
+```{r echo=FALSE, fig.cap = "Figure 2: Life cycle of files in Git"}
+knitr::include_graphics(rep("./git_images/Git_life_cycle.jpg", 1))
+
+```
+  
+Like most version control systems, Git also allows an user to diverge from the main line of development and continue to do work without messing with that main line by using **branches** (the default one is **master**).
+  
+### Install Git
+
+- Download Git by going to https://git-scm.com/downloads 
+
+- Depending on the option selected during installation, your environment variable will already be set so that you can open windows command line and check the version of your git by entering the command below.
+
+```{r eval=FALSE}
+git --version
+
+```
+
+- When using Git for the first time, make sure you set the username and user email since this will be used for all the commits.
+
+```{r eval=FALSE}
+$ git config --global user.name "Jay M. Patel"
+$ git config --global user.email jaypatel@example.com
+
+```
+
+- Check your settings by entering
+
+```{r eval=FALSE}
+git config --list
+```
+  
+### Useful Git Commands
+
+The figure below shows the type of git commands we will need to perform basic operations.
+
+```{r echo=FALSE, fig.cap = "Figure 3: Summarizing Git operations"}
+knitr::include_graphics(rep("./git_images/Git_data_flow.png", 1))
+
+```
+  
+- **Create** a new repository in an existing directory by using **`cd`** to select directory of your choice and using the command `git init` to initialize a git repository.
+
+```{r eval=FALSE}
+git init
+
+```
+
+- Clone an existing git repository into a directory:
+
+```{r eval=FALSE}
+git clone https://github.com/jaypat87/Physicochemical-Property-Prediction.git
+```
+
+- Setting up remote repo:
+
+```{r eval=FALSE}
+git remote add origin https://github.com/jaypat87/jaypat87.github.io
+```
+
+- Changing the url of an existing origin:
+
+```{r eval=FALSE}
+git remote set-url origin https://enter_url_here
+
+```
+
+- Check if remote repo is the one are what you want:
+
+```{r eval=FALSE}
+git remote -v
+```
+
+- As an exmaple, you should get this as output:
+
+```{r eval=FALSE}
+origin  https://github.com/jaypat87/jaypat87.github.io (fetch)
+origin  https://github.com/jaypat87/jaypat87.github.io (push)
+```
+
+- Once this is set, you can pull from remote master by:
+
+```{r eval=FALSE}
+git pull origin master
+```
+
+- Check if there are any changes:
+
+```{r eval=FALSE}
+git status
+```
+
+- To add files to the staging area:
+
+```{r eval=FALSE}
+git add -A 
+# or
+git add .
+```
+
+- Commit the changes to the local repo. if you do just git commit with "-m" then put a message down, enter esc and to type :wq to get out of the screen.
+
+```{r eval=FALSE}
+git commit -m "put a commit message here"
+```
+
+- Push the changes to the remote repo
+
+```{r eval=FALSE}
+git push origin master
+
+```
+
+- If you have to pull from a remote repo in case of two projects with unrelated histories aka which started their lives independently, and now you want to merge them, use the command allow-unrelated-histories
+
+```{r eval=FALSE}
+git pull origin master --allow-unrelated-histories
+```
+
+- At any time, if you want to get back to main branch
+
+```{r eval=FALSE}
+git checkout master
+```
+
+- Undoing any change: This can be done by advanced usages of `revert` and `rebase` commands and is beyond the scope of this tutorial and readers are refered to this [blog post](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/) on github for more information. 
+
+
+
+### Git Branches
+
+In all the git commands above, we have assumed that you were only working on one repos having one branch; however, we know that most version control systems including Git have branching support to make it truly a tool useful for collaborative software development among multiple team members.
+
+- Create a new branch
+
+```{r eval=FALSE}
+git branch testing
+
+```
+
+- Switching to a newly created branch
+
+```{r eval=FALSE}
+git checkout testing
+```
+
+- Push these changes to remote repo
+
+```{r eval=FALSE}
+git push origin testing
+```
+
+- Merging changes in dev once you are back in master branch
+
+```{r eval=FALSE}
+git merge testing
+```
+
+- Push this to the remote when you are ready. 
+
+- To see the last commit on each branch:
+
+```{r eval=FALSE}
+git branch -v
+```
+
+
+### Gitignore File
+
+A gitignore file specifies which files Git should not track. Readers are encouraged to go through a collection of useful [gitignore files examples](https://github.com/github/gitignore) and go through the [Git documentation](https://git-scm.com/docs/gitignore) for more information.
