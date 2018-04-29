@@ -1,5 +1,5 @@
 ---
-title: "Python Data Objects (Incl. NumPy and Pandas) in 10 Minutes"
+title: "Python Data Structures (Incl. NumPy and Pandas) in 10 Minutes"
 author: "Jay M. Patel"
 date: "April 11, 2018"
 output: html_document
@@ -248,7 +248,7 @@ print (x)
 print (pd.DataFrame(x))
 ```
 
-### Pandas DataFrame
+### Selection of Data in Pandas DataFrame
   
 **Selection and slicing by position**  
 
