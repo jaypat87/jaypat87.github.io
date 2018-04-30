@@ -1,9 +1,9 @@
 ---
 title: "Jay M. Patel"
 output:
-  html_document: default
   pdf_document: default
   word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 jay@jaympatel.com | jaypatel87@gmail.com  
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg  
 HOMEPAGE: http://www.jaympatel.com  
-[Click here for PDF version](http://www.jaympatel.com/assets/CV.pdf)
+[Click here for PDF version](http://www.jaympatel.com/pages/CV.pdf)
   
 **PROFILE:**  
 
-- Data scientist with over five years’ experience in data analytics, machine learning, statistics and text mining.  
+- Data scientist with over five year's experience in data analytics, machine learning, statistics and text mining.  
   
 - I have coauthored 1 book, 10 papers, 26 conference presentations and am passionate about explaining data science to non-technical business audiences. 
   
@@ -29,28 +29,34 @@ HOMEPAGE: http://www.jaympatel.com
   
 - **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
   
-- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
+- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL (MySQL, SQLite, MongoDB), Apache Spark, Apache Kafka, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
   
 **PROFESSIONAL EXPERIENCE:**  
 
-- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA \hfill (12/2015 – Present)      
+- INDEPENDENT CONSULTANT, MUMBAI, INDIA \hfill (05/2018 - Present)  
+**Data Scientist**  
+
+    + Provide continued support, bug fixes and feature addition to the data analytics python modules and R packages (HTdescR and HTqsarR) developed by me as part of the ongoing projects at US Environmental Protection Agency.  
+    
+    + Work with stakeholders in development on best standard practices on regression and statistical modeling by being an official voting member on ASTM Committee E11 on Quality and Statistics.  
+   
+- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA \hfill (12/2015 - 05/2018)      
 Office of Research and Development (ORD)  
 **Data Scientist (ORISE Fellow)**  
 
-    + Fulfill all the data science duties for US EPA’s and US FDA’s joint Tox21 program and chemistry safety for sustainability (CSS) program.
+    + Fulfilled all the data science duties for US EPA's and US FDA's joint Tox21 program and chemistry safety for sustainability (CSS) program.
   
-    + Compile and curate data from various sources and use that to develop machine learning based classification and regression models.
+    + Compiled and curated data from various sources and used that to develop machine learning based classification and regression models.
   
-    + Work with external stakeholders in development on best standard practices on regression and statistical modeling by being an official voting member on ASTM Committee E11 on Quality and Statistics
   
-- PMGB LTD. CO., ATHENS, GA, USA \hfill (05/2013 – 11/2015)    
-**Data Scientist**  
+- US ENVIRONMENTAL PROTECTION AGENCY, ATHENS, GA, USA \hfill (05/2013 - 11/2015)    
+**Data Scientist (Contract)**  
 
-    + Directed development of a predictive machine learning based model [(more info)](http://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $100,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA “Patel, Jay”).
+    + Directed development of a predictive machine learning based models [(more info)](http://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $150,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA Patel, Jay).
   
     + Led two data analysts for development of decision analytics dashboard to generate regulatory intelligence insights to guide quality management systems required for continued cGMP compliance as per ICH/US FDA guidelines by text mining data from US FDA warning letters and a custom Form 483 database.
   
-- THE UNIVERSITY OF GEORGIA \hfill (08/2010 – 05/2013)      
+- THE UNIVERSITY OF GEORGIA \hfill (08/2010 - 05/2013)      
 Franklin College of Arts and Sciences  
 **Research Associate**  
 
