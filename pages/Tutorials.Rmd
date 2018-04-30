@@ -8,7 +8,7 @@ The "10 minute series"" tutorials listed below are edited and reformatted from t
   
 The CoP audience was composed of working professionals from acedemia, scientists at federal govt agencies and contractors from private sector working on DigitalGov initiative projects.
   
-This is a labor of love, hence it may take me another month or two to post tutorials of all the 40+ talks I chaired in my involvement at the Athens, GA Agile community.
+This is a side project so it may take me another month or two to post tutorials of all the 40+ talks I have to the CoP group.
 
 The outline of the tutorials are below:
 
