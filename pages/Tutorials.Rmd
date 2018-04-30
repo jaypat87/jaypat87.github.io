@@ -4,11 +4,11 @@ output: html_document
 ---
 [Home](jaympatel.com)
 
-The "10 minute series"" tutorials listed below are edited and reformatted from the handouts of my numerous talks at a seminar series organized by Agile Community of Practice (CoP) group.
+The "10 minute series" tutorials listed below are edited and reformatted from the handouts of my numerous talks at a seminar series organized by Agile Community of Practice (CoP) group.
   
 The CoP audience was composed of working professionals from acedemia, scientists at federal govt agencies and contractors from private sector working on DigitalGov initiative projects.
   
-This is a side project so it may take me another month or two to post tutorials of all the 40+ talks I have to the CoP group.
+This is a side project so it may take me another month or two to post tutorials of all the 20+ talks I have given to the CoP group in past five years.
 
 The outline of the tutorials are below:
 
