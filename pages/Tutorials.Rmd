@@ -2,7 +2,7 @@
 title: "Tutorials"
 output: html_document
 ---
-[Home](jaympatel.com)
+[Home](/)
 
 The "10 minute series" tutorials listed below are edited and reformatted from the handouts of my numerous talks at a seminar series organized by Agile Community of Practice (CoP) group.
   
