@@ -1,0 +1,64 @@
+---
+title: "Perspectives on Object oriented Programming in R"
+author: "Jay M. Patel"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Types of OO Systems in R
+
+R has three types of OO systems called S3, S4 and reference. There is also a "base" type which are mainly C structures. 
+
+S3 system is a simple and common one and objects in most CRAN packages will be S3 types. For programmers familiar with other OO languages, S3 will seem quirky, since S3 methods don't belong to a object or a class, but rather to a specific type of functions called **generic functions**. 
+
+Different types of OO systems in R are not compatible with each other, meaning objects in one type will not be inheritable in other system; hence its vital you understand all the systems, use `pryr` to figure out the object types in the dependency packages and try to stick to one system.
+
+A fellow University of Georgia faculty member and an Athenian, Kelly Black has written an excellent tutorial on both S3 and S4 which many of you may have already used in past few years.  
+
+I am not going to recreate the wheel here and strongly suggest to the reader to go to the link below and read his tutorial.  
+
+- [S3](https://www.cyclismo.org/tutorial/R/s3Classes.html)
+
+- [S4](https://www.cyclismo.org/tutorial/R/s4Classes.html)
+
+Kelly has also written a very short book on [Object oriented programming in R](https://www.packtpub.com/big-data-and-business-intelligence/r-object-oriented-programming/), and I can wholeheartedly recommend that to anyone who wants to learn more about it.  
+
+### R Community Reccomendations
+
+**Google Style Guide Reccomendations (THM: S3)**
+
+- "Use S3 objects and methods unless there is a strong reason to use S4 objects or methods"
+
+- "Avoid mixing S3 and S4: S4 methods ignore S3 inheritance and vice-versa"
+
+**Hadley Wickam's Reccomendations (THM: S3)**
+
+- Hadley wickam in his book [Advanced R](https://adv-r.hadley.nz/s3.html) says:
+
+"S3 is R's first and simplest OO system. S3 is informal and ad hoc, but it has a certain elegance in its minimalism: you can't take away any part of it and still have a useful OO system. Because of these reasons, S3 should be your default choice for OO programming: you should use it unless you have a compelling reason otherwise. S3 is the only OO system used in the base and stats packages, and it's the most commonly used system in CRAN packages. "
+
+**Bioconductor's Reccomendations (THM: S4)**
+
+On the other side, we have [Bioconductor](https://www.bioconductor.org/) which strongly favors use of S4 in their packages. In their [presentation](https://www.bioconductor.org/help/course-materials/2010/AdvancedR/S4InBioconductor.pdf) it was mentioned that:
+
+- "S4 superiority to S3 in realizing BioC features"
+
+- "over 51% Bioc packages define S4 objects"
+
+### What's Better for New Projects: S3 or S4?
+
+- Well, like most things, it really depends. I would suggest that if you have no plans to host your project on Bioconductor, than just stick with S3. In case that your package depends on a bioconductor hosted dependency, than evaluate whether its feasible to switch to S4 without lot of refactoring. A major issue with S4 is that its a newer system, and many veteran R programmers don't code in that; so from a code maintenance point of view, its makes sense to stick to S3 for most situations not involving bioinformatics type packages which are mostly available in bioconductor. 
+
+### Further Reading  
+
+- [Google R style guide](https://google.github.io/styleguide/Rguide.xml#object)
+
+- [Object oriented programming in R](https://www.packtpub.com/big-data-and-business-intelligence/r-object-oriented-programming/)
+
+- [Advanced R](https://adv-r.hadley.nz/s3.html)
+
+- [Kelly Black's R tutorial](https://www.cyclismo.org/tutorial/R/index.html#)
+

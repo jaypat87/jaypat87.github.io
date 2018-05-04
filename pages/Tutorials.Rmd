@@ -14,41 +14,59 @@ The outline of the tutorials are below:
 
 **Section I: Basics**
 
-- [Python Data Structures in 10 minutes](http://jaympatel.com/pages/Python_Data_Structures_in_10_Minutes.html) 
-    - Tuple
-    - List
-    - Dictionaries or Dicts
-    - Set 
-    - Numpy
-    - Pandas Series
-    - Pandas DataFrame  
+1. [Python Data Structures in 10 minutes](http://jaympatel.com/pages/Python_Data_Structures_in_10_Minutes.html)  
+  - Tuple  
+  - List  
+  - Dictionaries or Dicts  
+  - Set  
+  - Numpy  
+  - Pandas Series  
+  - Pandas DataFrame  
   
-- Object Oriented Programming (OO) in Python in 10 Minutes
+2. Object Oriented Programming (OO) in Python in 10 Minutes
 
-- R Data Structures in 10 minutes
-
-- Object Oriented Programming in R
-
-- Distributing R Scripts as Packages
-
-- Visualization in Matplotlib and GGPlot2
+3. R Data Structures in 10 minutes
+  
+4. [Perspectives on Object oriented Programming in R](http://jaympatel.com/pages/OO_in_R.html)  
+  - S3  
+  - S4  
+  - Reference Class  
+  - Base  
+  - R Community Reccomendations  
+  - What's Better for New Projects: S3 or S4?  
+  
+5. Distributing R Scripts as Packages
+  
+6. Visualization in R and Python  
+- Matplotlib  
+- GGPlot2  
 
 **Section II: Getting Data from Databases and Web Services**
 
-- Relational Databases (MySQL, PostgreSQL, and SQLite)
+7. Relational Databases  
+ - MySQL  
+ - PostgreSQL 
+ - SQLite  
+  
+8. NoSQL Databases  
+- MongoDB  
+- Apache Cassandra  
 
-- NoSQL Databases (MongoDB and Apache Cassandra)
-
-- Rest Web Services
-
+9. Rest Web Services  
+  
 **Section III: Advanced Topics**
+  
+10. Big Data Analytics  
+- Apache Spark  
+- Apache Hadoop  
+- Apache Hive  
+- Apache Pig  
+- Apache Kafka  
+  
+11. Theoretical Considerations for Common Machine Learning Algorithms  
 
-- Using Apache Spark and Apache Kafka
-
-- Theoretical Considerations for Common Machine Learning Algorithms
-
-- Practical Machine Learning in Python
+12. Practical Machine Learning in Python  
 
 **Appendix**
 
-- [Git in 10 Minutes](http://jaympatel.com/pages/Git_in_10_minutes.html)
+[Git in 10 Minutes](http://jaympatel.com/pages/Git_in_10_minutes.html)
