@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 jay@jaympatel.com | jaypatel87@gmail.com  
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg  
 HOMEPAGE: http://www.jaympatel.com  
-[Click here for PDF version](http://www.jaympatel.com/pages/CV.pdf)
+[Click here for latest PDF version](http://www.jaympatel.com/pages/CV.pdf)
   
 **PROFILE:**  
 
@@ -25,11 +25,11 @@ HOMEPAGE: http://www.jaympatel.com
 
 **TECHNICAL SKILLS:**  
 
-- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering.
+- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering. Applying ML to unstructured data using Natural-language processing (content and knowledge based recommender systems).
   
 - **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
   
-- **Software and Programming Languages:** Python (scikit-learn,matplotlib, numpy, scipy, pandas), R (shiny, knitr, ggplot2 and other tidyverse packages, caret, e1071, randomforest), SQL (MySQL, SQLite, MongoDB), Apache Spark, Apache Kafka, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel, LaTeX.
+- **Software and Programming Languages:** Python (scikit-learn, matplotlib, numpy, scipy, pandas, NLTK, spaCy), R (shiny, knitr, ggplot2 and other tidyverse packages, caret), SQL (MySQL, SQLite, MongoDB), Apache Spark (MLib),Apache Hadoop, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel.
   
 **PROFESSIONAL EXPERIENCE:**  
 
@@ -54,13 +54,13 @@ Office of Research and Development (ORD)
 
     + Directed development of a predictive machine learning based models [(more info)](http://www.jaympatel.com/assets/DoD_SERDP_case_study.pdf) as part of a contract valued at over $150,000 with US federal government (Order no. EP13W000134 and EP14W000201, DBA Patel, Jay).
   
-    + Led two data analysts for development of decision analytics dashboard to generate regulatory intelligence insights to guide quality management systems required for continued cGMP compliance as per ICH/US FDA guidelines by text mining data from US FDA warning letters and a custom Form 483 database.
+    + Led a team for development of content based recommender system as part of decision analytics dashboard to generate regulatory intelligence insights by using web scraping plus Natural-language processing based model on unstructured data in HTML and pdf format.
   
 - THE UNIVERSITY OF GEORGIA \hfill (08/2010 - 05/2013)      
 Franklin College of Arts and Sciences  
 **Research Associate**  
 
-    + Designed and applied a virtual screening workflow based on machine learning classification model to identify high activity enzyme mutations (virtual screening) and validated it experimentally using site saturation mutagenesis.
+    + Designed and applied a virtual screening workflow based on machine learning classification model to identify high activity enzyme mutations and validated it experimentally using site saturation mutagenesis.
   
     + In a separate project, developed a partial least square model for predicting solvation energies for a enzyme mutation and experimentally validated it.
   
