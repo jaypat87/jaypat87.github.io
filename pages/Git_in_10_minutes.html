@@ -141,7 +141,7 @@ $(document).ready(function () {
 <p class="caption">Figure 1: Git operations</p>
 </div>
 <p>This local git repository is the middle layer in above figure and is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</p>
-<p>You are said to <strong>“pull”</strong> when bring (<strong>“fetch”</strong>) a file from git repo into your <strong>working directory/file</strong> which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will <strong>fetch the changes and merge</strong> it into a local branch of the same name.</p>
+<p>You are said to <strong>“pull”</strong> when bring (<strong>“fetch”</strong> and <strong>“merge”</strong>) a file from git repo into your <strong>working directory/file</strong> which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will <strong>fetch the changes and merge</strong> it into a local branch of the same name.</p>
 <p>Alternately, you can <strong>checkout</strong> from your local git directory into working directory which will <strong>fetch</strong> the changes but <strong>doesnt merge</strong> them (you can do it later if you want).</p>
 <p>The <strong>Stage</strong> in the above figure refers to a file in your Git directory which stores information about what goes in your commits; it is also called a <strong>staging area</strong>.</p>
 <p>A sample Git workflow is:</p>
@@ -269,6 +269,35 @@ git add .</code></pre>
 <div id="gitignore-file" class="section level3">
 <h3>Gitignore File</h3>
 <p>A gitignore file specifies which files Git should not track. Readers are encouraged to go through a collection of useful <a href="https://github.com/github/gitignore">gitignore files examples</a> and go through the <a href="https://git-scm.com/docs/gitignore">Git documentation</a> for more information.</p>
+</div>
+<div id="collaborating-on-github" class="section level3">
+<h3>Collaborating on Github</h3>
+<p>If you dont have access to push to a repo, then fork it on github, make whatever additions you would like and open a <strong>pull request</strong>. The owner of the original repo can either suggest more changes or accept and merge your change into the main repo.</p>
+<p>In order for them to keep their forks up to date with upstream or (main/master) open git bash and enter:</p>
+<pre class="r"><code>git remote add upstream https://upstream_git_url</code></pre>
+<p>Periodically, fetch changes from upstream</p>
+<pre class="r"><code>git fetch upstream</code></pre>
+<p>To checkout the master branch of upstream repo</p>
+<pre class="r"><code>git checkout upsteam/master</code></pre>
+<p>At this point, you should get a note</p>
+<pre class="r"><code>Note: checking out 'upstream/master'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;</code></pre>
+<p>You can assign this detached head state to a new branch by:</p>
+<pre class="r"><code>git branch my-temporary-work</code></pre>
+<p>Commit whatever changes you need to do, and come back to master by</p>
+<pre class="r"><code>git checkout master</code></pre>
+<p>At this point, you can merge by</p>
+<pre class="r"><code>git merge my-temporary-work</code></pre>
+<p>And push the changes to your origin repo by</p>
+<pre class="r"><code>git push origin master</code></pre>
 </div>
 </div>
 

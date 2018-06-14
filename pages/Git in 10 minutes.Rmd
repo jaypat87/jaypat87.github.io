@@ -30,7 +30,7 @@ knitr::include_graphics(rep("./git_images/Git_operations.png", 1))
   
 This local git repository is the middle layer in above figure and is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
   
-You are said to **"pull"** when bring (**"fetch"**) a file from git repo into your **working directory/file** which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will **fetch the changes and merge** it into a local branch of the same name.
+You are said to **"pull"** when bring (**"fetch"** and **"merge"**) a file from git repo into your **working directory/file** which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will **fetch the changes and merge** it into a local branch of the same name.
   
 Alternately, you can **checkout** from your local git directory into working directory which will **fetch** the changes but **doesnt merge** them (you can do it later if you want).
   
@@ -218,3 +218,72 @@ git branch -v
 ### Gitignore File
 
 A gitignore file specifies which files Git should not track. Readers are encouraged to go through a collection of useful [gitignore files examples](https://github.com/github/gitignore) and go through the [Git documentation](https://git-scm.com/docs/gitignore) for more information.
+  
+### Collaborating on Github   
+
+If you dont have access to push to a repo, then fork it on github, make whatever additions you would like and open a **pull request**. The owner of the original repo can either suggest more changes or accept and merge your change into the main repo.  
+
+In order for them to keep their forks up to date with upstream or (main/master) open git bash and enter:  
+
+```{r eval=FALSE}
+git remote add upstream https://upstream_git_url
+```
+  
+Periodically, fetch changes from upstream  
+
+```{r eval=FALSE}
+git fetch upstream
+```
+
+To checkout the master branch of upstream repo
+
+ 
+```{r eval=FALSE}
+git checkout upsteam/master
+```
+ 
+
+At this point, you should get a note
+
+ 
+```{r eval=FALSE}
+Note: checking out 'upstream/master'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+```
+
+You can assign this detached head state to a new branch by:
+  
+
+```{r eval=FALSE}
+git branch my-temporary-work
+
+```
+  
+Commit whatever changes you need to do, and come back to master by
+
+ 
+```{r eval=FALSE}
+git checkout master
+```
+  
+At this point, you can merge by  
+
+```{r eval=FALSE}
+git merge my-temporary-work
+```
+  
+And push the changes to your origin repo by
+
+
+```{r eval=FALSE}
+git push origin master
+```
