@@ -25,11 +25,11 @@ HOMEPAGE: http://www.jaympatel.com
 
 **TECHNICAL SKILLS:**  
 
-- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest etc), clustering, feature engineering. Applying ML to unstructured data using Natural-language processing (content and knowledge based recommender systems).
+- **Machine Learning:** classification and regression (support vector machine, partial least square, random forest), cluster analysis, feature engineering. Analyzing unstructured data using Natural-language processing (content and knowledge based recommender systems).
   
-- **Statistical Methods:** regression models, hypothesis testing and confidence intervals, time series, principal component analysis and dimensionality reduction.
+- **Statistical Methods:** regression models (linear and logistic), hypothesis testing (ANOVA, t-test) and confidence intervals, Correlation (bivariate, partial, distances),  time series, principal component analysis and dimensionality reduction.
   
-- **Software and Programming Languages:** Python (scikit-learn, matplotlib, numpy, scipy, pandas, NLTK, spaCy), R (shiny, knitr, ggplot2 and other tidyverse packages, caret), SQL (MySQL, SQLite, MongoDB), Apache Spark (MLib),Apache Hadoop, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel.
+- **Software and Programming Languages:** SPSS, Stata, Python (scikit-learn, matplotlib, numpy, scipy, pandas, NLTK, spaCy), R (shiny, knitr, ggplot2 tidyverse, caret), SQL (MySQL, SQLite, MongoDB), Apache Spark (MLib), Apache Hadoop, Weka, Eclipse RCP/Java, KNIME, Microsoft Excel.
   
 **PROFESSIONAL EXPERIENCE:**  
 
