@@ -29,12 +29,14 @@ HOMEPAGE: http://www.jaympatel.com
   
 - **Statistical Methods:** hypothesis testing (ANOVA, t-test) and confidence intervals, correlation (bivariate, partial, distances), time series, principal component analysis and dimensionality reduction.
   
-- **Software and Programming Languages:** Python (scikit-learn, keras, pandas, matplotlib, numpy, scipy, NLTK, spaCy), R (shiny, knitr, ggplot2, tidyverse, caret), SQL (MySQL, SQLite, MongoDB), Apache Spark (MLib), Apache Hadoop, Weka, Eclipse RCP/Java, KNIME, SPSS, Stata, Microsoft Excel.
+- **Software and Programming Languages:** Python (scikit-learn, keras, pandas, matplotlib, numpy, scipy, NLTK, spaCy), R (shiny, knitr, ggplot2, tidyverse, caret), SQL (MySQL, SQLite, MongoDB), Apache Spark (MLlib), Apache Hadoop, Weka, Eclipse RCP/Java, KNIME, SPSS, Stata, Microsoft Excel.
   
 **PROFESSIONAL EXPERIENCE:**  
 
-- INDEPENDENT CONSULTANT, MUMBAI, INDIA \hfill (05/2018 - Present)  
-**Data Scientist**  
+- INDEPENDENT CONSULTANT (SPECROM.COM), MUMBAI, INDIA \hfill (05/2018 - Present)  
+**Principal Data Scientist** 
+
+    +  Implementing text analytics and NLP algorithms for social listening, sentiment analysis and business process improvement (learn more at [specrom.com](http://www.specrom.com)).
 
     + Provide continued support, bug fixes and feature addition to the data analytics python modules and R packages (HTdescR and HTqsarR) developed by me as part of the ongoing projects at US Environmental Protection Agency.  
     
@@ -82,7 +84,7 @@ B.Tech, Chemical Engineering \hfill (06/2010)
   
 - Patel J.M., Phillips R.S. (2014) Effects of hydrostatic pressure on stereospecificity of secondary alcohol dehydrogenase from Thermoanaerobacter ethanolicus support the role of solvation in enantiospecificity. ACS Catalysis. 4, 692-694.  
 
-- Patel J.M. (2009) Biocatalytic synthesis of atorvastatin intermediates. J. Mol. Catal. B: Enzym.. 61, 123-128.  
+- Patel J.M. (2009) Biocatalytic synthesis of atorvastatin intermediates. J. Mol. Catal. B: Enzym. 61, 123-128.  
 
 **SELECT PRESENTATIONS:**  
 
