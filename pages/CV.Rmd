@@ -1,9 +1,9 @@
 ---
 title: "Jay M. Patel"
 output:
-  pdf_document: default
-  word_document: default
   html_document: default
+  word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -90,4 +90,4 @@ B.Tech, Chemical Engineering \hfill (06/2010)
 
 - Patel, J. M., Stevens, C.T., Weber, E. J. Estimation of hydrolysis rate constants for carbamates. American Chemical Society (ACS) Annual Spring Meeting 2017, San Francisco, CA, April 02 - 06, 2017.  
 
-- Weber, E. J., Card, M. Patel, J. M., Stevens, C.T. Cheminformatics applications and physicochemical property calculators: a powerful combination for the encoding of process science. Gordon Research Conference: Water, NH, Holderness, June 26 - July 01, 2016.  
+- Weber, E. J., Card, M. Patel, J. M., Stevens, C.T. Cheminformatics applications and physicochemical property calculators: a powerful combination for the encoding of process science. Gordon Research Conference: Water, Holderness, NH, June 26 - July 01, 2016.  
