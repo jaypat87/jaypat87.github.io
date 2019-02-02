@@ -37,7 +37,8 @@ The outline of the tutorials are below:
   
 5. Distributing R Scripts as Packages
   
-6. Visualization in R and Python  
+6. Visualization in R and Python
+- [Wordcloud in python](/pages/wordcloud.html)
 - Matplotlib  
 - GGPlot2  
 
