@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Version Control on Jay M. Patel</title>
-    <link>http://www.jaympatel.com/tags/version-control/</link>
+    <link>http://jaympatel.com/tags/version-control/</link>
     <description>Recent content in Version Control on Jay M. Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
     <lastBuildDate>Wed, 28 Nov 2018 08:59:27 +0100</lastBuildDate>
     
-	<atom:link href="http://www.jaympatel.com/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jaympatel.com/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Get Started with Git and Github in Under 10 Minutes</title>
-      <link>http://www.jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</link>
+      <link>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</link>
       <pubDate>Wed, 28 Nov 2018 08:59:27 +0100</pubDate>
       
-      <guid>http://www.jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</guid>
+      <guid>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</guid>
       <description>Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it&amp;rsquo;s strongly reccomended that you go through this section since lot of concepts from other systems dont directly translate to Git.
 Git Basics You can create a local Git repository on your computer by either:
  Clone an existing Git repository from a remote repository on internet (e.</description>

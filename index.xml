@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jay M. Patel</title>
-    <link>http://www.jaympatel.com/</link>
+    <link>http://jaympatel.com/</link>
     <description>Recent content on Jay M. Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
     <lastBuildDate>Fri, 28 Dec 2018 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="http://www.jaympatel.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jaympatel.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://www.jaympatel.com/about/</link>
+      <link>http://jaympatel.com/about/</link>
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
       
-      <guid>http://www.jaympatel.com/about/</guid>
+      <guid>http://jaympatel.com/about/</guid>
       <description>Hi! I am a fullstack software developer and an internet marketer working on web scraping, natural language processing, data mining and content marketing.
 I also design and implement machine learning based models at a startup Specrom Analytics as their principal data scientist.
 In my free time, I volunteer in dangs district in India to assist tribal community in building homes, getting clean water and sanitation. I also write about issues pertaining to these issues at various outlets as well as blog about them here.</description>
@@ -25,10 +25,10 @@ In my free time, I volunteer in dangs district in India to assist tribal communi
     
     <item>
       <title>Get Started with Git and Github in Under 10 Minutes</title>
-      <link>http://www.jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</link>
+      <link>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</link>
       <pubDate>Wed, 28 Nov 2018 08:59:27 +0100</pubDate>
       
-      <guid>http://www.jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</guid>
+      <guid>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</guid>
       <description>Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it&amp;rsquo;s strongly reccomended that you go through this section since lot of concepts from other systems dont directly translate to Git.
 Git Basics You can create a local Git repository on your computer by either:
  Clone an existing Git repository from a remote repository on internet (e.</description>
@@ -36,10 +36,10 @@ Git Basics You can create a local Git repository on your computer by either:
     
     <item>
       <title>CV</title>
-      <link>http://www.jaympatel.com/cv/</link>
+      <link>http://jaympatel.com/cv/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jaympatel.com/cv/</guid>
+      <guid>http://jaympatel.com/cv/</guid>
       <description>jay@jaympatel.com | jaypatel87@gmail.com
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg
 HOMEPAGE: http://www.jaympatel.com
