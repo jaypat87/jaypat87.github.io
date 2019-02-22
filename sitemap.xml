@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/2019/02/top-data-science-interview-questions/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -30,8 +37,22 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/categories/data-science/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/tags/git/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/categories/interviews/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -44,8 +65,22 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/machine-learning/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/categories/machine-learning/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/post/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

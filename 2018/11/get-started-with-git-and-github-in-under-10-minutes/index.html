@@ -22,7 +22,7 @@
         "datePublished": "2018-11-28 08:59:27 +0100 +0100",
         "dateModified" : "2018-11-28 08:59:27 +0100 +0100",
         "url" : "/2018/11/get-started-with-git-and-github-in-under-10-minutes/",
-        "wordCount" : "1232",
+        "wordCount" : "1230",
         "keywords" : [ "Git","Version Control","Blog" ]
     }
 </script>
@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2018-10-28T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1232">
+<meta itemprop="wordCount" content="1230">
 
 
 
@@ -91,6 +91,8 @@
                                 aria-haspopup="true" aria-expanded="false">Tutorials</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown1">
                             
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions/">Top Data Science Interview Questions</a>
+                            
                                 <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get Started with Git and Github in Under 10 Minutes</a>
                             
                             </div>
@@ -122,7 +124,7 @@
 
         <p class="card-text">
 
-<p>Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it&rsquo;s strongly reccomended that you go through this section since lot of concepts from other systems dont directly translate to Git.</p>
+<p>Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it&rsquo;s strongly recommended that you go through this section since lot of concepts from other systems don&rsquo;t directly translate to Git.</p>
 
 <h3 id="git-basics">Git Basics</h3>
 
@@ -143,7 +145,7 @@
 
 <p>This local git repository is the middle layer in above figure and is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</p>
 
-<p>You are said to <strong>&ldquo;pull&rdquo;</strong> when bring (<strong>&ldquo;fetch&rdquo;</strong> and <strong>&ldquo;merge&rdquo;</strong>) a file from git repo into your <strong>working directory/file</strong> which is simply single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify. Pull will <strong>fetch the changes and merge</strong> it into a local branch of the same name.</p>
+<p>You are said to <strong>&ldquo;pull&rdquo;</strong> when bringing a file from a remote git repo into your <strong>working directory/file</strong> which is simply single checkout of one version of the project. This will bring the file from compressed database in the Git directory and placed on disk for you to use or modify. Pull will <strong>fetch the changes and merge</strong> it into a local branch of the same name.</p>
 
 <p>Alternately, you can <strong>checkout</strong> from your local git directory into working directory which will <strong>fetch</strong> the changes but <strong>doesnt merge</strong> them (you can do it later if you want).</p>
 
@@ -156,7 +158,7 @@
 
 <li><p>Selectively <strong>&ldquo;add&rdquo;</strong> the changes you want to be part of your next commit to the staging area.</p></li>
 
-<li><p><strong>&ldquo;Committ&rdquo;</strong>  the files in the staging area to store that snapshot permanently to your Git directory. You can use <strong>commit -a</strong> to automatically stage files that have been modified or deleted. It is customary to include a short commit message to briefly explain the changes you are committing.</p></li>
+<li><p><strong>&ldquo;Commit&rdquo;</strong>  the files in the staging area to store that snapshot permanently to your Git directory. You can use <strong>commit -a</strong> to automatically stage files that have been modified or deleted. It is customary to include a short commit message to briefly explain the changes you are committing.</p></li>
 
 <li><p><strong>&ldquo;Push&rdquo;</strong> the changes from the local git directory to the remote repository hosted by your organization or to public git repos such as github.</p></li>
 </ul>
@@ -179,27 +181,16 @@
 
 <li><p>Depending on the option selected during installation, your environment variable will already be set so that you can open windows command line and check the version of your git by entering the command below.</p></li>
 </ul>
-
-<pre><code>git --version
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git --version</span></code></pre></div>
 <ul>
 <li>When using Git for the first time, make sure you set the username and user email since this will be used for all the commits.</li>
 </ul>
-
-<pre><code>$ git config --global user.name &quot;Jay M. Patel&quot;
-$ git config --global user.email jaypatel@example.com
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">$ git config --global user.name &#34;Jay M. Patel&#34;</span>
+<span style="color:#309">$ git config --global user.email jaypatel@example.com</span></code></pre></div>
 <ul>
 <li>Check your settings by entering</li>
 </ul>
-
-<pre><code>git config --list
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git config --list</span></code></pre></div>
 <h3 id="useful-git-commands">Useful Git Commands</h3>
 
 <p>The figure below shows the type of git commands we will need to perform basic operations.</p>
@@ -214,102 +205,60 @@ $ git config --global user.email jaypatel@example.com
 <ul>
 <li><strong>Create</strong> a new repository in an existing directory by using <strong><code>cd</code></strong> to select directory of your choice and using the command <code>git init</code> to initialize a git repository.</li>
 </ul>
-
-<pre><code>git init
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git init</span></code></pre></div>
 <ul>
 <li>Clone an existing git repository into a directory:</li>
 </ul>
-
-<pre><code>git clone https://github.com/jaypat87/Physicochemical-Property-Prediction.git
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git clone https://github.com/jaypat87/Physicochemical-Property-Prediction.git</span></code></pre></div>
 <ul>
 <li>Setting up remote repo:</li>
 </ul>
-
-<pre><code>git remote add origin https://github.com/jaypat87/jaypat87.github.io
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git remote add origin https://github.com/jaypat87/jaypat87.github.io</span></code></pre></div>
 <ul>
 <li>Changing the url of an existing origin:</li>
 </ul>
-
-<pre><code>git remote set-url origin https://enter_url_here
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git remote set-url origin https://enter_url_here</span></code></pre></div>
 <ul>
 <li>Check if remote repo is the one are what you want:</li>
 </ul>
-
-<pre><code>git remote -v
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git remote -v</span></code></pre></div>
 <ul>
 <li>As an exmaple, you should get this as output:</li>
 </ul>
-
-<pre><code>origin  https://github.com/jaypat87/jaypat87.github.io (fetch)
-origin  https://github.com/jaypat87/jaypat87.github.io (push)
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">origin  https://github.com/jaypat87/jaypat87.github.io (fetch)</span>
+<span style="color:#309">origin  https://github.com/jaypat87/jaypat87.github.io (push)</span></code></pre></div>
 <ul>
 <li>Once this is set, you can pull from remote master by:</li>
 </ul>
-
-<pre><code>git pull origin master
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git pull origin master</span></code></pre></div>
 <ul>
 <li>Check if there are any changes:</li>
 </ul>
-
-<pre><code>git status
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git status</span></code></pre></div>
 <ul>
 <li>To add files to the staging area:</li>
 </ul>
-
-<pre><code>git add -A 
-# or
-git add .
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git add -A </span>
+<span style="color:#09f;font-style:italic"># or</span>
+<span style="color:#309">git add .</span></code></pre></div>
 <ul>
 <li>Commit the changes to the local repo. if you do just git commit with &ldquo;-m&rdquo; then put a message down, enter esc and to type :wq to get out of the screen.</li>
 </ul>
-
-<pre><code>git commit -m &quot;put a commit message here&quot;
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git commit -m &#34;put a commit message here&#34;</span></code></pre></div>
 <ul>
 <li>Push the changes to the remote repo</li>
 </ul>
-
-<pre><code>git push origin master
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git push origin master</span></code></pre></div>
 <ul>
 <li>If you have to pull from a remote repo in case of two projects with unrelated histories aka which started their lives independently, and now you want to merge them, use the command allow-unrelated-histories</li>
 </ul>
-
-<pre><code>git pull origin master --allow-unrelated-histories
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git pull origin master --allow-unrelated-histories</span></code></pre></div>
 <ul>
 <li>At any time, if you want to get back to main branch</li>
 </ul>
-
-<pre><code>git checkout master
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git checkout master</span></code></pre></div>
 <ul>
-<li>Undoing any change: This can be done by advanced usages of <code>revert</code> and <code>rebase</code> commands and is beyond the scope of this tutorial and readers are refered to this <a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">blog post</a> on github for more information.</li>
+<li>Undoing any change: This can be done by advanced usages of <code>revert</code> and <code>rebase</code> commands and is beyond the scope of this tutorial and readers are referred to this <a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">blog post</a> on github for more information.</li>
 </ul>
 
 <h3 id="git-branches">Git Branches</h3>
@@ -319,41 +268,25 @@ git add .
 <ul>
 <li>Create a new branch</li>
 </ul>
-
-<pre><code>git branch testing
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git branch testing</span></code></pre></div>
 <ul>
 <li>Switching to a newly created branch</li>
 </ul>
-
-<pre><code>git checkout testing
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git checkout testing</span></code></pre></div>
 <ul>
 <li>Push these changes to remote repo</li>
 </ul>
-
-<pre><code>git push origin testing
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git push origin testing</span></code></pre></div>
 <ul>
 <li>Merging changes in dev once you are back in master branch</li>
 </ul>
-
-<pre><code>git merge testing
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git merge testing</span></code></pre></div>
 <ul>
 <li><p>Push this to the remote when you are ready.</p></li>
 
 <li><p>To see the last commit on each branch:</p></li>
 </ul>
-
-<pre><code>git branch -v
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git branch -v</span></code></pre></div>
 <h3 id="gitignore-file">Gitignore File</h3>
 
 <p>A gitignore file specifies which files Git should not track. Readers are encouraged to go through a collection of useful <a href="https://github.com/github/gitignore">gitignore files examples</a> and go through the <a href="https://git-scm.com/docs/gitignore">Git documentation</a> for more information.</p>
@@ -363,56 +296,30 @@ git add .
 <p>If you dont have access to push to a repo, then fork it on github, make whatever additions you would like and open a <strong>pull request</strong>. The owner of the original repo can either suggest more changes or accept and merge your change into the main repo.</p>
 
 <p>In order for them to keep their forks up to date with upstream or (main/master) open git bash and enter:</p>
-
-<pre><code>git remote add upstream https://upstream_git_url
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git remote add upstream https://upstream_git_url</span></code></pre></div>
 <p>Periodically, fetch changes from upstream</p>
-
-<pre><code>git fetch upstream
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git fetch upstream</span></code></pre></div>
 <p>To checkout the master branch of upstream repo</p>
-
-<pre><code>git checkout upsteam/master
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git checkout upsteam/master</span></code></pre></div>
 <p>At this point, you should get a note</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">Note: checking out &#39;upstream/master&#39;.</span>
 
-<pre><code>Note: checking out 'upstream/master'.
+<span style="color:#309">You are in &#39;detached HEAD&#39; state. You can look around, make experimental</span>
+<span style="color:#309">changes and commit them, and you can discard any commits you make in this</span>
+<span style="color:#309">state without impacting any branches by performing another checkout.</span>
 
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by performing another checkout.
+<span style="color:#309">If you want to create a new branch to retain commits you create, you may</span>
+<span style="color:#309">do so (now or later) by using -b with the checkout command again. Example:</span>
 
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -b with the checkout command again. Example:
-
-  git checkout -b &lt;new-branch-name&gt;
-
-</code></pre>
-
+  <span style="color:#309">git checkout -b &lt;new-branch-name&gt;</span></code></pre></div>
 <p>You can assign this detached head state to a new branch by:</p>
-
-<pre><code>git branch my-temporary-work
-
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git branch my-temporary-work</span></code></pre></div>
 <p>Commit whatever changes you need to do, and come back to master by</p>
-
-<pre><code>git checkout master
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git checkout master</span></code></pre></div>
 <p>At this point, you can merge by</p>
-
-<pre><code>git merge my-temporary-work
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git merge my-temporary-work</span></code></pre></div>
 <p>And push the changes to your origin repo by</p>
-
-<pre><code>git push origin master
-</code></pre>
-</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-INI" data-lang="INI"><span style="color:#309">git push origin master</span></code></pre></div></p>
 
     </div>
     <div class="card-footer">
@@ -454,6 +361,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
 	</div>
 	
 
@@ -509,5 +417,6 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
