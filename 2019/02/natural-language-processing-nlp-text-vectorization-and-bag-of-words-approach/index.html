@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Natural language processing (NLP): Text Vectorization and Bag of Words Approach",
+        "headline" : "Natural language processing (NLP): Text Vectorization and Bag of Words Approach",
+        "description" : "Count Vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-02-04 00:00:00 +0000 UTC",
+        "dateModified" : "2019-02-04 00:00:00 +0000 UTC",
+        "url" : "/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/",
+        "wordCount" : "802",
+        "keywords" : [ "machine learning","text mining","Blog" ]
+    }
+</script>
+<title>
+    Natural language processing (NLP): Text Vectorization and Bag of Words Approach &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Natural language processing (NLP): Text Vectorization and Bag of Words Approach">
+<meta itemprop="description" content="Count Vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification">
+
+
+<meta itemprop="datePublished" content="2019-02-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="802">
+
+
+
+<meta itemprop="keywords" content="machine learning,text mining," />
+
+<meta property="og:title" content="Natural language processing (NLP): Text Vectorization and Bag of Words Approach" />
+<meta property="og:description" content="Count Vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/" /><meta property="article:published_time" content="2019-02-04T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-04T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Natural language processing (NLP): Text Vectorization and Bag of Words Approach"/>
+<meta name="twitter:description" content="Count Vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): Text Vectorization and Bag of Words Approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top Data Science Interview Questions and Answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get Started with Git and Github in Under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): Text Vectorization and Bag of Words Approach</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            04.02.2019 - 
+            Jay M. Patel -
+            Reading time ~4 Minutes
+        </h6>
+
+        <p class="card-text">
+
+<p>Let us consider a simple task of classifying a given email into spam or not spam. As you might have already guessed, this is an example of a simple binary classification problem with target or label values being 0 or 1, within the larger field of supervised machine learning (ML).</p>
+
+<p>However, we still need to convert non-numerical text contained in emails into numerical features which can be fed into a ML algorithm of our choice. This process is known as &ldquo;text vectorization&rdquo;, and there are many different ways of doing it, from simple approach of count based vectorization, discussed here, to more sophisticated term frequency-inverse document frequency (tf-idf) and word embedding and neural network methods such as Glove, word2vec etc.</p>
+
+<h3 id="introduction-to-bag-of-words-based-text-vectorization">Introduction to bag of words based text vectorization</h3>
+
+<p>In this model, any text is represented as the bag or a multiset of its words (known as &ldquo;tokens&rdquo;) by disregarding grammar, punctuation and word order but keeping multiplicity of individual words/tokens. Splitting individual sentences into it&rsquo;s contituent words or tokens is referred to as &ldquo;tokenization&rdquo;.</p>
+
+<p>As an example, let us consider the sentence below</p>
+
+<pre><code>Sam likes to watch baseball. Christine likes baseball too.
+</code></pre>
+
+<p>Let us remove punctuation and tokenize it.</p>
+
+<pre><code>&quot;Sam&quot;,&quot;likes&quot;,&quot;to&quot;,&quot;watch&quot;,&quot;baseball&quot;,&quot;Christine&quot;,&quot;likes&quot;,&quot;baseball&quot;,&quot;too&quot;
+</code></pre>
+
+<p>In a bag of words representation, we can convert the list above into a dictionary, with keys being the words, and values being the number of occurrences.</p>
+
+<pre><code>BoW_dict = {&quot;Sam&quot;:1,&quot;likes&quot;:2,&quot;to&quot;:1,&quot;watch&quot;:1,&quot;baseball&quot;:2,&quot;Christine&quot;:1,&quot;too&quot;:1}
+
+</code></pre>
+
+<p>For our purposes, we are more interested in getting a list of &ldquo;term frequencies&rdquo; from the above dictionary which serves as a sparse vector representation of the underlying sentence, with number of dimensions being equal of total number of unique words in the corpus. As you might have already noticed, this term frequency vector does not preserve order of the words in the sentence. However, for many text classification tasks this bag of words model works pretty satisfactorily.</p>
+
+<pre><code>vect = [1, 2, 1, 1, 2, 1, 1]
+
+</code></pre>
+
+<h3 id="count-vectorization-with-scikit-learn">Count vectorization with scikit-learn.</h3>
+
+<p>Let us take a block of text below from a <a href="https://www.open.edu/openlearn/nature-environment/environmental-studies/the-animals-are-rebelling-because-they-are-dying-and-we-should-too-lessons-modern-day-fable">random page on open learn</a>.</p>
+
+<pre><code>text = '''As a psychologist and coach, I have long been interested in the power of stories to convey important lessons. Some of my earliest     recollections were fables, stories involving animals as protagonists. Fables are an oral story-telling tradition typically involving animals, occasionally humans or forces of nature interacting with each other. The best-known fables are attributed to the ancient Greek storyteller Aesop, although there are fables found in almost all human societies and oral traditions making this an almost universal feature of human culture. A more modern example of an allegorical tale involving animals is George Orwell’s Animal Farm , in which animals rebel against their human masters only to recreate the oppressive system humans had subjected them to. Fables work by casting animals as characters with minds that are recognisably human. This superimposition of human minds and animals serves as a medium for transmitting and teaching moral and ethical values, in particular to children. It does this by drawing on the symbolic connection between nature and society and the dilemmas that this connection can be used to represent. Fables have survived into the modern age, although their role seems to have waned under the emergence of other storytelling media. Animals are, thus, still a feature of modern day stories (e.g. David Attenborough’s wildlife programmes, stories about animals in the news, and and CGI-heavy children’s cartoons involving cute animal characters). Our more immediate and visceral connection with nature and with the different type of animal species seems to have been reduced to being observers rather than participants. Wild animals in ancient times were revered as avatars of ancient gods but also viewed with fear. By and large, our modern position as observer in relation to animal stories is that we remotely view animals in peril from climate change on television and social media news coverage, but we may remain disconnected to the fundamental moral lessons their stories could teach us today.'''
+
+</code></pre>
+
+<p>Let us remove punctuations from the text using regex function.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">re</span>
+<span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">preprocessor</span>(text):
+
+    text <span style="color:#555">=</span> re<span style="color:#555">.</span>sub(<span style="color:#c30">&#39;&lt;[^&gt;]*&gt;&#39;</span>, <span style="color:#c30">&#39;&#39;</span>, text)
+    emoticons <span style="color:#555">=</span> re<span style="color:#555">.</span>findall(<span style="color:#c30">&#39;(?::|;|=)(?:-)?(?:\)|\(|D|P)&#39;</span>,
+                           text)
+    text <span style="color:#555">=</span> (re<span style="color:#555">.</span>sub(<span style="color:#c30">&#39;[\W]+&#39;</span>, <span style="color:#c30">&#39; &#39;</span>, text<span style="color:#555">.</span>lower()) <span style="color:#555">+</span>
+            <span style="color:#c30">&#39; &#39;</span><span style="color:#555">.</span>join(emoticons)<span style="color:#555">.</span>replace(<span style="color:#c30">&#39;-&#39;</span>, <span style="color:#c30">&#39;&#39;</span>))
+    <span style="color:#069;font-weight:bold">return</span> text</code></pre></div>
+<p>After preprocessing, the text looks like shown below:</p>
+
+<figure>
+    <img src="./textvectorization_images/image_2.png"/> <figcaption>
+            <h4>Figure 1: Text after applying preprocessing function</h4>
+        </figcaption>
+</figure>
+
+
+<p>Now, this is ready to be fed into scikit learn&rsquo;s count vectorizer which will convert it into bag of words.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">sklearn.feature_extraction.text</span> <span style="color:#069;font-weight:bold">import</span> CountVectorizer
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pandas</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">pd</span>
+
+cv <span style="color:#555">=</span> CountVectorizer(analyzer<span style="color:#555">=</span><span style="color:#c30">&#39;word&#39;</span>)
+<span style="color:#09f;font-style:italic">#cv.get_feature_names()</span></code></pre></div>
+<p>You can see</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dtm <span style="color:#555">=</span> cv<span style="color:#555">.</span>transform([text])
+pd<span style="color:#555">.</span>DataFrame(dtm<span style="color:#555">.</span>toarray(), columns<span style="color:#555">=</span>cv<span style="color:#555">.</span>get_feature_names())</code></pre></div>
+<figure>
+    <img src="./textvectorization_images/image_3.png"/> <figcaption>
+            <h4>Figure 2: pandas dataframe from sparse bag of words vectors</h4>
+        </figcaption>
+</figure>
+
+
+<p>You can directly use the vectors created aboove for text classification. However, there are some disadvantages with using these count vectors directly and in other posts we will discuss more robust approaches and preprocessing techniques which we can use instead.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#machine-learning" class="badge badge-primary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#natural-language-processing" class="badge badge-primary"><span>natural-language-processing</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#text-vectorization" class="badge badge-primary"><span>text-vectorization</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#machine-learning" class="badge badge-secondary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#text-mining" class="badge badge-secondary"><span>text-mining</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2019 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

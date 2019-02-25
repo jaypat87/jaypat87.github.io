@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Natural language processing (NLP): Text Vectorization and Bag of Words Approach</title>
+      <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</guid>
+      <description>Let us consider a simple task of classifying a given email into spam or not spam. As you might have already guessed, this is an example of a simple binary classification problem with target or label values being 0 or 1, within the larger field of supervised machine learning (ML).
+However, we still need to convert non-numerical text contained in emails into numerical features which can be fed into a ML algorithm of our choice.</description>
+    </item>
     
     <item>
       <title>Top Data Science Interview Questions and Answers</title>

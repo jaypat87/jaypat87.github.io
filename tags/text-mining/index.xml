@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning on Jay M. Patel</title>
-    <link>http://jaympatel.com/categories/machine-learning/</link>
-    <description>Recent content in Machine Learning on Jay M. Patel</description>
+    <title>Text Mining on Jay M. Patel</title>
+    <link>http://jaympatel.com/tags/text-mining/</link>
+    <description>Recent content in Text Mining on Jay M. Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
     <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jaympatel.com/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jaympatel.com/tags/text-mining/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</guid>
       <description>Let us consider a simple task of classifying a given email into spam or not spam. As you might have already guessed, this is an example of a simple binary classification problem with target or label values being 0 or 1, within the larger field of supervised machine learning (ML).
 However, we still need to convert non-numerical text contained in emails into numerical features which can be fed into a ML algorithm of our choice.</description>
-    </item>
-    
-    <item>
-      <title>Top Data Science Interview Questions and Answers</title>
-      <link>http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/</guid>
-      <description>Machine Learning Basics 1. What is machine learning? Machine learning (ML) is a field of computer science that gives computer systems the ability to progressively improve performance on a specific task aka learn with data without being explicitly programmed. Taking a 50,000 ft view, we want to model a given dataset either to make predictions or we want a model to describe a given dataset to gain valuable insights.</description>
     </item>
     
   </channel>
