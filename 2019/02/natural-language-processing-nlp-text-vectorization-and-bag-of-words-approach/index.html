@@ -22,7 +22,7 @@
         "datePublished": "2019-02-04 00:00:00 +0000 UTC",
         "dateModified" : "2019-02-04 00:00:00 +0000 UTC",
         "url" : "/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/",
-        "wordCount" : "802",
+        "wordCount" : "814",
         "keywords" : [ "machine learning","text mining","Blog" ]
     }
 </script>
@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2019-02-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="802">
+<meta itemprop="wordCount" content="814">
 
 
 
@@ -174,7 +174,7 @@
 <p>After preprocessing, the text looks like shown below:</p>
 
 <figure>
-    <img src="./textvectorization_images/image_2.png"/> <figcaption>
+    <img src="./textvectorization_images/image_2.PNG"/> <figcaption>
             <h4>Figure 1: Text after applying preprocessing function</h4>
         </figcaption>
 </figure>
@@ -187,11 +187,11 @@
 
 cv <span style="color:#555">=</span> CountVectorizer(analyzer<span style="color:#555">=</span><span style="color:#c30">&#39;word&#39;</span>)
 <span style="color:#09f;font-style:italic">#cv.get_feature_names()</span></code></pre></div>
-<p>You can see</p>
+<p>You can intutively see the sparse vectors by converting the cv into a pandas dataframe.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dtm <span style="color:#555">=</span> cv<span style="color:#555">.</span>transform([text])
 pd<span style="color:#555">.</span>DataFrame(dtm<span style="color:#555">.</span>toarray(), columns<span style="color:#555">=</span>cv<span style="color:#555">.</span>get_feature_names())</code></pre></div>
 <figure>
-    <img src="./textvectorization_images/image_3.png"/> <figcaption>
+    <img src="./textvectorization_images/image_3.PNG"/> <figcaption>
             <h4>Figure 2: pandas dataframe from sparse bag of words vectors</h4>
         </figcaption>
 </figure>
