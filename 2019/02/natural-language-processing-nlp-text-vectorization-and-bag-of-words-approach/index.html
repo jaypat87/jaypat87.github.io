@@ -180,8 +180,6 @@
 </figure>
 
 
-<p><img src="http://jaympatel.com/static/textvectorization_images/image_2.PNG" alt="Figure 1: Text after applying preprocessing function" /></p>
-
 <p>Now, this is ready to be fed into scikit learn&rsquo;s count vectorizer which will convert it into bag of words.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">sklearn.feature_extraction.text</span> <span style="color:#069;font-weight:bold">import</span> CountVectorizer
 <span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
@@ -198,8 +196,6 @@ pd<span style="color:#555">.</span>DataFrame(dtm<span style="color:#555">.</span
         </figcaption>
 </figure>
 
-
-<p><img src="http://jaympatel.com/static/textvectorization_images/image_3.PNG" alt="Figure 2: pandas dataframe from sparse bag of words vectors" /></p>
 
 <p>You can directly use the vectors created aboove for text classification. However, there are some disadvantages with using these count vectors directly and in other posts we will discuss more robust approaches and preprocessing techniques which we can use instead.</p>
 </p>
