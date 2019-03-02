@@ -23,6 +23,16 @@ However, we still need to convert non-numerical text contained in emails into nu
     </item>
     
     <item>
+      <title>Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</title>
+      <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/</guid>
+      <description>In the previous post, we looked at count vectorization to convert a given document into a sparse vectors which can be used as features for text classification task such as classifying emails into spam or not spam.
+Count vectorization has one major drawback: it gives equal weightage to all the words (or tokens) present in the corpus, and this makes it a poor representation for the semantic analysis of the sentence.</description>
+    </item>
+    
+    <item>
       <title>Top Data Science Interview Questions and Answers</title>
       <link>http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
