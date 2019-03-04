@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python",
+        "headline" : "Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python",
+        "description" : "Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-02-08 00:00:00 +0000 UTC",
+        "dateModified" : "2019-02-08 00:00:00 +0000 UTC",
+        "url" : "/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/",
+        "wordCount" : "1498",
+        "keywords" : [ "machine learning","text mining","word embeddings","words2vec","GloVe","Blog" ]
+    }
+</script>
+<title>
+    Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python">
+<meta itemprop="description" content="Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification">
+
+
+<meta itemprop="datePublished" content="2019-02-08T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-08T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1498">
+
+
+
+<meta itemprop="keywords" content="machine learning,text mining,word embeddings,words2vec,GloVe," />
+
+<meta property="og:title" content="Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python" />
+<meta property="og:description" content="Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/" /><meta property="article:published_time" content="2019-02-08T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-08T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python"/>
+<meta name="twitter:description" content="Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): Text Vectorization and Bag of Words Approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top Data Science Interview Questions and Answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get Started with Git and Github in Under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            08.02.2019 - 
+            Jay M. Patel -
+            Reading time ~8 Minutes
+        </h6>
+
+        <p class="card-text">
+
+<p>In the previous posts, we looked at <a href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">count vectorization</a> and <a href="2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">term frequency-inverse document frequency (tf-idf)</a> to convert a given text document into a vectors which can be used as features for text classification task such as classifying emails into spam or not spam.</p>
+
+<p>Major disadvantages of such an approach is that the vectors generated are sparse (mostly made of zeros), and very high-dimensional (same
+dimensionality as the number of words in the vocabulary). They also miss out on learning the structure of the sentences, since bag of words isn&rsquo;t order preserving. To alleviate this problem, we often have to resort to ngrams while generating features.</p>
+
+<p>A much better approach is converting words into dense vectors (50-1000 dimensions) and these are learned by training on the large corpus of text itself.</p>
+
+<p>If you have a large training data, than you can simply train the word embeddings on your training data as part of training the classifier, using a deep learning library such as Keras/Tensorflow etc.</p>
+
+<p>However, if you don&rsquo;t have a large corpus of training data, then you&rsquo;ll get much higher accuracy and will avoid overfitting if you use precomputed vectors such as GloVe, words2vec etc which already has word vectors calculated for a large number of words. You&rsquo;ll have to handle cases when the words in your training data isn&rsquo;t found in the precomputed word vectors by initializing such words to zero.</p>
+
+<p>Let us first explore word vector call GloVe and in the next section write some code to extract GloVe vectors for use as features in text classification using neural networks.</p>
+
+<h3 id="explore-word-similarities-with-pretrained-glove-vectors-using-gensim">Explore word similarities with pretrained GloVe vectors using Gensim</h3>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">gensim.test.utils</span> <span style="color:#069;font-weight:bold">import</span> datapath, get_tmpfile
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">gensim.models</span> <span style="color:#069;font-weight:bold">import</span> KeyedVectors
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">gensim.scripts.glove2word2vec</span> <span style="color:#069;font-weight:bold">import</span> glove2word2vec
+
+glove_file <span style="color:#555">=</span> datapath(<span style="color:#c30">r</span><span style="color:#c30">&#39;C:\Users\Jay M. Patel\Downloads\glove.6B\glove.6B.300d.txt&#39;</span>)
+tmp_file <span style="color:#555">=</span> get_tmpfile(<span style="color:#c30">&#34;test_word2vec.txt&#34;</span>)
+_ <span style="color:#555">=</span> glove2word2vec(glove_file, tmp_file)
+
+model <span style="color:#555">=</span> KeyedVectors<span style="color:#555">.</span>load_word2vec_format(tmp_file)
+
+<span style="color:#09f;font-style:italic"># Access vectors for specific words with a keyed lookup:</span>
+vector <span style="color:#555">=</span> model[<span style="color:#c30">&#39;difficult&#39;</span>]
+vector</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Out:
+array([<span style="color:#555">-</span><span style="color:#f60">4.0606e-02</span>,  <span style="color:#f60">1.4324e-01</span>,  <span style="color:#f60">1.9288e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0436e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.6030e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">3.0935e-01</span>,  <span style="color:#f60">1.5655e-01</span>,  <span style="color:#f60">2.3725e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.3723e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.1004e+00</span>,
+        <span style="color:#f60">5.9859e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.3431e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.3793e-01</span>,  <span style="color:#f60">1.0236e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.0622e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">7.6803e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1541e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1179e-02</span>,  <span style="color:#f60">1.6535e-01</span>,  <span style="color:#f60">1.5336e-02</span>,
+        <span style="color:#f60">1.8997e-02</span>,  <span style="color:#f60">1.0863e-01</span>,  <span style="color:#f60">3.8125e-01</span>,  <span style="color:#f60">1.4823e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.4693e-01</span>,
+        <span style="color:#f60">4.4363e-02</span>,  <span style="color:#f60">1.4309e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.5470e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.4463e-01</span>,  <span style="color:#f60">5.0835e-01</span>,
+        <span style="color:#f60">1.7206e-01</span>,  <span style="color:#f60">9.9587e-02</span>, <span style="color:#555">-</span><span style="color:#f60">4.2409e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.0810e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0157e+00</span>,
+        <span style="color:#f60">3.4243e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.9691e-01</span>,  <span style="color:#f60">6.5321e-03</span>, <span style="color:#555">-</span><span style="color:#f60">6.8339e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.6867e-01</span>,
+        <span style="color:#f60">2.0538e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.9454e-02</span>,  <span style="color:#f60">4.7625e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1684e-01</span>,  <span style="color:#f60">5.0577e-02</span>,
+        <span style="color:#f60">2.2495e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.3178e-01</span>,  <span style="color:#f60">4.9180e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.1754e-01</span>,  <span style="color:#f60">8.3796e-02</span>,
+        <span style="color:#f60">3.6140e-01</span>,  <span style="color:#f60">1.9740e-01</span>,  <span style="color:#f60">2.2693e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1942e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.9624e-01</span>,
+        <span style="color:#f60">2.7698e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.2097e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.9311e-02</span>,  <span style="color:#f60">8.4818e-03</span>,  <span style="color:#f60">5.1844e-01</span>,
+        <span style="color:#f60">1.1367e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.3604e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0600e-01</span>,  <span style="color:#f60">2.5175e-01</span>,  <span style="color:#f60">3.4666e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">1.1251e-01</span>,  <span style="color:#f60">1.0034e-01</span>,  <span style="color:#f60">2.3927e-01</span>,  <span style="color:#f60">9.4413e-02</span>,  <span style="color:#f60">2.7226e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">5.8804e-01</span>,  <span style="color:#f60">2.3139e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.2413e-01</span>,  <span style="color:#f60">3.2389e-01</span>,  <span style="color:#f60">2.1242e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.1664e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0549e-01</span>,  <span style="color:#f60">1.7353e-01</span>,  <span style="color:#f60">2.1278e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.5790e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.8885e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.4372e-01</span>,  <span style="color:#f60">3.8583e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.4501e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.3514e-01</span>,
+        <span style="color:#f60">3.4023e-01</span>,  <span style="color:#f60">2.0493e-01</span>,  <span style="color:#f60">3.9131e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.3880e-01</span>,  <span style="color:#f60">6.3694e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.8986e-01</span>,  <span style="color:#f60">4.5282e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.3680e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.1792e-01</span>,  <span style="color:#f60">2.2253e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">1.0863e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.4295e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.3874e-01</span>,  <span style="color:#f60">1.4042e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.2659e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.9056e-01</span>,  <span style="color:#f60">2.1324e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.8131e-01</span>,  <span style="color:#f60">1.6505e-02</span>,  <span style="color:#f60">3.8621e-02</span>,
+        <span style="color:#f60">1.0543e-01</span>,  <span style="color:#f60">2.2498e-01</span>, <span style="color:#555">-</span><span style="color:#f60">8.8775e-02</span>,  <span style="color:#f60">1.6820e-01</span>,  <span style="color:#f60">2.1441e-01</span>,
+        <span style="color:#f60">4.6674e-02</span>,  <span style="color:#f60">1.3272e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.7832e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.8319e-01</span>,  <span style="color:#f60">1.7978e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">4.9054e-01</span>,  <span style="color:#f60">1.8272e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.4948e-01</span>,  <span style="color:#f60">2.5928e-01</span>,  <span style="color:#f60">3.8793e-01</span>,
+        <span style="color:#f60">1.2461e-03</span>, <span style="color:#555">-</span><span style="color:#f60">8.0123e-02</span>,  <span style="color:#f60">3.5682e-01</span>,  <span style="color:#f60">7.2455e-02</span>,  <span style="color:#f60">2.4277e-02</span>,
+        <span style="color:#f60">2.7593e-01</span>,  <span style="color:#f60">7.8571e-02</span>,  <span style="color:#f60">1.7030e-01</span>, <span style="color:#555">-</span><span style="color:#f60">7.3869e-02</span>, <span style="color:#555">-</span><span style="color:#f60">4.8485e-01</span>,
+        <span style="color:#f60">6.6072e-01</span>,  <span style="color:#f60">4.6059e-01</span>, <span style="color:#555">-</span><span style="color:#f60">8.2610e-02</span>,  <span style="color:#f60">2.4914e-01</span>,  <span style="color:#f60">6.7816e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">1.1211e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.3612e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.1851e-01</span>,  <span style="color:#f60">4.8579e-02</span>,  <span style="color:#f60">2.9305e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.0241e-03</span>,  <span style="color:#f60">4.8158e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.6371e-01</span>,  <span style="color:#f60">2.8233e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.9021e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">3.3825e-01</span>,  <span style="color:#f60">4.8388e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.3091e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.1689e-02</span>,  <span style="color:#f60">1.7659e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">5.3690e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.6085e-01</span>, <span style="color:#555">-</span><span style="color:#f60">8.9463e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.0241e-01</span>,  <span style="color:#f60">2.6071e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.3258e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.0427e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0499e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.8492e-02</span>,  <span style="color:#f60">3.8111e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.4881e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.5313e-01</span>,  <span style="color:#f60">1.9272e-01</span>,  <span style="color:#f60">7.1384e-02</span>, <span style="color:#555">-</span><span style="color:#f60">4.2484e-02</span>,
+        <span style="color:#f60">1.1687e-01</span>, <span style="color:#555">-</span><span style="color:#f60">6.7063e-02</span>, <span style="color:#555">-</span><span style="color:#f60">4.5600e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.7347e-01</span>,  <span style="color:#f60">2.7672e-01</span>,
+        <span style="color:#f60">3.0203e-01</span>,  <span style="color:#f60">2.3025e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.4759e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.7419e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.6792e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.5255e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.3110e-01</span>,  <span style="color:#f60">2.9205e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.4940e-01</span>,  <span style="color:#f60">3.3786e-01</span>,
+        <span style="color:#f60">3.2858e-01</span>,  <span style="color:#f60">2.2003e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1040e-01</span>,  <span style="color:#f60">1.7974e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0873e-01</span>,
+        <span style="color:#f60">1.4175e-01</span>,  <span style="color:#f60">1.8542e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.2056e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.8736e-01</span>,  <span style="color:#f60">4.1422e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.2709e-01</span>,  <span style="color:#f60">1.5384e-01</span>,  <span style="color:#f60">7.2828e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.9905e-01</span>,  <span style="color:#f60">4.9462e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">3.2603e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.2826e-01</span>,  <span style="color:#f60">1.2393e-01</span>,  <span style="color:#f60">1.7079e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.9508e-01</span>,
+        <span style="color:#f60">6.5985e-01</span>,  <span style="color:#f60">2.1349e-01</span>,  <span style="color:#f60">4.9656e-03</span>, <span style="color:#555">-</span><span style="color:#f60">1.6015e-01</span>,  <span style="color:#f60">1.7824e-01</span>,
+        <span style="color:#f60">2.3835e-01</span>,  <span style="color:#f60">5.4046e-02</span>,  <span style="color:#f60">1.7623e-01</span>,  <span style="color:#f60">2.5032e-01</span>, <span style="color:#555">-</span><span style="color:#f60">8.9558e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">5.1746e-02</span>, <span style="color:#555">-</span><span style="color:#f60">5.6780e-02</span>,  <span style="color:#f60">4.6783e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.0191e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.4609e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">4.1840e-01</span>,  <span style="color:#f60">4.7808e-02</span>,  <span style="color:#f60">8.5309e-02</span>,  <span style="color:#f60">2.2981e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.3150e-01</span>,
+        <span style="color:#f60">3.5223e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.9983e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.5872e-01</span>,  <span style="color:#f60">4.8105e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.1813e-01</span>,
+        <span style="color:#f60">2.6121e-02</span>,  <span style="color:#f60">2.9155e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.6576e-01</span>, <span style="color:#555">-</span><span style="color:#f60">6.4291e-01</span>,  <span style="color:#f60">1.1702e-01</span>,
+        <span style="color:#f60">2.1869e-02</span>,  <span style="color:#f60">2.3049e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.0427e-04</span>, <span style="color:#555">-</span><span style="color:#f60">3.0246e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.5311e-01</span>,
+        <span style="color:#f60">2.1771e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.7757e-01</span>,  <span style="color:#f60">3.6217e-01</span>,  <span style="color:#f60">3.0001e-01</span>,  <span style="color:#f60">1.3424e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.9047e-02</span>,  <span style="color:#f60">4.1382e-01</span>,  <span style="color:#f60">6.5554e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.4646e-01</span>, <span style="color:#555">-</span><span style="color:#f60">7.5479e-01</span>,
+        <span style="color:#f60">1.5657e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.1010e-02</span>,  <span style="color:#f60">2.6448e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.0306e-01</span>,  <span style="color:#f60">1.8929e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">4.0320e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.3840e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.4240e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.6037e-01</span>,  <span style="color:#f60">4.9534e-01</span>,
+        <span style="color:#f60">2.2218e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.4530e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.0531e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.9072e-02</span>,  <span style="color:#f60">4.3804e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">2.1604e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.1227e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.7679e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.7617e-01</span>,  <span style="color:#f60">2.9929e-01</span>,
+        <span style="color:#f60">4.8557e-01</span>, <span style="color:#555">-</span><span style="color:#f60">4.1022e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.5577e-01</span>,  <span style="color:#f60">1.5126e-01</span>, <span style="color:#555">-</span><span style="color:#f60">7.7749e-02</span>,
+        <span style="color:#f60">3.0098e-01</span>,  <span style="color:#f60">5.3022e-01</span>, <span style="color:#555">-</span><span style="color:#f60">7.3720e-02</span>,  <span style="color:#f60">3.1710e-01</span>,  <span style="color:#f60">2.7338e-01</span>,
+        <span style="color:#f60">1.2067e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.6816e+00</span>,  <span style="color:#f60">5.4383e-02</span>,  <span style="color:#f60">4.4323e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.8093e-02</span>,
+        <span style="color:#f60">1.5088e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.7838e-02</span>,  <span style="color:#f60">5.6679e-01</span>,  <span style="color:#f60">2.8874e-01</span>,  <span style="color:#f60">2.0058e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">5.9464e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.1689e-02</span>,  <span style="color:#f60">3.7966e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.5294e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.6049e-01</span>,
+        <span style="color:#f60">5.1990e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.3183e-01</span>,  <span style="color:#f60">4.7882e-01</span>,  <span style="color:#f60">1.3886e-01</span>,  <span style="color:#f60">4.3026e-01</span>,
+        <span style="color:#f60">1.6122e-01</span>, <span style="color:#555">-</span><span style="color:#f60">8.2338e-02</span>,  <span style="color:#f60">9.2464e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.7833e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.2110e-02</span>],
+      dtype<span style="color:#555">=</span>float32)</code></pre></div>
+<p>Let us query to see which words have vectors most similar to a given word within GloVe.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">model<span style="color:#555">.</span>most_similar(<span style="color:#c30">&#34;difficult&#34;</span>)</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Out: 
+
+[(<span style="color:#c30">&#39;impossible&#39;</span>, <span style="color:#f60">0.7520476579666138</span>),
+ (<span style="color:#c30">&#39;very&#39;</span>, <span style="color:#f60">0.6883023977279663</span>),
+ (<span style="color:#c30">&#39;extremely&#39;</span>, <span style="color:#f60">0.681058943271637</span>),
+ (<span style="color:#c30">&#39;complicated&#39;</span>, <span style="color:#f60">0.674138069152832</span>),
+ (<span style="color:#c30">&#39;quite&#39;</span>, <span style="color:#f60">0.6580551862716675</span>),
+ (<span style="color:#c30">&#39;harder&#39;</span>, <span style="color:#f60">0.647814929485321</span>),
+ (<span style="color:#c30">&#39;easier&#39;</span>, <span style="color:#f60">0.6476973295211792</span>),
+ (<span style="color:#c30">&#39;able&#39;</span>, <span style="color:#f60">0.6425892114639282</span>),
+ (<span style="color:#c30">&#39;tough&#39;</span>, <span style="color:#f60">0.6402384042739868</span>),
+ (<span style="color:#c30">&#39;so&#39;</span>, <span style="color:#f60">0.638898491859436</span>)]</code></pre></div>
+<h3 id="explore-word-similarities-with-pretrained-word-embeddings-vectors-in-spacy">Explore word similarities with pretrained word embeddings vectors in SpaCy</h3>
+
+<p>Let us take another example; spacy ships with a pretrained model for English and few other languages. It includes a similarity method to compare different words and also includes pretrained word embeddings for the large models. The one shown below is one of their &ldquo;sm&rdquo; models which does NOT include pretrained word embeddings and hence it will be less accurate than Gensim/GloVe shown above.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">spacy</span>
+
+nlp <span style="color:#555">=</span> spacy<span style="color:#555">.</span>load(<span style="color:#c30">&#39;en_core_web_sm&#39;</span>)
+tokens <span style="color:#555">=</span> nlp(<span style="color:#c30">u</span><span style="color:#c30">&#39;difficult impossible&#39;</span>)
+<span style="color:#069;font-weight:bold">for</span> token1 <span style="color:#000;font-weight:bold">in</span> tokens:
+    <span style="color:#069;font-weight:bold">for</span> token2 <span style="color:#000;font-weight:bold">in</span> tokens:
+        <span style="color:#069;font-weight:bold">print</span>(token1<span style="color:#555">.</span>text, token2<span style="color:#555">.</span>text, token1<span style="color:#555">.</span>similarity(token2))</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Out:
+difficult difficult <span style="color:#f60">1.0</span>
+difficult impossible <span style="color:#f60">0.49030286</span>
+impossible difficult <span style="color:#f60">0.49030286</span>
+impossible impossible <span style="color:#f60">1.0</span></code></pre></div>
+<h3 id="document-level-vectors-for-running-shallow-machine-learning-algorithms-such-as-support-vector-machines-svms">Document level vectors for running shallow machine learning algorithms such as Support vector machines (SVMs)</h3>
+
+<p>I know from the previous sections, you must be wondering about how do we generate document level vectors from pretrained embeddings such as GloVe so that we can apply shallow machine learning algorithms such as support vector machines, random forest etc., like we would normally do from sparse vectors coming directly from count vectorizer and Tf-idf.</p>
+
+<p>Most common method known in literature (see this <a href="hhttps://www.researchgate.net/publication/328748193_A_Text_Classifier_Using_Weighted_Average_Word_Embedding/download">paper</a>) and on many award winning Kaggle kernels is simply taking an average of all the word vectors in a particular document to get an overall document level vector. A further refinement in this strategy (<a href="http://www.cs.unibo.it/~montesi/CBD/Articoli/2015_Support%20vector%20machines%20and%20Word2vec%20for%20text%20classification%20with%20semantic%20features.pdf">Lilleberg &amp; Zhang, 2015</a>) is to multiply this with Tf-idf vectoring scheme so that we can weigh important words in a given corpus higher than other ones.</p>
+
+<p>Let us take a block of text just like in previous two sections, and preprocess and tokenize it and convert it into bytes objects.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">text <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;&#39;As a psychologist and coach, I have long been interested in the power of stories to convey important lessons. Some of my earliest     recollections were fables, stories involving animals as protagonists. Fables are an oral story-telling tradition typically involving animals, occasionally humans or forces of nature interacting with each other. The best-known fables are attributed to the ancient Greek storyteller Aesop, although there are fables found in almost all human societies and oral traditions making this an almost universal feature of human culture. A more modern example of an allegorical tale involving animals is George Orwell’s Animal Farm , in which animals rebel against their human masters only to recreate the oppressive system humans had subjected them to. Fables work by casting animals as characters with minds that are recognisably human. This superimposition of human minds and animals serves as a medium for transmitting and teaching moral and ethical values, in particular to children. It does this by drawing on the symbolic connection between nature and society and the dilemmas that this connection can be used to represent. Fables have survived into the modern age, although their role seems to have waned under the emergence of other storytelling media. Animals are, thus, still a feature of modern day stories (e.g. David Attenborough’s wildlife programmes, stories about animals in the news, and and CGI-heavy children’s cartoons involving cute animal characters). Our more immediate and visceral connection with nature and with the different type of animal species seems to have been reduced to being observers rather than participants. Wild animals in ancient times were revered as avatars of ancient gods but also viewed with fear. By and large, our modern position as observer in relation to animal stories is that we remotely view animals in peril from climate change on television and social media news coverage, but we may remain disconnected to the fundamental moral lessons their stories could teach us today.&#39;&#39;&#39;</span>
+
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">re</span>
+<span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">preprocessor</span>(text):
+
+    text <span style="color:#555">=</span> re<span style="color:#555">.</span>sub(<span style="color:#c30">&#39;&lt;[^&gt;]*&gt;&#39;</span>, <span style="color:#c30">&#39;&#39;</span>, text)
+    emoticons <span style="color:#555">=</span> re<span style="color:#555">.</span>findall(<span style="color:#c30">&#39;(?::|;|=)(?:-)?(?:\)|\(|D|P)&#39;</span>,
+                           text)
+    text <span style="color:#555">=</span> (re<span style="color:#555">.</span>sub(<span style="color:#c30">&#39;[\W]+&#39;</span>, <span style="color:#c30">&#39; &#39;</span>, text<span style="color:#555">.</span>lower()) <span style="color:#555">+</span>
+            <span style="color:#c30">&#39; &#39;</span><span style="color:#555">.</span>join(emoticons)<span style="color:#555">.</span>replace(<span style="color:#c30">&#39;-&#39;</span>, <span style="color:#c30">&#39;&#39;</span>))
+    <span style="color:#069;font-weight:bold">return</span> text
+    
+text <span style="color:#555">=</span> preprocessor(text)
+text <span style="color:#555">=</span> text<span style="color:#555">.</span>split()
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#366">len</span>(text)):
+    text[i] <span style="color:#555">=</span> text[i]<span style="color:#555">.</span>encode()</code></pre></div>
+<p>Let us preprocess the downloaded GloVe vectors and convert it into a dict.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">os</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+
+embeddings_index <span style="color:#555">=</span> {}
+<span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(<span style="color:#c30">r</span><span style="color:#c30">&#34;C:\Users\Jay M. Patel\Downloads\glove.6B\glove.6B.50d.txt&#34;</span>, <span style="color:#c30">&#34;rb&#34;</span>) <span style="color:#069;font-weight:bold">as</span> lines:
+    <span style="color:#069;font-weight:bold">for</span> line <span style="color:#000;font-weight:bold">in</span> lines:
+        values <span style="color:#555">=</span> line<span style="color:#555">.</span>split()
+        word <span style="color:#555">=</span> values[<span style="color:#f60">0</span>]
+        coefs <span style="color:#555">=</span> np<span style="color:#555">.</span>asarray(values[<span style="color:#f60">1</span>:], dtype<span style="color:#555">=</span><span style="color:#c30">&#39;float32&#39;</span>)
+        embeddings_index[word] <span style="color:#555">=</span> coefs</code></pre></div>
+<p>Finally, lets take average of all the word vectors to get a vector for the entire document which we can directly use for text classification</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic"># taking average of vectors for a given document</span>
+total_words <span style="color:#555">=</span> <span style="color:#366">len</span>(text)
+
+vector_sum <span style="color:#555">=</span> np<span style="color:#555">.</span>zeros(embeddings_index[text[<span style="color:#f60">0</span>]]<span style="color:#555">.</span>shape, dtype<span style="color:#555">=</span><span style="color:#366">float</span>)
+
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(total_words):
+    <span style="color:#069;font-weight:bold">if</span> embeddings_index<span style="color:#555">.</span>get(text[i]) <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> None:
+        vector_sum <span style="color:#555">=</span> vector_sum <span style="color:#555">+</span> embeddings_index<span style="color:#555">.</span>get(text[i])
+
+vector_average <span style="color:#555">=</span> vector_sum<span style="color:#555">/</span>total_words
+
+vector_average</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Out:
+        array([ <span style="color:#f60">4.27346652e-01</span>,  <span style="color:#f60">1.57514317e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.39625478e-01</span>, <span style="color:#555">-</span><span style="color:#f60">9.35632864e-02</span>,
+        <span style="color:#f60">3.44963874e-01</span>,  <span style="color:#f60">3.40743040e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.63750508e-01</span>, <span style="color:#555">-</span><span style="color:#f60">3.66529997e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">8.27876303e-02</span>,  <span style="color:#f60">3.41370854e-02</span>,  <span style="color:#f60">4.36536945e-02</span>,  <span style="color:#f60">1.38812064e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">7.28143505e-02</span>, <span style="color:#555">-</span><span style="color:#f60">8.25220181e-02</span>,  <span style="color:#f60">3.11417515e-01</span>,  <span style="color:#f60">4.72280507e-02</span>,
+        <span style="color:#f60">1.04038140e-01</span>,  <span style="color:#f60">1.44413003e-02</span>, <span style="color:#555">-</span><span style="color:#f60">3.03484470e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.69421163e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">7.93770321e-04</span>,  <span style="color:#f60">1.88174378e-01</span>,  <span style="color:#f60">2.59898154e-01</span>,  <span style="color:#f60">2.18157735e-02</span>,
+        <span style="color:#f60">2.42991123e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.24372694e+00</span>, <span style="color:#555">-</span><span style="color:#f60">5.44038484e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.15947643e-01</span>,
+        <span style="color:#f60">1.31132527e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.05934229e-01</span>,  <span style="color:#f60">2.97637301e+00</span>,  <span style="color:#f60">1.27288132e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">1.00509887e-01</span>, <span style="color:#555">-</span><span style="color:#f60">5.74834689e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.73898482e-02</span>,  <span style="color:#f60">1.25999838e-01</span>,
+       <span style="color:#555">-</span><span style="color:#f60">8.16523744e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.20244182e-02</span>, <span style="color:#555">-</span><span style="color:#f60">1.90150194e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.36316453e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">1.41432983e-01</span>,  <span style="color:#f60">2.43932903e-02</span>,  <span style="color:#f60">1.20964539e-01</span>,  <span style="color:#f60">2.92627208e-01</span>,
+        <span style="color:#f60">5.57823928e-02</span>,  <span style="color:#f60">1.55617574e-01</span>, <span style="color:#555">-</span><span style="color:#f60">1.29049102e-01</span>, <span style="color:#555">-</span><span style="color:#f60">2.56062194e-02</span>,
+       <span style="color:#555">-</span><span style="color:#f60">6.94451796e-02</span>, <span style="color:#555">-</span><span style="color:#f60">2.09271689e-01</span>])</code></pre></div>
+<p>You can also generate sentence and document level vectors from sophisticated methods such as doc2vec.</p>
+
+<h3 id="using-word-embeddings-in-neural-networks">Using word embeddings in neural networks</h3>
+
+<p>We will talk about this in a detailed post which will walk you through all the steps of not only using pretrained word vectors but will also tell you about to train it on your own training data.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#machine-learning" class="badge badge-primary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#natural-language-processing" class="badge badge-primary"><span>natural-language-processing</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#text-vectorization" class="badge badge-primary"><span>text-vectorization</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#machine-learning" class="badge badge-secondary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#text-mining" class="badge badge-secondary"><span>text-mining</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#word-embeddings" class="badge badge-secondary"><span>word-embeddings</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#words2vec" class="badge badge-secondary"><span>words2vec</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#glove" class="badge badge-secondary"><span>glove</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2019 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

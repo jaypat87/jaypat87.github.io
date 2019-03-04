@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/</loc>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</loc>
     <lastmod>2019-02-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -65,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/glove/</loc>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/categories/interviews/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,28 +94,28 @@
   
   <url>
     <loc>http://jaympatel.com/tags/machine-learning/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jaympatel.com/categories/machine-learning/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jaympatel.com/categories/natural-language-processing/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jaympatel.com/post/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -129,14 +143,14 @@
   
   <url>
     <loc>http://jaympatel.com/tags/text-mining/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jaympatel.com/categories/text-vectorization/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -144,6 +158,20 @@
   <url>
     <loc>http://jaympatel.com/tags/version-control/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/word-embeddings/</loc>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/words2vec/</loc>
+    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/categories/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</title>
+      <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/</guid>
+      <description>In the previous posts, we looked at count vectorization and term frequency-inverse document frequency (tf-idf) to convert a given text document into a vectors which can be used as features for text classification task such as classifying emails into spam or not spam.
+Major disadvantages of such an approach is that the vectors generated are sparse (mostly made of zeros), and very high-dimensional (same dimensionality as the number of words in the vocabulary).</description>
+    </item>
     
     <item>
       <title>Natural language processing (NLP): Text Vectorization and Bag of Words Approach</title>

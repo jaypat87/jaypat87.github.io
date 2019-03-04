@@ -22,9 +22,18 @@
     </item>
     
     <item>
+      <title>Glove</title>
+      <link>http://jaympatel.com/tags/glove/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/glove/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Machine Learning</title>
       <link>http://jaympatel.com/tags/machine-learning/</link>
-      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/tags/machine-learning/</guid>
       <description></description>
@@ -42,7 +51,7 @@
     <item>
       <title>Text Mining</title>
       <link>http://jaympatel.com/tags/text-mining/</link>
-      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/tags/text-mining/</guid>
       <description></description>
@@ -54,6 +63,24 @@
       <pubDate>Wed, 28 Nov 2018 08:59:27 +0100</pubDate>
       
       <guid>http://jaympatel.com/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word Embeddings</title>
+      <link>http://jaympatel.com/tags/word-embeddings/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/word-embeddings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Words2vec</title>
+      <link>http://jaympatel.com/tags/words2vec/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/words2vec/</guid>
       <description></description>
     </item>
     
