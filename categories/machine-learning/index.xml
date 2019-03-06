@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</title>
+      <link>http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/</guid>
+      <description>The ability of computers to understand human languages us referred to as Natural Language Processing (NLP). This is a vast field and frequently practitioners include machine translation and natural language generation (NLG) as part of core NLP. However, in this section we will only look at NLP techniques which aim to extract insights from unstructured text.
+Regular expressions (Regex) and rule based methods Regular expressions (Regex) match patterns with sequences of characters and they are supported in wide variety of programming languages.</description>
+    </item>
     
     <item>
       <title>Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</title>

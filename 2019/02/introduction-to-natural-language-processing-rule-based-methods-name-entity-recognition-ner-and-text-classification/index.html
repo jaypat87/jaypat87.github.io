@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification",
+        "headline" : "Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification",
+        "description" : "Introduction to Natural Language Processing: Rule based methods, Name entity recognition (NER), and text classification",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-02-01 00:00:00 +0000 UTC",
+        "dateModified" : "2019-02-01 00:00:00 +0000 UTC",
+        "url" : "/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/",
+        "wordCount" : "471",
+        "keywords" : [ "machine learning","text mining","Name entity recognition","regex","Blog" ]
+    }
+</script>
+<title>
+    Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification">
+<meta itemprop="description" content="Introduction to Natural Language Processing: Rule based methods, Name entity recognition (NER), and text classification">
+
+
+<meta itemprop="datePublished" content="2019-02-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="471">
+
+
+
+<meta itemprop="keywords" content="machine learning,text mining,Name entity recognition,regex," />
+
+<meta property="og:title" content="Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification" />
+<meta property="og:description" content="Introduction to Natural Language Processing: Rule based methods, Name entity recognition (NER), and text classification" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/" /><meta property="article:published_time" content="2019-02-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-01T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification"/>
+<meta name="twitter:description" content="Introduction to Natural Language Processing: Rule based methods, Name entity recognition (NER), and text classification"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): Text Vectorization and Bag of Words Approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top Data Science Interview Questions and Answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get Started with Git and Github in Under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            01.02.2019 - 
+            Jay M. Patel -
+            Reading time ~3 Minutes
+        </h6>
+
+        <p class="card-text">
+
+<p>The ability of computers to understand human languages us referred to as Natural Language Processing (NLP). This is a vast field and frequently practitioners include machine translation and natural language generation (NLG) as part of core NLP. However, in this section we will only look at NLP techniques which aim to extract insights from unstructured text.</p>
+
+<h3 id="regular-expressions-regex-and-rule-based-methods">Regular expressions (Regex) and rule based methods</h3>
+
+<p>Regular expressions (Regex) match patterns with sequences of characters and they are supported in wide variety of programming languages. A common use case for regex is extracting email addresses, phone numbers etc. from a text document. They are also widely used for search and replace in many commonly used programs and text processing software applications. There is no &ldquo;learning&rdquo; happening per se, and since we are more focused on using machine learning algorithms for NLP, we shall not extensively talk about regex and other rule based methods.</p>
+
+<p>Using regex makes your code harder to read and debug, and their performance degrades too in case the regex pattern is very complex. I think for these reasons and more, most coders seem to be in agree with Jamie Zawinski&rsquo;s famous quote &ldquo;Some people, when confronted with a problem, think &ldquo;I know, I&rsquo;ll use regular expressions.&rdquo; Now they have two problems&rdquo;.</p>
+
+<p>Below is the sample of the regex I used to extract out email addresses from a large corpus of text.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">re</span>
+
+regex <span style="color:#555">=</span> re<span style="color:#555">.</span><span style="color:#366">compile</span>(<span style="color:#c30">&#34;([a-z0-9!#$%&amp;&#39;*+\/=?^_`{|.}~-]+@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)&#34;</span>, re<span style="color:#555">.</span>IGNORECASE)
+email_address_set <span style="color:#555">=</span> {x<span style="color:#555">.</span>strip() <span style="color:#069;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> regex<span style="color:#555">.</span>findall(sample_text)}</code></pre></div>
+<h3 id="name-entity-recognition-ner">Name entity recognition (NER)</h3>
+
+<p>These refer to a group or statistical and machine learning methods which extracts out specific tokens (words or phrases) from unstructured text belonging to specific categories such as names of persons, companies, geographical locations etc. Essentially NER consists of two separate tasks, the first being text segmentation (similar to chunking) where a &ldquo;name&rdquo; is extracted, and secondly classifying it within predefined categories.</p>
+
+<p>NER models are trained on labeled text where start and end indexes or offsets of each words are manually labeled into categories you want the NER model to recognize. The categories could be anything as long as the text can be labeled as start and end offsets for training purposes.</p>
+
+<h3 id="text-classification">Text classification</h3>
+
+<p>A classic example of text classification is classifying a given email into spam or not spam based on the unstructured text in the email itself. Other examples of text classification include classifying the topic of the news article into financial, entertainment, sports etc. Document level sentiments classification such as customer reviews on ecommerce sites (Amazon, ebay) or movie reviews on sites such as ImDb is also examples of text classification.</p>
+
+<p>A first step in applying machine learning algorithms for text classification is generating features from unstructured text by converting it into  numerical vectors. We can use <a href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">count vectorization</a>, <a href="2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">term frequency-inverse document frequency (tf-idf)</a> or <a href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">word embeddings</a> for this task.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#machine-learning" class="badge badge-primary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#natural-language-processing" class="badge badge-primary"><span>natural-language-processing</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#text-vectorization" class="badge badge-primary"><span>text-vectorization</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#machine-learning" class="badge badge-secondary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#text-mining" class="badge badge-secondary"><span>text-mining</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#name-entity-recognition" class="badge badge-secondary"><span>name-entity-recognition</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#regex" class="badge badge-secondary"><span>regex</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2019 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

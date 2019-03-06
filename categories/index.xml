@@ -32,7 +32,7 @@
     <item>
       <title>Machine Learning</title>
       <link>http://jaympatel.com/categories/machine-learning/</link>
-      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/categories/machine-learning/</guid>
       <description></description>
@@ -41,9 +41,18 @@
     <item>
       <title>Natural Language Processing</title>
       <link>http://jaympatel.com/categories/natural-language-processing/</link>
-      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/categories/natural-language-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiments</title>
+      <link>http://jaympatel.com/categories/sentiments/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/categories/sentiments/</guid>
       <description></description>
     </item>
     
@@ -59,9 +68,27 @@
     <item>
       <title>Text Vectorization</title>
       <link>http://jaympatel.com/categories/text-vectorization/</link>
-      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/categories/text-vectorization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>http://jaympatel.com/categories/twitter/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/categories/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Scraping</title>
+      <link>http://jaympatel.com/categories/web-scraping/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/categories/web-scraping/</guid>
       <description></description>
     </item>
     
