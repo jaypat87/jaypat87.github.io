@@ -33,7 +33,7 @@ Major disadvantages of such an approach is that the vectors generated are sparse
     </item>
     
     <item>
-      <title>Natural language processing (NLP): Text Vectorization and Bag of Words Approach</title>
+      <title>Natural language processing (NLP): text vectorization and bag of words approach</title>
       <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -43,7 +43,7 @@ However, we still need to convert non-numerical text contained in emails into nu
     </item>
     
     <item>
-      <title>Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</title>
+      <title>Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</title>
       <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       

@@ -63,12 +63,12 @@ Regular expressions (Regex) and rule based methods Regular expressions (Regex) m
     </item>
     
     <item>
-      <title>Using twitter rest APIs in python to search and download tweets in bulk</title>
+      <title>Using Twitter rest APIs in python to search and download tweets in bulk</title>
       <link>http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/</guid>
-      <description>Getting Twitter Data Lets use tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.
+      <description>Getting Twitter data Lets use tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.
 Let’s go ahead and get our imports loaded.
 import tweepy import pandas as pd import matplotlib.pyplot as plt import seaborn as sns import numpy as np sns.</description>
     </item>
@@ -84,7 +84,7 @@ Major disadvantages of such an approach is that the vectors generated are sparse
     </item>
     
     <item>
-      <title>Natural language processing (NLP): Text Vectorization and Bag of Words Approach</title>
+      <title>Natural language processing (NLP): text vectorization and bag of words approach</title>
       <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -94,7 +94,7 @@ However, we still need to convert non-numerical text contained in emails into nu
     </item>
     
     <item>
-      <title>Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</title>
+      <title>Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</title>
       <link>http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -104,12 +104,12 @@ Count vectorization has one major drawback: it gives equal weightage to all the 
     </item>
     
     <item>
-      <title>Top Data Science Interview Questions and Answers</title>
+      <title>Top data science interview questions and answers</title>
       <link>http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/</guid>
-      <description>Machine Learning Basics 1. What is machine learning? Machine learning (ML) is a field of computer science that gives computer systems the ability to progressively improve performance on a specific task aka learn with data without being explicitly programmed. Taking a 50,000 ft view, we want to model a given dataset either to make predictions or we want a model to describe a given dataset to gain valuable insights.</description>
+      <description>Machine learning Basics 1. What is machine learning? Machine learning (ML) is a field of computer science that gives computer systems the ability to progressively improve performance on a specific task aka learn with data without being explicitly programmed. Taking a 50,000 ft view, we want to model a given dataset either to make predictions or we want a model to describe a given dataset to gain valuable insights.</description>
     </item>
     
     <item>
