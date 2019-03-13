@@ -34,6 +34,20 @@ Once I have the data we need, I&amp;rsquo;ll use the most appropriate and state 
     </item>
     
     <item>
+      <title>Books</title>
+      <link>http://jaympatel.com/books/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
+      
+      <guid>http://jaympatel.com/books/</guid>
+      <description>Getting Structured Data from Internet: Web Scraping and Rest APIs ISBN-10: [TBA]
+ISBN-13: [TBA]
+Paperback: est. 2019
+  Leanpub
+About the Book
+This book will teach you web scraping to quickly get unlimited amounts of free data available on the web in structured format. You&amp;rsquo;ll learn Python scripts to not only to access free APIs to get structured data from websites such as Twitter, but you&amp;rsquo;ll also learn to scrape data from any HTML and Javascript page and convert that into Excel, CSV or SQL database of your choice.</description>
+    </item>
+    
+    <item>
       <title>Introduction to web scraping in python using Beautiful Soup</title>
       <link>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</link>
       <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
