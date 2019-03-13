@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Introduction to web scraping in python using Beautiful Soup",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "Introduction to web scraping in python using Beautiful Soup",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-02-14 00:00:00 +0000 UTC",
+        "dateModified" : "2019-02-14 00:00:00 +0000 UTC",
+        "url" : "/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/",
+        "wordCount" : "871",
+        "keywords" : [ "machine learning","text mining","web scraping","Blog" ]
+    }
+</script>
+<title>
+    Introduction to web scraping in python using Beautiful Soup &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Introduction to web scraping in python using Beautiful Soup">
+<meta itemprop="description" content="Introduction to web scraping in python using Beautiful Soup">
+
+
+<meta itemprop="datePublished" content="2019-02-14T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-14T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="871">
+
+
+
+<meta itemprop="keywords" content="machine learning,text mining,web scraping," />
+
+<meta property="og:title" content="Introduction to web scraping in python using Beautiful Soup" />
+<meta property="og:description" content="Introduction to web scraping in python using Beautiful Soup" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/" /><meta property="article:published_time" content="2019-02-14T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-14T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to web scraping in python using Beautiful Soup"/>
+<meta name="twitter:description" content="Introduction to web scraping in python using Beautiful Soup"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): Text Vectorization and Bag of Words Approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): Term Frequency - Inverse Document Frequency (Tf-idf) based vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top Data Science Interview Questions and Answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get Started with Git and Github in Under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            14.02.2019 - 
+            Jay M. Patel -
+            Reading time ~5 Minutes
+        </h6>
+
+        <p class="card-text">
+
+<p>The first step for any web scraping project is getting the webpage you want to parse. There are many python libraries such as <code>urllib</code>, <code>urllib2</code>, <code>urllib3</code> for requesting pages via HTTP, however, none of them beat the elegance of <code>requests</code> library which we have been using in earlier posts on rest APIs and we will continue to use that here. Before we get into the workings of Beautiful Soup, let us first get a basic understanding of HTML structure, common tags and styling sheets.</p>
+
+<h3 id="introduction-to-html-documents">Introduction to HTML documents</h3>
+
+<p>Let us test out an example; we will go to the wikipedia page for a machine learning algorithm called <a href="https://en.wikipedia.org/wiki/Support-vector_machine">support vector machine (SVM)</a>. Right click anywhere on the page and click &ldquo;inspect&rdquo; if you are using Google Chrome as your browser, or click on &ldquo;View page source&rdquo; if you are using Mozilla Firefox.</p>
+
+<p>If you prefer, you can use the <code>requests</code> module to get the same html page as shown below.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test_url <span style="color:#555">=</span> <span style="color:#c30">&#34;https://en.wikipedia.org/wiki/Support-vector_machine&#34;</span>
+r <span style="color:#555">=</span> requests<span style="color:#555">.</span>get(test_url)
+r<span style="color:#555">.</span>text</code></pre></div>
+<p>You will see bunch of code, don&rsquo;t be intimidated; let us go through it and decode the HTML tags according to rules outlined above.</p>
+
+<ul>
+<li>Every HTML document contains <code>&lt;html&gt;...&lt;/html&gt;</code> with <code>&lt;!DOCTYPE html&gt;</code> usually the the start of a HTML document</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#099">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#309;font-weight:bold">html</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;client-nojs&#34;</span> <span style="color:#309">lang</span><span style="color:#555">=</span><span style="color:#c30">&#34;en&#34;</span> <span style="color:#309">dir</span><span style="color:#555">=</span><span style="color:#c30">&#34;ltr&#34;</span>&gt;
+&lt;<span style="color:#309;font-weight:bold">head</span>&gt;
+&lt;<span style="color:#309;font-weight:bold">meta</span> <span style="color:#309">charset</span><span style="color:#555">=</span><span style="color:#c30">&#34;UTF-8&#34;</span>/&gt;
+...............</code></pre></div>
+<ul>
+<li><code>&lt;h1&gt;...&lt;/h1&gt;</code> to <code>&lt;h6&gt;...&lt;/h6&gt;</code> tags are used for headers</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">h1</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;firstHeading&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;firstHeading&#34;</span> <span style="color:#309">lang</span><span style="color:#555">=</span><span style="color:#c30">&#34;en&#34;</span>&gt;Support-vector machine&lt;/<span style="color:#309;font-weight:bold">h1</span>&gt;</code></pre></div>
+<p>The other important tags are:</p>
+
+<ul>
+<li><p><code>&lt;div&gt;...&lt;/div&gt;</code> to indicate a division in an HTML document, generally used to group a set of elements</p></li>
+
+<li><p><code>&lt;p&gt;...&lt;/p&gt;</code> to enclose a paragraph</p></li>
+
+<li><p><code>&lt;br&gt;</code> to set a line break</p></li>
+
+<li><p><code>&lt;table&gt;...&lt;/table&gt;</code> to start a table block</p>
+
+<ul>
+<li><code>&lt;tr&gt;...&lt;tr/&gt;</code> is used for the rows</li>
+<li><code>&lt;td&gt;...&lt;/td&gt;</code> is used for individual cells</li>
+</ul></li>
+
+<li><p><code>&lt;img&gt;</code> for images</p></li>
+
+<li><p><code>&lt;a&gt;...&lt;/a&gt;</code> for hyperlinks;</p></li>
+
+<li><p><code>&lt;ul&gt;...&lt;/ul&gt;</code>, <code>&lt;ol&gt;...&lt;/ol&gt;</code> for unordered and ordered lists
+respectively; inside of these, <code>&lt;li&gt;...&lt;/li&gt;</code> is used for each list item</p></li>
+</ul>
+
+<h3 id="introduction-to-cascading-style-sheets-css">Introduction to Cascading Style Sheets (CSS)</h3>
+
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document such as layout, colors, and fonts written in a markup language like HTML.</p>
+
+<p>In the section above, you may have noticed the terms &ldquo;ids&rdquo; and &ldquo;class&rdquo; such as for h1 headers such as for h1 tags.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">h1</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;firstHeading&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;firstHeading&#34;</span> <span style="color:#309">lang</span><span style="color:#555">=</span><span style="color:#c30">&#34;en&#34;</span>&gt;Support-vector machine&lt;/<span style="color:#309;font-weight:bold">h1</span>&gt;</code></pre></div>
+<ul>
+<li>Id: is an unique identifier representing a tag within the document</li>
+<li>Class: an identifier that can annotate multiple elements in a document and represents a space separated series of CSS class names</li>
+</ul>
+
+<p>Classes and id are case-sensitive, start with letters, and can include alphanumeric characters, hyphens and underscores. A class may apply to any number of instances of any elements whereas ID may only be applied to a single element.</p>
+
+<p>There are three ways to apply CSS styles to HTML pages.</p>
+
+<ul>
+<li>Inside a regular HTML tag such as shown below. You can also apply styles to change font colors <code>&lt;p style=”color:’green’;”&gt;...&lt;/p&gt;</code>.</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;/<span style="color:#309;font-weight:bold">tr</span>&gt;&lt;<span style="color:#309;font-weight:bold">tr</span>&gt;&lt;<span style="color:#309;font-weight:bold">td</span> <span style="color:#309">style</span><span style="color:#555">=</span><span style="color:#c30">&#34;padding:0 0.1em 0.4em&#34;</span>&gt;</code></pre></div>
+<ul>
+<li><p>You can create a separate CSS file and link it by including it in a <code>link</code> tag within the main <code>&lt;head&gt;</code> of the HTML document; the browser will go out and request the CSS file whenever a page is loaded.</p></li>
+
+<li><p>Style can also be applied inside of <code>&lt;style&gt;...&lt;/style&gt;</code> tags, placed inside the <code>&lt;head&gt;</code> tag of a page.</p></li>
+</ul>
+
+<p>CSS selectors define the patterns used to &ldquo;select&rdquo; the HTML elements you want to style. For web scraping perspective, they are very essential in enabling you to capture specific text enclosed within a CSS selector without taking in all the other boilerplate text.</p>
+
+<ul>
+<li><p>tagname selects all elements with a particular tag name. For example, &ldquo;h2&rdquo;  matches with all <code>&lt;h2&gt;</code> tags on a page.</p></li>
+
+<li><p>.classname selects all the elements having the same classname.</p></li>
+
+<li><p>#myid selects the element with the given id. Note from the last section that id is unique and it is only applied to one element in contrast to tagname and classname.</p></li>
+</ul>
+
+<p>Please check out this for <a href="https://www.w3schools.com/cssref/css_selectors.asp">more information</a> on how to use CSS selectors.</p>
+
+<h3 id="installing-beautiful-soup">Installing Beautiful Soup</h3>
+
+<p>todo</p>
+
+<h3 id="web-scraping-with-beautiful-soup">Web scraping with Beautiful Soup</h3>
+
+<p><code>Beautifulsoup</code> is a python library designed to pull data out of HTML and XML files. Let us start with a simple example of requesting the same wikipedia page as above on support vector machine and processing it with Beautiful Soup library.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">bs4</span> <span style="color:#069;font-weight:bold">import</span> BeautifulSoup
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">requests</span>
+
+test_url <span style="color:#555">=</span> <span style="color:#c30">&#34;https://en.wikipedia.org/wiki/Support-vector_machine&#34;</span>
+r <span style="color:#555">=</span> requests<span style="color:#555">.</span>get(test_url)
+html_response <span style="color:#555">=</span> r<span style="color:#555">.</span>text
+soup <span style="color:#555">=</span> BeautifulSoup(html_response,<span style="color:#c30">&#39;html.parser&#39;</span>)
+
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>))
+
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>)<span style="color:#555">.</span>get_text())
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>)<span style="color:#555">.</span>text)
+
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>)<span style="color:#555">.</span>contents)
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>)<span style="color:#555">.</span>attrs)
+
+<span style="color:#069;font-weight:bold">print</span>(soup<span style="color:#555">.</span>find(<span style="color:#c30">&#39;h1&#39;</span>)<span style="color:#555">.</span>name)</code></pre></div>
+<pre><code>Out:
+&lt;h1 class=&quot;firstHeading&quot; id=&quot;firstHeading&quot; lang=&quot;en&quot;&gt;Support-vector machine&lt;/h1&gt;
+Support-vector machine
+Support-vector machine
+['Support-vector machine']
+{'id': 'firstHeading', 'class': ['firstHeading'], 'lang': 'en'}
+h1
+</code></pre>
+
+<p>In the example above, we used the Python’s <code>html.parser</code> but beautiful Soup also supports other parsers such as <code>lxml</code>, <code>lxml-xml</code>, <code>html5lib</code>; each them have different strengths and weaknesses and please refer to the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser">official documentation</a> for a more complete discussion.</p>
+
+<p>Once you have a soup object, can filter the results using the <code>find()</code> method, and get only the text contained in the tag by <code>.text</code> or <code>.get_text()</code>.</p>
+
+<p>Another very useful function is <code>find_all()</code> which will return a list of all tags with a given attribute. A quick example of how to use that is shown below.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">for</span> <span style="color:#366">object</span> <span style="color:#000;font-weight:bold">in</span> soup<span style="color:#555">.</span>find_all([<span style="color:#c30">&#39;h1&#39;</span>, <span style="color:#c30">&#39;h2&#39;</span>]):
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">object</span><span style="color:#555">.</span>get_text())
+    </code></pre></div>
+<pre><code>Out:
+Support-vector machine
+Contents
+Motivation[edit]
+Definition[edit]
+Applications[edit]
+History[edit]
+Linear SVM[edit]
+Nonlinear classification[edit]
+Computing the SVM classifier[edit]
+Empirical risk minimization[edit]
+Properties[edit]
+Extensions[edit]
+Implementation[edit]
+See also[edit]
+References[edit]
+Bibliography[edit]
+External links[edit]
+Navigation menu
+</code></pre>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#web-scraping" class="badge badge-primary"><span>web-scraping</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#data-mining" class="badge badge-primary"><span>data-mining</span></a>
+                    
+                        <a href="http://jaympatel.com/categories/#requests" class="badge badge-primary"><span>requests</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#machine-learning" class="badge badge-secondary"><span>machine-learning</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#text-mining" class="badge badge-secondary"><span>text-mining</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#web-scraping" class="badge badge-secondary"><span>web-scraping</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2019 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

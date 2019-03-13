@@ -10,6 +10,27 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/consulting-services/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</loc>
+    <lastmod>2019-02-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -72,6 +93,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/categories/data-mining/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/categories/data-science/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -114,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://jaympatel.com/categories/machine-learning/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <loc>http://jaympatel.com/tags/machine-learning/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jaympatel.com/tags/machine-learning/</loc>
+    <loc>http://jaympatel.com/categories/machine-learning/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -143,7 +171,7 @@
   
   <url>
     <loc>http://jaympatel.com/post/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -151,6 +179,13 @@
   <url>
     <loc>http://jaympatel.com/tags/regex/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/categories/requests/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -185,7 +220,7 @@
   
   <url>
     <loc>http://jaympatel.com/tags/text-mining/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -219,8 +254,15 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/web-scraping/</loc>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/categories/web-scraping/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

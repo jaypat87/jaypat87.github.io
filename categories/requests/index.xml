@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Requests on Jay M. Patel</title>
+    <link>http://jaympatel.com/categories/requests/</link>
+    <description>Recent content in Requests on Jay M. Patel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jay M. Patel</copyright>
+    <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jaympatel.com/categories/requests/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to web scraping in python using Beautiful Soup</title>
+      <link>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</guid>
+      <description>The first step for any web scraping project is getting the webpage you want to parse. There are many python libraries such as urllib, urllib2, urllib3 for requesting pages via HTTP, however, none of them beat the elegance of requests library which we have been using in earlier posts on rest APIs and we will continue to use that here. Before we get into the workings of Beautiful Soup, let us first get a basic understanding of HTML structure, common tags and styling sheets.</description>
+    </item>
+    
+  </channel>
+</rss>

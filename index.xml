@@ -18,9 +18,38 @@
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
       
       <guid>http://jaympatel.com/about/</guid>
-      <description>Hi! My name is Jay M. Patel and I’ve been working fulltime as freelance software developer and data scientist on data mining, web crawling/scraping, natural language processing (NLP) projects.
-I am also bootstraping my startup project Specrom Analytics which uses AI algorithms for marketing, social listening and creating alternative financial datasets.
-I wrote an algorithmic (or quantitative) trading program for my first client back in 2007 while still in college, and I have been investing in stocks ever since with particular focus on healthcare and biotech stocks.</description>
+      <description>My name is Jay M. Patel and I am a fulltime freelance software developer and data scientist specializing in data mining, web crawling/scraping, natural language processing (NLP) projects. Please check out my consulting page for details on how to hire me for your project.
+I worked at US Environmental Protection Agency (US EPA) for about five years before quitting in 2018 to do consulting fulltime and bootstrap my startup, Specrom Analytics, which applies AI algorithms for marketing, social listening and creating alternative financial datasets.</description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>http://jaympatel.com/consulting-services/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/consulting-services/</guid>
+      <description>As a full stack software developer and data scientist, my focus is solving problems and getting data driven insights for your business needs.
+I can help you evaluate the data you already have, augment and complement it with web scraping/crawling all the while looking out for opportunities to automate and scale so that you can get the answers more rapidly with higher accuracy.
+Once I have the data we need, I&amp;rsquo;ll use the most appropriate and state of the art algorithms for a given problem.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to web scraping in python using Beautiful Soup</title>
+      <link>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</guid>
+      <description>The first step for any web scraping project is getting the webpage you want to parse. There are many python libraries such as urllib, urllib2, urllib3 for requesting pages via HTTP, however, none of them beat the elegance of requests library which we have been using in earlier posts on rest APIs and we will continue to use that here. Before we get into the workings of Beautiful Soup, let us first get a basic understanding of HTML structure, common tags and styling sheets.</description>
+    </item>
+    
+    <item>
+      <title>Why is web scraping essential and who uses web scraping?</title>
+      <link>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</guid>
+      <description>Web scraping, also called web harvesting, web data extraction, or even web data mining is defined as a software program or code designed to automate the downloading and parsing of the data from the web.
+Nowadays many websites such as Twitter, Facebook etc. provides REST based Application Programming Interface (APIs) to programmatically consume the structured data available on their websites and data obtained that way is usually not only &amp;ldquo;cleaner&amp;rdquo; but also easy and hassle-free compared to web scraping.</description>
     </item>
     
     <item>

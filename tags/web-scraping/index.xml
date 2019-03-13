@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Scraping on Jay M. Patel</title>
-    <link>http://jaympatel.com/categories/web-scraping/</link>
+    <link>http://jaympatel.com/tags/web-scraping/</link>
     <description>Recent content in Web Scraping on Jay M. Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
     <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jaympatel.com/categories/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jaympatel.com/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,17 +29,6 @@
       <guid>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</guid>
       <description>Web scraping, also called web harvesting, web data extraction, or even web data mining is defined as a software program or code designed to automate the downloading and parsing of the data from the web.
 Nowadays many websites such as Twitter, Facebook etc. provides REST based Application Programming Interface (APIs) to programmatically consume the structured data available on their websites and data obtained that way is usually not only &amp;ldquo;cleaner&amp;rdquo; but also easy and hassle-free compared to web scraping.</description>
-    </item>
-    
-    <item>
-      <title>Using twitter rest APIs in python to search and download tweets in bulk</title>
-      <link>http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/</guid>
-      <description>Getting Twitter Data Lets use tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.
-Let’s go ahead and get our imports loaded.
-import tweepy import pandas as pd import matplotlib.pyplot as plt import seaborn as sns import numpy as np sns.</description>
     </item>
     
   </channel>

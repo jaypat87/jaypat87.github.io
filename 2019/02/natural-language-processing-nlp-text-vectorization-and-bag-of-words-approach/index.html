@@ -10,7 +10,7 @@
         },
         "articleSection" : "post",
         "name" : "Natural language processing (NLP): Text Vectorization and Bag of Words Approach",
-        "headline" : "Natural language processing (NLP): Text Vectorization and Bag of Words Approach",
+        "headline" : "Data Science consulting, training and speaking",
         "description" : "Count Vectorization for natural language processing (NLP), how to convert text into vectors for bag of words model for text classification",
         "inLanguage" : "en",
         "author" : "Jay M. Patel",
@@ -85,10 +85,20 @@
                     
                 
                     
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Tutorials</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
                             
                                 <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
                             
@@ -155,7 +165,7 @@
 
 </code></pre>
 
-<p>For our purposes, we are more interested in getting a list of &ldquo;term frequencies&rdquo; from the above dictionary which serves as a sparse vector representation of the underlying sentence, with number of dimensions being equal of total number of unique words in the corpus. As you might have already noticed, this term frequency vector does not preserve order of the words in the sentence. However, for many text classification tasks this bag of words model works pretty satisfactorily.</p>
+<p>For our purposes, we are more interested in getting a list of &ldquo;word frequencies&rdquo; from the above dictionary which serves as a sparse vector representation of the underlying sentence, with number of dimensions being equal of total number of unique words in the corpus. As you might have already noticed, this term frequency vector does not preserve order of the words in the sentence. However, for many text classification tasks this bag of words model works pretty satisfactorily.</p>
 
 <pre><code>vect = [1, 2, 1, 1, 2, 1, 1]
 

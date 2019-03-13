@@ -10,7 +10,7 @@
         },
         "articleSection" : "post",
         "name" : "Top Data Science Interview Questions and Answers",
-        "headline" : "Top Data Science Interview Questions and Answers",
+        "headline" : "Data Science consulting, training and speaking",
         "description" : "Top 1000 Data Science Interview Questions and Answers (General) for 2019",
         "inLanguage" : "en",
         "author" : "Jay M. Patel",
@@ -22,7 +22,7 @@
         "datePublished": "2019-02-02 00:00:00 +0000 UTC",
         "dateModified" : "2019-02-02 00:00:00 +0000 UTC",
         "url" : "/2019/02/top-data-science-interview-questions-and-answers/",
-        "wordCount" : "1053",
+        "wordCount" : "1447",
         "keywords" : [ "machine learning","Blog" ]
     }
 </script>
@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2019-02-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1053">
+<meta itemprop="wordCount" content="1447">
 
 
 
@@ -85,10 +85,20 @@
                     
                 
                     
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Tutorials</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
                             
                                 <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
                             
@@ -126,7 +136,7 @@
         <h6 class="card-subtitle mb-2 text-muted">
             02.02.2019 - 
             Jay M. Patel -
-            Reading time ~5 Minutes
+            Reading time ~7 Minutes
         </h6>
 		
 		<aside>
@@ -146,6 +156,16 @@
 <li><a href="#8-what-is-precision-recall-and-f1-score">8. What is precision, recall and F1 score ?</a></li>
 <li><a href="#9-what-are-common-data-transformations">9. What are common data transformations ?</a></li>
 <li><a href="#10-define-hyperparameters">10. Define hyperparameters.</a></li>
+</ul></li>
+<li><a href="#feature-engineering-for-text-analytics-and-natural-language-processing">Feature engineering for text analytics and natural language processing</a>
+<ul>
+<li><a href="#what-is-meant-by-text-tokenization">What is meant by text tokenization?</a></li>
+<li><a href="#what-is-bag-of-words-based-text-vectorization">What is bag of words based text vectorization?</a></li>
+<li><a href="#how-to-create-bag-of-word-vectors-in-scikit-learn">How to create bag of word vectors in scikit learn?</a></li>
+<li><a href="#what-is-a-major-drawback-of-count-vectorization-compared-to-other-vectorization-methods">What is a major drawback of count vectorization compared to other vectorization methods?</a></li>
+<li><a href="#define-term-frequency">Define Term Frequency.</a></li>
+<li><a href="#define-inverse-document-frequency">Define Inverse Document Frequency.</a></li>
+<li><a href="#define-term-frequency-inverse-document-frequency-tf-idf">Define Term Frequency - Inverse Document Frequency (Tf-idf)</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -252,6 +272,73 @@ $$F1 = 2\frac{P \times R}{P+R}$$
 <h3 id="10-define-hyperparameters">10. Define hyperparameters.</h3>
 
 <p>Hyperparameters is a parameter whose value is set before the learning process begins. By contrast, the values of other parameters are derived via training. Learning rate, regularization etc are examples of hyperparameters.</p>
+
+<h2 id="feature-engineering-for-text-analytics-and-natural-language-processing">Feature engineering for text analytics and natural language processing</h2>
+
+<h3 id="what-is-meant-by-text-tokenization">What is meant by text tokenization?</h3>
+
+<p>Splitting individual sentences into it&rsquo;s constituent words or tokens is referred to as &ldquo;tokenization&rdquo;.</p>
+
+<p>let us consider the sentence below</p>
+
+<pre><code>Sam likes to watch baseball. Christine likes baseball too.
+</code></pre>
+
+<p>After removing punctuations, we can represent the sentence as a list of individual &ldquo;tokens&rdquo; or words.</p>
+
+<pre><code>&quot;Sam&quot;,&quot;likes&quot;,&quot;to&quot;,&quot;watch&quot;,&quot;baseball&quot;,&quot;Christine&quot;,&quot;likes&quot;,&quot;baseball&quot;,&quot;too&quot;
+</code></pre>
+
+<h3 id="what-is-bag-of-words-based-text-vectorization">What is bag of words based text vectorization?</h3>
+
+<p>text is represented as the bag or a multiset of its words (known as &ldquo;tokens&rdquo;) by disregarding grammar, punctuation and word order but keeping multiplicity of individual words/tokens.</p>
+
+<p>In a bag of words representation, we can convert the list above into a dictionary, with keys being the words, and values being the number of occurrences.</p>
+
+<pre><code>BoW_dict = {&quot;Sam&quot;:1,&quot;likes&quot;:2,&quot;to&quot;:1,&quot;watch&quot;:1,&quot;baseball&quot;:2,&quot;Christine&quot;:1,&quot;too&quot;:1}
+
+</code></pre>
+
+<h3 id="how-to-create-bag-of-word-vectors-in-scikit-learn">How to create bag of word vectors in scikit learn?</h3>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">sklearn.feature_extraction.text</span> <span style="color:#069;font-weight:bold">import</span> CountVectorizer
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pandas</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">pd</span>
+
+cv <span style="color:#555">=</span> CountVectorizer(analyzer<span style="color:#555">=</span><span style="color:#c30">&#39;word&#39;</span>)
+dtm <span style="color:#555">=</span> cv<span style="color:#555">.</span>transform([text])</code></pre></div>
+<h3 id="what-is-a-major-drawback-of-count-vectorization-compared-to-other-vectorization-methods">What is a major drawback of count vectorization compared to other vectorization methods?</h3>
+
+<p>It gives equal weightage to all the words (or tokens) present in the corpus, and this makes it a poor representation for the semantic analysis of the sentence. There are certain words above such as &ldquo;it&rdquo;, &ldquo;is&rdquo;, &ldquo;that&rdquo;, &ldquo;this&rdquo; etc which don&rsquo;t contribute much to the meaning of the underlying sentence and are actually quite common across all English documents and these are known as <strong>stop words</strong>. Ideally, you want to decrease the weightage given to these stop words and give higher weightage to words which imparting semantic meaning of the sentence.</p>
+
+<h3 id="define-term-frequency">Define Term Frequency.</h3>
+
+<p>Term Frequency (TF) is the ratio of number of times a word appears in a document compared to the total number of words in that document and it&rsquo;s expressed below. TF will be high for STOP words whereas it will be pretty low for rare words which impart meaning to a sentence.</p>
+
+<div>
+
+$$TF = \frac{n_i,_j}{\sum\limits_{k} n_i,_j}$$
+
+</div>
+
+<h3 id="define-inverse-document-frequency">Define Inverse Document Frequency.</h3>
+
+<p>Inverse Document Frequency idf(w) of a given word w is defined as a log of total number of documents (N) divided by document frequency df<sub>t</sub>, which is the the number of documents in the collection containing the word w.</p>
+
+<div>
+
+$$idf(w) = \log\frac{N}{df_t}$$
+
+</div>
+
+<h3 id="define-term-frequency-inverse-document-frequency-tf-idf">Define Term Frequency - Inverse Document Frequency (Tf-idf)</h3>
+
+<p>Term Frequency - Inverse Document Frequency tfidf(w) is simply a product of term frequency and inverse document frequency.</p>
+
+<div>
+
+$$tfidf(w) = {TF}\times{idf(w)}$$
+
+</div>
 </p>
 
     </div>

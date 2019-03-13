@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Data Mining</title>
+      <link>http://jaympatel.com/categories/data-mining/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/categories/data-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science</title>
       <link>http://jaympatel.com/categories/data-science/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
@@ -44,6 +53,15 @@
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/categories/natural-language-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Requests</title>
+      <link>http://jaympatel.com/categories/requests/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/categories/requests/</guid>
       <description></description>
     </item>
     
@@ -86,7 +104,7 @@
     <item>
       <title>Web Scraping</title>
       <link>http://jaympatel.com/categories/web-scraping/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/categories/web-scraping/</guid>
       <description></description>

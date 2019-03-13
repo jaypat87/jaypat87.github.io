@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to web scraping in python using Beautiful Soup</title>
+      <link>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</guid>
+      <description>The first step for any web scraping project is getting the webpage you want to parse. There are many python libraries such as urllib, urllib2, urllib3 for requesting pages via HTTP, however, none of them beat the elegance of requests library which we have been using in earlier posts on rest APIs and we will continue to use that here. Before we get into the workings of Beautiful Soup, let us first get a basic understanding of HTML structure, common tags and styling sheets.</description>
+    </item>
+    
+    <item>
+      <title>Why is web scraping essential and who uses web scraping?</title>
+      <link>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/</guid>
+      <description>Web scraping, also called web harvesting, web data extraction, or even web data mining is defined as a software program or code designed to automate the downloading and parsing of the data from the web.
+Nowadays many websites such as Twitter, Facebook etc. provides REST based Application Programming Interface (APIs) to programmatically consume the structured data available on their websites and data obtained that way is usually not only &amp;ldquo;cleaner&amp;rdquo; but also easy and hassle-free compared to web scraping.</description>
+    </item>
     
     <item>
       <title>Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</title>
