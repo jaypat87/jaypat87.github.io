@@ -92,13 +92,13 @@ Count vectorization has one major drawback: it gives equal weightage to all the 
     </item>
     
     <item>
-      <title>Get Started with Git and Github in Under 10 Minutes</title>
+      <title>Get started with Git and Github in under 10 Minutes</title>
       <link>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</link>
       <pubDate>Wed, 28 Nov 2018 08:59:27 +0100</pubDate>
       
       <guid>http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/</guid>
       <description>Git is probably the most popular version control system being used right now, and if you have any experience with other version control systems like subversion than it&amp;rsquo;s strongly recommended that you go through this section since lot of concepts from other systems don&amp;rsquo;t directly translate to Git.
-Git Basics You can create a local Git repository on your computer by either:
+Git basics You can create a local Git repository on your computer by either:
  Clone an existing Git repository from a remote repository on internet (e.</description>
     </item>
     
