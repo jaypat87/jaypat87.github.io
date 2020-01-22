@@ -48,6 +48,16 @@ This book will teach you web scraping to quickly get unlimited amounts of free d
     </item>
     
     <item>
+      <title>Introduction to machine learning metrics</title>
+      <link>http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/</guid>
+      <description>Machine learning (ML) is a field of computer science that gives computer systems the ability to progressively improve performance on a specific task aka learn with data without being explicitly programmed. Taking a 50,000 ft view, we want to model a given dataset either to make predictions or we want a model to describe a given dataset to gain valuable insights.
+There are three general areas of machine learning models</description>
+    </item>
+    
+    <item>
       <title>Introduction to web scraping in python using Beautiful Soup</title>
       <link>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</link>
       <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>

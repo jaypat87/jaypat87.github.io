@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/</loc>
     <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -100,6 +107,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/coefficient-of-determination-r2/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/categories/data-mining/</loc>
     <lastmod>2019-02-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,6 +137,13 @@
   <url>
     <loc>http://jaympatel.com/tags/glove/</loc>
     <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/information-criterion/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -157,7 +178,7 @@
   
   <url>
     <loc>http://jaympatel.com/categories/machine-learning/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -177,8 +198,15 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/p-value/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/post/</loc>
-    <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -186,6 +214,13 @@
   <url>
     <loc>http://jaympatel.com/tags/regex/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/regression/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -212,8 +247,15 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/tags/t-test/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/tags/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

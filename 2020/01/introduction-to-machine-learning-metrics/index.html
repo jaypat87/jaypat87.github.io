@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Introduction to machine learning metrics",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "Introduction to machine learning metrics such as precision, recall, R2 etc which can evaluate goodness of fit",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-01-01 00:00:00 +0000 UTC",
+        "dateModified" : "2020-01-01 00:00:00 +0000 UTC",
+        "url" : "/2020/01/introduction-to-machine-learning-metrics/",
+        "wordCount" : "1149",
+        "keywords" : [ "regression","Coefficient of determination (R2)","information criterion","p-value","t-test","Blog" ]
+    }
+</script>
+<title>
+    Introduction to machine learning metrics &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Introduction to machine learning metrics">
+<meta itemprop="description" content="Introduction to machine learning metrics such as precision, recall, R2 etc which can evaluate goodness of fit">
+
+
+<meta itemprop="datePublished" content="2020-01-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-01-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1149">
+
+
+
+<meta itemprop="keywords" content="regression,Coefficient of determination (R2),information criterion,p-value,t-test," />
+
+<meta property="og:title" content="Introduction to machine learning metrics" />
+<meta property="og:description" content="Introduction to machine learning metrics such as precision, recall, R2 etc which can evaluate goodness of fit" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/" /><meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-01-01T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to machine learning metrics"/>
+<meta name="twitter:description" content="Introduction to machine learning metrics such as precision, recall, R2 etc which can evaluate goodness of fit"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/books/">Books</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): text vectorization and bag of words approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top data science interview questions and answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get started with Git and Github in under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            01.01.2020 - 
+            Jay M. Patel -
+            Reading time ~6 Minutes
+        </h6>
+
+        <p class="card-text">
+
+<p>Machine learning (ML) is a field of computer science that gives computer systems the ability to progressively improve performance on a specific task aka learn with data without being explicitly programmed. Taking a 50,000 ft view, we want to model a given dataset either to make predictions or we want a model to describe a given dataset to gain valuable insights.</p>
+
+<p>There are three general areas of machine learning models</p>
+
+<ul>
+<li><p><strong>Numerical prediction, also called Regression:</strong> These are supervised  ML algorithms which use a training set of independent variables to derive relationship to a dependent variable.</p></li>
+
+<li><p><strong>Classification:</strong> These are supervised ML algorithms which classify a new observation to a set of sub populations using a training set of data containing observations (or instances) whose category membership is known.</p></li>
+
+<li><p><strong>Clustering:</strong> These are unsupervised ML algorithms which can group a set of objects in such a way that objects in the same group called a cluster are more similar  to each other than to those in other groups/clusters.</p></li>
+</ul>
+
+<h2 id="basic-statistics">Basic statistics</h2>
+
+<p>Almost everyone knows basic statistics such as mean, standard deviation etc. but let us mention their formulae below just in case.</p>
+
+<p>Mean,  X<sub>M</sub> can be defined as</p>
+
+<div>
+$$X_M = \dfrac{\sum_{i=1}^{n} X_i}n$$
+</div>
+
+<p>Degrees of freedom, Df, with N observations is defined as</p>
+
+<div>
+
+$$Df = N-1$$
+
+</div>
+
+<p>Standard deviation, s is defined as</p>
+
+<div>
+
+
+$$s = \sqrt{\dfrac{\sum_{i=1}^{n} (X_i-X_M)^2}{Df}} = \sqrt{\dfrac{\sum_{i=1}^{n} (X_i-X_M)^2}{N-1}}$$
+
+</div>
+
+<h2 id="evaluating-goodness-of-fit-for-regression">Evaluating goodness of fit for regression</h2>
+
+<p>If a regression model is perfect than we would see zero deviation between predicted values of Y and actual Y, however, in practice this is seldom the case and the difference between actual and predicted value is known as <em>residuals</em>.</p>
+
+<p>Intuitively, the model with lowest total residuals will perform the best; however, residuals can be positive or negative so adding it up may cancel it out leading to incorrect conclusions.</p>
+
+<p>We could easily avoid this problem if we take squares of each residuals and take a sum of that (sum of squared differences, SS).</p>
+
+<p>Thus we obtain the best model by selecting the one with lowest sum of squared differences; and this is excatly how ordinary least squares method for linear regression works.</p>
+
+<h3 id="coefficient-of-determination-r-sup-2-sup">Coefficient of determination ( R<sup>2</sup> )</h3>
+
+<p>In order to assess goodness of fit, we need to compare our model something else. In statistics, the most basic model available is <em>mean</em>.</p>
+
+<div>
+  
+$$S_T = \sum_{i=1}^{n} (Y_{iObs}-mean)^2$$
+
+</div>
+
+<p>Where, S<sub>T</sub> is total sum of squares (sum of squares between Y and mean)</p>
+
+<div>
+
+$$S_R = \sum_{i=1}^{n} (Y_{iObs}-Y_{iM})^2$$
+
+</div>
+
+<p>Where S<sub>R</sub> are residual sum of squares between Y<sub>iObs</sub> and predicted Y, aka Y<sub>iM</sub> from a given model. They are also called sum of squared errors of prediction (SSE).</p>
+
+<div>
+
+$$S_M=S_T-S_R$$
+
+</div>
+
+<p>S<sub>M</sub> defined as model sum of squares and represents the improvement made by a given regression model in comparison with just a basic model of just using a mean. This is also called explained sum of squares (ESS) or sum of squares due to regression (SSR).</p>
+
+<p>In simple regression cases, it can be calculated by the above expression, whereas for more complicated cases, we need to add other terms.</p>
+
+<p>If S<sub>M</sub> is small, than the model is just a little better than simply using mean as the best guess.</p>
+
+<p>The performance of a model can be represented as a fraction from 0-1 called R<sup>2</sup> with a value of 1 indicating that a given model can explain all the variance in data whereas 0 means that it doesn&rsquo;t explain any variance in a given dataset.</p>
+
+<div>
+
+$$R^2 = S_M/S_T$$
+
+</div>
+
+<p>For simple linear regression, taking square root of this R<sup>2</sup> will give Pearson&rsquo;s correlation coefficient.</p>
+
+<p>In general, R<sup>2</sup> can be represented as:</p>
+
+<div>
+
+$$R^2=\frac{\sum_{i=1}^{n} (Y_{iM}-Y_{iObs})^2}{\sum_{i=1}^{n} (Y_{iObs}-mean)^2}$$
+
+</div>
+
+<h3 id="akaike-information-criterion-aic-and-bayesian-information-criterion-bic">Akaike information criterion (AIC) and Bayesian information criterion (BIC)</h3>
+
+<p>As you add variables in a multiple linear regression (MLR) model, R<sup>2</sup> goes up regardless of whether you are improving the fit or no. Due to this, we need other parsimony adjusted measures of fit to figure out which model performs best in fitting a given data among multiple models.</p>
+
+<div>
+
+$$AIC=2k-2\ln(L_h)$$
+
+$$BIC=2\ln(n)k-2\ln(L_h)$$
+
+</div>
+
+<p>Where, AIC is Akaike information criterion and BIC is  Bayesian information criterion respectively.<br />
+- k is number of parameters estimated by the model; for the MLR it is number of slope coefficients (q), plus the intercept and error so k = q+2<br />
+- n is number of observations.<br />
+- L<sub>h</sub> is maximum value of the likelihood function for the model (this ofcourse varies for different types of regressions).</p>
+
+<p>Leave-one-out cross-validation is asymptotically equivalent to AIC, for ordinary linear regression models.</p>
+
+<p>AIC introduces a penalty term of 2k for addition of new parameters whereas BIC uses 2ln(n)k as its penalty term, so that as you add more variables and consequently new parameters, the values of AIC and BIC go up, indicating a worse fit.</p>
+
+<p>In general its a good idea to use both for model selection. As you can probably guess, there are no hard guidelines on what is an acceptable AIC value, essentially, values of AIC and BIC are only used to compare it with other models with same outcome variable and in general a low value is preferred over a high one.</p>
+
+<h3 id="p-value-and-t-test">p-value and t-test</h3>
+
+<p>p-value or probability value or asymptotic significance is the probability of the null hypothesis being true for a given statistical model. A small p-value (typically &lt; 0.05) indicates strong evidence against the null hypothesis whereas a large p-value (&gt; 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis.</p>
+
+<p>In case of regression models, we can calculate p value of each coefficients of the model, with null hypothesis being that coefficient being zero. A low p-value indicates the probability of that coefficient being zero is low.</p>
+
+<p>We use a t-test to assess the null hypothesis of a coefficient in a regression equation being zero. If it is significant, than we are more confident in the hypothesis that the coefficient value is different than zero.</p>
+
+<p>The degree of freedom in a regression is N-p-1, where N are number of observations, and p are number of predictors. As explained above, a low p-value from the t-test shows that coefficient is significantly different from 0.</p>
+
+<h4 id="f-ratio">F-ratio</h4>
+
+<p>S<sub>M</sub> and S<sub>R</sub> are dependent on number of observations we have added, so its better if use mean sum of squares (MSS) and residual mean squares (MSR), where we we have divided it by their respective degrees of freedom. F-ratio can then be defined as:</p>
+
+<div>
+
+$$ F = \dfrac{MSS}{MSR}$$
+
+</div>
+
+<p>A large F-ratio is obtained with a good model (F&gt;1) and exact magnitude should be assessed by checking F values with appropriate degrees of freedom for both numerator and denominator. Df for MSS are number of variables in the model and Df for MSR are number of observations minus number of parameters being estimated.</p>
+
+<h3 id="evaluating-metrics-for-classification">Evaluating metrics for classification</h3>
+
+<p>Classification metrics such as precision, recall, F1 score etc. are all covered in detail in our article about <a href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">top data science FAQs</a> article, check it out for more information.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#machine-learning" class="badge badge-primary"><span>machine-learning</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#regression" class="badge badge-secondary"><span>regression</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#coefficient-of-determination-r2" class="badge badge-secondary"><span>coefficient-of-determination-r2</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#information-criterion" class="badge badge-secondary"><span>information-criterion</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#p-value" class="badge badge-secondary"><span>p-value</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#t-test" class="badge badge-secondary"><span>t-test</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2020 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
