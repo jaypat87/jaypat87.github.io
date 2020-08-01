@@ -77,6 +77,17 @@ Nowadays many websites such as Twitter, Facebook etc. provides REST based Applic
     </item>
     
     <item>
+      <title>How to create pdf documents in python using FPDF library</title>
+      <link>http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/</guid>
+      <description>PDF files are ubiquitous in our daily life and it&amp;rsquo;s a good idea to spend few minutes to learn how to programmatically generate it in Python.
+In this tutorial, we will take structured data in JSON and convert that into a pdf. Ideally, pdfs contain text paragraphs, hyperlinks and images, so we will work with a dataset containing all of that for better real world experience.
+Firstly, let us fetch the data from a publicly available API containing scraped news articles from past 24 hours.</description>
+    </item>
+    
+    <item>
       <title>Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</title>
       <link>http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>

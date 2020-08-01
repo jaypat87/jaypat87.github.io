@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "How to create pdf documents in python using FPDF library",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "We will learn how we can create pdf documents in Python with text, images and links from a web scraped news documents",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-08-01 00:00:00 +0000 UTC",
+        "dateModified" : "2020-08-01 00:00:00 +0000 UTC",
+        "url" : "/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/",
+        "wordCount" : "621",
+        "keywords" : [ "web scraping","tutorial","pdf","Blog" ]
+    }
+</script>
+<title>
+    How to create pdf documents in python using FPDF library &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="How to create pdf documents in python using FPDF library">
+<meta itemprop="description" content="We will learn how we can create pdf documents in Python with text, images and links from a web scraped news documents">
+
+
+<meta itemprop="datePublished" content="2020-08-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-08-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="621">
+
+
+
+<meta itemprop="keywords" content="web scraping,tutorial,pdf," />
+
+<meta property="og:title" content="How to create pdf documents in python using FPDF library" />
+<meta property="og:description" content="We will learn how we can create pdf documents in Python with text, images and links from a web scraped news documents" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/" /><meta property="article:published_time" content="2020-08-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-08-01T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to create pdf documents in python using FPDF library"/>
+<meta name="twitter:description" content="We will learn how we can create pdf documents in Python with text, images and links from a web scraped news documents"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/books/">Books</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/">How to create pdf documents in python using FPDF library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): text vectorization and bag of words approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top data science interview questions and answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get started with Git and Github in under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/">How to create pdf documents in python using FPDF library</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            01.08.2020 - 
+            Jay M. Patel -
+            Reading time ~3 Minutes
+        </h6>
+
+        <p class="card-text"><p>PDF files are ubiquitous in our daily life and it&rsquo;s a good idea to spend few minutes to learn how to programmatically generate it in Python.</p>
+
+<p>In this tutorial, we will take structured data in JSON and convert that into a pdf. Ideally, pdfs contain text paragraphs, hyperlinks and images, so we will work with a dataset containing all of that for better real world experience.</p>
+
+<p>Firstly, let us fetch the data from a publicly available API containing <a href="https://algorithmia.com/algorithms/specrom/LatestNewsAPI">scraped news articles</a> from past 24 hours. You will have to register at <a href="https://algorithmia.com/signup">Algorithmia</a> to get the free API keys (no credit card etc. required). You will get about free 10,000 credits hen you sign up which should be plenty to call it hundreds of times.</p>
+
+<figure>
+    <img src="./fpdf_images/api-example.PNG"/> <figcaption>
+            <h4>Figure 1: API example showing input/output schema</h4>
+        </figcaption>
+</figure>
+
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">Algorithmia</span>
+
+clean_response_list <span style="color:#555">=</span> []
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">1</span>,<span style="color:#f60">3</span>):
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;fetching page &#34;</span>, <span style="color:#366">str</span>(i))
+    <span style="color:#366">input</span> <span style="color:#555">=</span> {
+  <span style="color:#c30">&#34;domains&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;topic&#34;</span>: <span style="color:#c30">&#34;politics&#34;</span>,
+  <span style="color:#c30">&#34;q&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;qInTitle&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;content&#34;</span>: <span style="color:#c30">&#34;true&#34;</span>,
+  <span style="color:#c30">&#34;author_only&#34;</span>: <span style="color:#c30">&#34;true&#34;</span>,
+  <span style="color:#c30">&#34;page&#34;</span>: <span style="color:#366">str</span>(i)
+    }
+    client <span style="color:#555">=</span> Algorithmia<span style="color:#555">.</span>client(YOUR_ALGO_KEY)
+    algo <span style="color:#555">=</span> client<span style="color:#555">.</span>algo(<span style="color:#c30">&#39;specrom/LatestNewsAPI/0.1.6&#39;</span>)
+    response_dict <span style="color:#555">=</span> algo<span style="color:#555">.</span>pipe(<span style="color:#366">input</span>)<span style="color:#555">.</span>result
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;Total results found: &#34;</span>, response_dict[<span style="color:#c30">&#34;totalResults&#34;</span>])
+    clean_response_list <span style="color:#555">=</span> clean_response_list <span style="color:#555">+</span> response_dict[<span style="color:#c30">&#34;Article&#34;</span>]
+<span style="color:#366">len</span>(clean_response_list)</code></pre></div>
+<p>Output</p>
+
+<pre><code>
+Total results found:  2617
+fetching page  2
+Total results found:  2617
+</code></pre>
+
+<p>Now, let us load this data into a dataframe and view the top results.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pandas</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">pd</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+
+df <span style="color:#555">=</span> pd<span style="color:#555">.</span>DataFrame(clean_response_list)
+df<span style="color:#555">.</span>head()</code></pre></div>
+<figure>
+    <img src="./fpdf_images/df-example.PNG"/> <figcaption>
+            <h4>Figure 2: Pandas Dataframe with scraped news data</h4>
+        </figcaption>
+</figure>
+
+
+<p>Alright, as you can see, we have quite a few types of data in the above dataset. Now, let us use the title, url, and images, and content to create a pdf.</p>
+
+<p>We will be using Python port of a popular PHP based PDF library called FPDF. Install it using <code>pip install fpdf</code>. Let us initialize an empty FPDF object and set font to Times new roman with font size of 12.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">fpdf</span> <span style="color:#069;font-weight:bold">import</span> FPDF
+
+pdf <span style="color:#555">=</span> FPDF()
+pdf<span style="color:#555">.</span>alias_nb_pages()
+pdf<span style="color:#555">.</span>add_page()
+pdf<span style="color:#555">.</span>set_font(<span style="color:#c30">&#39;Times&#39;</span>, <span style="color:#c30">&#39;&#39;</span>, <span style="color:#f60">12</span>)
+pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>,ln<span style="color:#555">=</span><span style="color:#f60">1</span> )</code></pre></div>
+<p>Now, we can iterate through the dataframe rows aand add article url, title and full text to our PDF object.</p>
+
+<p>If you want to create a multiline block of text, you should use <code>multicell</code> as shown below. By default, Python 3 encodes the strings as utf-8 however, FPDF package expects it in latin-1 so you will have to manually change encoding as shown.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pdf<span style="color:#555">.</span>multi_cell(<span style="color:#f60">0</span>, <span style="color:#f60">10</span>,txt<span style="color:#555">=</span><span style="color:#c30">&#34;demo_string&#34;</span><span style="color:#555">.</span>encode()<span style="color:#555">.</span>decode(<span style="color:#c30">&#39;latin-1&#39;</span>, <span style="color:#c30">&#39;strict&#39;</span>))</code></pre></div>
+<p>Similarly, you can create a single line text by using the <code>cell</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>,txt<span style="color:#555">=</span><span style="color:#c30">&#34;demo string&#34;</span><span style="color:#555">.</span>encode()<span style="color:#555">.</span>decode(<span style="color:#c30">&#39;latin-1&#39;</span>, <span style="color:#c30">&#39;strict&#39;</span>),ln<span style="color:#555">=</span><span style="color:#f60">1</span>)</code></pre></div>
+<p>We can close the pdf object and save it as a file as shown.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pdf<span style="color:#555">.</span>output(<span style="color:#c30">&#39;news_articles.pdf&#39;</span>, <span style="color:#c30">&#39;F&#39;</span>)</code></pre></div>
+<p>We will bring all of these elements together and as an additional challenge, we will also download cover image from each article and delete it after we are done.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">requests</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">os</span>
+
+df_filtered <span style="color:#555">=</span> df<span style="color:#555">.</span>iloc[:<span style="color:#f60">25</span>]
+image_list <span style="color:#555">=</span> []
+
+count <span style="color:#555">=</span> <span style="color:#f60">1</span>
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#366">len</span>(df_filtered)):
+<span style="color:#09f;font-style:italic">#for i in range(5):</span>
+
+    <span style="color:#069;font-weight:bold">if</span> True: <span style="color:#09f;font-style:italic"># specify some other filtering criteria here if you want</span>
+        <span style="color:#069;font-weight:bold">try</span>:
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#366">str</span>(count),ln<span style="color:#555">=</span><span style="color:#f60">1</span> )
+            count <span style="color:#555">=</span> count<span style="color:#555">+</span><span style="color:#f60">1</span>
+            
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>, <span style="color:#f60">10</span>,txt<span style="color:#555">=</span><span style="color:#c30">&#39;Article url&#39;</span>, link <span style="color:#555">=</span> df_filtered<span style="color:#555">.</span>url<span style="color:#555">.</span>iloc[i]<span style="color:#555">.</span>encode()<span style="color:#555">.</span>decode(<span style="color:#c30">&#39;latin-1&#39;</span>, <span style="color:#c30">&#39;strict&#39;</span>),ln<span style="color:#555">=</span><span style="color:#f60">1</span>)
+            pdf<span style="color:#555">.</span>multi_cell(<span style="color:#f60">0</span>, <span style="color:#f60">10</span>,txt<span style="color:#555">=</span>df_filtered<span style="color:#555">.</span>title<span style="color:#555">.</span>iloc[i]<span style="color:#555">.</span>encode()<span style="color:#555">.</span>decode(<span style="color:#c30">&#39;latin-1&#39;</span>, <span style="color:#c30">&#39;strict&#39;</span>))
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#c30">&#39;</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span>,ln<span style="color:#555">=</span><span style="color:#f60">1</span> )
+            
+            <span style="color:#069;font-weight:bold">try</span>:
+                sample_ss <span style="color:#555">=</span> df_filtered<span style="color:#555">.</span>urlToImage<span style="color:#555">.</span>iloc[i]
+                image_name <span style="color:#555">=</span> <span style="color:#c30">&#39;image_name&#39;</span> <span style="color:#555">+</span> <span style="color:#366">str</span>(i) <span style="color:#555">+</span> <span style="color:#c30">&#39;.jpg&#39;</span>
+                <span style="color:#069;font-weight:bold">if</span> sample_ss<span style="color:#555">.</span>split(<span style="color:#c30">&#34;.&#34;</span>)[<span style="color:#555">-</span><span style="color:#f60">1</span>]  <span style="color:#555">==</span> <span style="color:#c30">&#39;jpg&#39;</span>:
+                    img_data <span style="color:#555">=</span> requests<span style="color:#555">.</span>get(sample_ss)<span style="color:#555">.</span>content
+                    <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(image_name, <span style="color:#c30">&#39;wb&#39;</span>) <span style="color:#069;font-weight:bold">as</span> handler:
+                        handler<span style="color:#555">.</span>write(img_data)
+                    pdf<span style="color:#555">.</span>image(image_name, w <span style="color:#555">=</span> <span style="color:#f60">100</span>, h <span style="color:#555">=</span> <span style="color:#f60">50</span>)
+                    image_list<span style="color:#555">.</span>append(image_name)
+
+            <span style="color:#069;font-weight:bold">except</span> <span style="color:#c00;font-weight:bold">Exception</span> <span style="color:#069;font-weight:bold">as</span> E:
+                <span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">str</span>(E))
+                <span style="color:#069;font-weight:bold">pass</span>
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#c30">&#39;</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span>,ln<span style="color:#555">=</span><span style="color:#f60">1</span> )
+
+            pdf<span style="color:#555">.</span>multi_cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>,txt<span style="color:#555">=</span>df_filtered<span style="color:#555">.</span>content<span style="color:#555">.</span>iloc[i]<span style="color:#555">.</span>encode()<span style="color:#555">.</span>decode(<span style="color:#c30">&#39;latin-1&#39;</span>, <span style="color:#c30">&#39;strict&#39;</span>))
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#c30">&#39;</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span>,ln<span style="color:#555">=</span><span style="color:#f60">1</span> )
+            pdf<span style="color:#555">.</span>cell(<span style="color:#f60">0</span>,<span style="color:#f60">10</span>, txt <span style="color:#555">=</span> <span style="color:#c30">&#39;*&#39;</span><span style="color:#555">*</span><span style="color:#f60">30</span>,ln<span style="color:#555">=</span><span style="color:#f60">1</span> )
+            
+        <span style="color:#069;font-weight:bold">except</span> <span style="color:#c00;font-weight:bold">Exception</span> <span style="color:#069;font-weight:bold">as</span> E:
+            <span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">str</span>(E))
+pdf<span style="color:#555">.</span>output(<span style="color:#c30">&#39;news_articles.pdf&#39;</span>, <span style="color:#c30">&#39;F&#39;</span>)
+
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#366">len</span>(image_list)):
+    os<span style="color:#555">.</span>remove(image_list[i])
+    </code></pre></div>
+<figure>
+    <img src="./fpdf_images/pdf-screenshot.PNG"/> <figcaption>
+            <h4>Figure 3: First page of the generated pdf</h4>
+        </figcaption>
+</figure>
+
+
+<p>We use FPDF extensively in our codebase with it&rsquo;s advanced features such as support for custom fonts which is very essential if you want to work with many languages and you should definately check it out if you need a production ready PDF library in Python.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#data-science" class="badge badge-primary"><span>data-science</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#web-scraping" class="badge badge-secondary"><span>web-scraping</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#tutorial" class="badge badge-secondary"><span>tutorial</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#pdf" class="badge badge-secondary"><span>pdf</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2020 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
