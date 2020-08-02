@@ -22,7 +22,7 @@
         "datePublished": "2020-08-02 00:00:00 +0000 UTC",
         "dateModified" : "2020-08-02 00:00:00 +0000 UTC",
         "url" : "/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/",
-        "wordCount" : "594",
+        "wordCount" : "596",
         "keywords" : [ "full text searching","tutorial","Pandas","Whoosh","Blog" ]
     }
 </script>
@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2020-08-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-08-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="594">
+<meta itemprop="wordCount" content="596">
 
 
 
@@ -177,7 +177,9 @@ search_regex <span style="color:#555">=</span> base<span style="color:#555">.</s
 <p>There is a full text search library called Lucene in Java which powers Elasticsearch; similarly, Whoosh is a pure Python library which fits the same niche and can be installed simply by <code>pip install Whoosh</code>. In this post, we will create and populate a Whoosh search index and use it to run some fulltext queries.</p>
 
 <p>Firstly, let us get some data to fill our Whoosh index. One of the best ways to see the power of full text searching is by using it on recent news articles. Let us grab some articles from the Latest News API at Algorithmia. You get about 10,000 free credits when you sign up for free using your email address, and that should be plenty to run hundreds of queries.</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">results_list <span style="color:#555">=</span> []
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">Algorithmia</span>
+
+results_list <span style="color:#555">=</span> []
 <span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">1</span>,<span style="color:#f60">3</span>):
     <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;fetching page &#34;</span>, <span style="color:#366">str</span>(i))
     <span style="color:#366">input</span> <span style="color:#555">=</span> {
