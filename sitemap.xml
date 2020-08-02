@@ -45,6 +45,13 @@
   </url>
   
   <url>
+    <loc>http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -129,7 +136,14 @@
   
   <url>
     <loc>http://jaympatel.com/categories/data-science/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/full-text-searching/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -207,6 +221,13 @@
   <url>
     <loc>http://jaympatel.com/tags/p-value/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/pandas/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -297,7 +318,7 @@
   
   <url>
     <loc>http://jaympatel.com/tags/tutorial/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -333,6 +354,13 @@
   <url>
     <loc>http://jaympatel.com/categories/web-scraping/</loc>
     <lastmod>2019-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jaympatel.com/tags/whoosh/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

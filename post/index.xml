@@ -42,6 +42,16 @@ Nowadays many websites such as Twitter, Facebook etc. provides REST based Applic
     </item>
     
     <item>
+      <title>How to do full text searching in Python using Whoosh library</title>
+      <link>http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/</guid>
+      <description>Full text searching with fast indexing is essential to go through large quantities of text in Pandas dataframes to power your data science workflows. Traditionally, we can use a full text search engine databases like Elasticsearch, Apache Solr or Amazon cloudsearch for this; however, it&amp;rsquo;s pretty impractical to do that for one off requirements or when working with only few GBs of data.
+In that case, you can simply load your text into Pandas dataframe, and use regex to perform the search as shown.</description>
+    </item>
+    
+    <item>
       <title>How to create pdf documents in python using FPDF library</title>
       <link>http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>

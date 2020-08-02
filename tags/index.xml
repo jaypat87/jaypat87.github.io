@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Full Text Searching</title>
+      <link>http://jaympatel.com/tags/full-text-searching/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/full-text-searching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>http://jaympatel.com/tags/git/</link>
       <pubDate>Wed, 28 Nov 2018 08:59:27 +0100</pubDate>
@@ -85,6 +94,15 @@
     </item>
     
     <item>
+      <title>Pandas</title>
+      <link>http://jaympatel.com/tags/pandas/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pdf</title>
       <link>http://jaympatel.com/tags/pdf/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
@@ -141,7 +159,7 @@
     <item>
       <title>Tutorial</title>
       <link>http://jaympatel.com/tags/tutorial/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/tags/tutorial/</guid>
       <description></description>
@@ -171,6 +189,15 @@
       <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/tags/web-scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whoosh</title>
+      <link>http://jaympatel.com/tags/whoosh/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/tags/whoosh/</guid>
       <description></description>
     </item>
     

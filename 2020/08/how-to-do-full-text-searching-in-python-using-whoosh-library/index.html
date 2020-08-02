@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "How to do full text searching in Python using Whoosh library",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "We will learn how do full text searching with fast indexing, stemming and stop word removal in Pandas dataframes using Whoosh library",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-08-02 00:00:00 +0000 UTC",
+        "dateModified" : "2020-08-02 00:00:00 +0000 UTC",
+        "url" : "/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/",
+        "wordCount" : "594",
+        "keywords" : [ "full text searching","tutorial","Pandas","Whoosh","Blog" ]
+    }
+</script>
+<title>
+    How to do full text searching in Python using Whoosh library &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="How to do full text searching in Python using Whoosh library">
+<meta itemprop="description" content="We will learn how do full text searching with fast indexing, stemming and stop word removal in Pandas dataframes using Whoosh library">
+
+
+<meta itemprop="datePublished" content="2020-08-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-08-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="594">
+
+
+
+<meta itemprop="keywords" content="full text searching,tutorial,Pandas,Whoosh," />
+
+<meta property="og:title" content="How to do full text searching in Python using Whoosh library" />
+<meta property="og:description" content="We will learn how do full text searching with fast indexing, stemming and stop word removal in Pandas dataframes using Whoosh library" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/" /><meta property="article:published_time" content="2020-08-02T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-08-02T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to do full text searching in Python using Whoosh library"/>
+<meta name="twitter:description" content="We will learn how do full text searching with fast indexing, stemming and stop word removal in Pandas dataframes using Whoosh library"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/books/">Books</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/">How to create pdf documents in python using FPDF library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/">How to do full text searching in Python using Whoosh library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): text vectorization and bag of words approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top data science interview questions and answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get started with Git and Github in under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/">How to do full text searching in Python using Whoosh library</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            02.08.2020 - 
+            Jay M. Patel -
+            Reading time ~3 Minutes
+        </h6>
+
+        <p class="card-text"><p>Full text searching with fast indexing is essential to go through large quantities of text in Pandas dataframes to power your data science workflows. Traditionally, we can use a full text search engine databases like Elasticsearch, Apache Solr or Amazon cloudsearch for this; however, it&rsquo;s pretty impractical to do that for one off requirements or when working with only few GBs of data.</p>
+
+<p>In that case, you can simply load your text into Pandas dataframe, and use regex to perform the search as shown.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pandas</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">pd</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">re</span>
+
+df <span style="color:#555">=</span> pd<span style="color:#555">.</span>read_csv(<span style="color:#c30">&#34;your_csv_file_path&#34;</span>)
+df <span style="color:#555">=</span> df<span style="color:#555">.</span>fillna(<span style="color:#c30">&#34;&#34;</span>)
+df <span style="color:#555">=</span> df[df<span style="color:#555">.</span>col_name<span style="color:#555">.</span><span style="color:#366">str</span><span style="color:#555">.</span>contains(<span style="color:#c30">r</span><span style="color:#c30">&#39;^(?=.*trump)(?=.*biden)&#39;</span>, flags<span style="color:#555">=</span>re<span style="color:#555">.</span>IGNORECASE, regex<span style="color:#555">=</span>True)] <span style="color:#09f;font-style:italic"># https://stackoverflow.com/questions/37011734/pandas-dataframe-str-contains-and-operation</span>
+
+<span style="color:#09f;font-style:italic"># this is equivalent to:</span>
+
+df <span style="color:#555">=</span> df[(df[<span style="color:#c30">&#39;col_name&#39;</span>]<span style="color:#555">.</span><span style="color:#366">str</span><span style="color:#555">.</span>contains(<span style="color:#c30">&#39;trump&#39;</span>), flags<span style="color:#555">=</span>re<span style="color:#555">.</span>IGNORECASE) <span style="color:#555">&amp;</span> (df[<span style="color:#c30">&#39;col_name&#39;</span>]<span style="color:#555">.</span><span style="color:#366">str</span><span style="color:#555">.</span>contains(<span style="color:#c30">&#39;biden&#39;</span>), flags<span style="color:#555">=</span>re<span style="color:#555">.</span>IGNORECASE)]</code></pre></div>
+<p>You can build the regex expression programmatically as shown:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">base <span style="color:#555">=</span> <span style="color:#c30">r</span><span style="color:#c30">&#39;^{}&#39;</span>
+expr <span style="color:#555">=</span> <span style="color:#c30">&#39;(?=.*{})&#39;</span>
+words <span style="color:#555">=</span> [<span style="color:#c30">&#39;trump&#39;</span>, <span style="color:#c30">&#39;biden&#39;</span>, <span style="color:#c30">&#39;elections&#39;</span>]  <span style="color:#09f;font-style:italic"># example</span>
+search_regex <span style="color:#555">=</span> base<span style="color:#555">.</span>format(<span style="color:#c30">&#39;&#39;</span><span style="color:#555">.</span>join(expr<span style="color:#555">.</span>format(w) <span style="color:#069;font-weight:bold">for</span> w <span style="color:#000;font-weight:bold">in</span> words))</code></pre></div>
+<p>However, this is still pretty imperfect, for starters, there is no stop word removal happening; and words are not being normalized into their base forms, so that words like rain, raining, etc are considered distinct even though they still belong to same root form and have the same sementic meaning.</p>
+
+<p>There is lot of <a href="https://towardsdatascience.com/setting-up-text-preprocessing-pipeline-using-scikit-learn-and-spacy-e09b9b76758f">text preprocessing</a> which is necessary to get all the relevant search results.</p>
+
+<p>There is a full text search library called Lucene in Java which powers Elasticsearch; similarly, Whoosh is a pure Python library which fits the same niche and can be installed simply by <code>pip install Whoosh</code>. In this post, we will create and populate a Whoosh search index and use it to run some fulltext queries.</p>
+
+<p>Firstly, let us get some data to fill our Whoosh index. One of the best ways to see the power of full text searching is by using it on recent news articles. Let us grab some articles from the Latest News API at Algorithmia. You get about 10,000 free credits when you sign up for free using your email address, and that should be plenty to run hundreds of queries.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">results_list <span style="color:#555">=</span> []
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">1</span>,<span style="color:#f60">3</span>):
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;fetching page &#34;</span>, <span style="color:#366">str</span>(i))
+    <span style="color:#366">input</span> <span style="color:#555">=</span> {
+  <span style="color:#c30">&#34;domains&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;topic&#34;</span>: <span style="color:#c30">&#34;politics&#34;</span>,
+  <span style="color:#c30">&#34;q&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;qInTitle&#34;</span>: <span style="color:#c30">&#34;&#34;</span>,
+  <span style="color:#c30">&#34;content&#34;</span>: <span style="color:#c30">&#34;true&#34;</span>,
+  <span style="color:#c30">&#34;author_only&#34;</span>: <span style="color:#c30">&#34;true&#34;</span>,
+  <span style="color:#c30">&#34;page&#34;</span>: <span style="color:#366">str</span>(i)
+    }
+    client <span style="color:#555">=</span> Algorithmia<span style="color:#555">.</span>client(YOUR_ALGO_KEY)
+    algo <span style="color:#555">=</span> client<span style="color:#555">.</span>algo(<span style="color:#c30">&#39;specrom/LatestNewsAPI/0.1.6&#39;</span>)
+    response_dict <span style="color:#555">=</span> algo<span style="color:#555">.</span>pipe(<span style="color:#366">input</span>)<span style="color:#555">.</span>result
+    
+    results_list <span style="color:#555">=</span> results_list <span style="color:#555">+</span> response_dict[<span style="color:#c30">&#34;Article&#34;</span>]
+df <span style="color:#555">=</span> pd<span style="color:#555">.</span>DataFrame(results_list)
+df<span style="color:#555">.</span>head()</code></pre></div>
+<figure>
+    <img src="./whoosh-images/dataframe-example.PNG"/> 
+</figure>
+
+
+<p>Let us create a search schema for whoosh. For our purposes, let us only index few fields like title, content, and path which is just the index of the dataframe row; let us also create an empty index directory.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">whoosh.fields</span> <span style="color:#069;font-weight:bold">import</span> Schema, TEXT, ID
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">whoosh</span> <span style="color:#069;font-weight:bold">import</span> index
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">os</span><span style="color:#555">,</span> <span style="color:#0cf;font-weight:bold">os.path</span>
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">whoosh</span> <span style="color:#069;font-weight:bold">import</span> index
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">whoosh</span> <span style="color:#069;font-weight:bold">import</span> qparser
+<span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">whoosh.qparser</span> <span style="color:#069;font-weight:bold">import</span> QueryParser
+
+schema <span style="color:#555">=</span> Schema(title<span style="color:#555">=</span>TEXT(stored<span style="color:#555">=</span>True), path<span style="color:#555">=</span>ID(stored<span style="color:#555">=</span>True), content<span style="color:#555">=</span>TEXT(stored <span style="color:#555">=</span> True))
+
+<span style="color:#09f;font-style:italic"># create empty index directory</span>
+
+<span style="color:#069;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> os<span style="color:#555">.</span>path<span style="color:#555">.</span>exists(<span style="color:#c30">&#34;index_dir&#34;</span>):
+    os<span style="color:#555">.</span>mkdir(<span style="color:#c30">&#34;index_dir&#34;</span>)</code></pre></div>
+<p>Now, we will use the schema to initialize a Whoosh index in the above directory.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ix <span style="color:#555">=</span> index<span style="color:#555">.</span>create_in(<span style="color:#c30">&#34;index_dir&#34;</span>, schema)
+writer <span style="color:#555">=</span> ix<span style="color:#555">.</span>writer()</code></pre></div>
+<p>Lastly, let us fill this index with the data from the dataframe.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(df):
+    writer<span style="color:#555">.</span>add_document(title<span style="color:#555">=</span><span style="color:#366">str</span>(df<span style="color:#555">.</span>title<span style="color:#555">.</span>iloc[i]), content<span style="color:#555">=</span><span style="color:#366">str</span>(df2<span style="color:#555">.</span>content<span style="color:#555">.</span>iloc[i]),
+                    path<span style="color:#555">=</span><span style="color:#366">str</span>(i))
+writer<span style="color:#555">.</span>commit()</code></pre></div>
+<p>Now, all we need is to write up a function which can search this index.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic"># https://stackoverflow.com/questions/19477319/whoosh-accessing-search-page-result-items-throws-readerclosed-exception</span>
+<span style="color:#09f;font-style:italic"># http://annamarbut.blogspot.com/2018/08/whoosh-pandas-and-redshift-implementing.html</span>
+<span style="color:#09f;font-style:italic"># https://ai.intelligentonlinetools.com/ml/search-text-documents-whoosh/</span>
+<span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">index_search</span>(dirname, search_fields, search_query):
+    ix <span style="color:#555">=</span> index<span style="color:#555">.</span>open_dir(dirname)
+    schema <span style="color:#555">=</span> ix<span style="color:#555">.</span>schema
+    
+    og <span style="color:#555">=</span> qparser<span style="color:#555">.</span>OrGroup<span style="color:#555">.</span>factory(<span style="color:#f60">0.9</span>)
+    mp <span style="color:#555">=</span> qparser<span style="color:#555">.</span>MultifieldParser(search_fields, schema, group <span style="color:#555">=</span> og)
+
+    
+    q <span style="color:#555">=</span> mp<span style="color:#555">.</span>parse(search_query)
+    
+    
+    <span style="color:#069;font-weight:bold">with</span> ix<span style="color:#555">.</span>searcher() <span style="color:#069;font-weight:bold">as</span> s:
+        results <span style="color:#555">=</span> s<span style="color:#555">.</span>search(q, terms<span style="color:#555">=</span>True, limit <span style="color:#555">=</span> <span style="color:#f60">10</span>)
+        <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;Search Results: &#34;</span>)
+        
+        
+        <span style="color:#069;font-weight:bold">print</span>(results[<span style="color:#f60">0</span>:<span style="color:#f60">10</span>])
+    
+results_dict <span style="color:#555">=</span> index_search(<span style="color:#c30">&#34;index_dir&#34;</span>, [<span style="color:#c30">&#39;title&#39;</span>,<span style="color:#c30">&#39;content&#39;</span>], <span style="color:#c30">u</span><span style="color:#c30">&#34;northern minnesota&#34;</span>)</code></pre></div>
+<figure>
+    <img src="./whoosh-images/search-results.PNG"/> 
+</figure>
+
+
+<p>The simplicity of using Whoosh makes it an attractive choice for quick and easy searching before moving onto more heavyweight options.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#data-science" class="badge badge-primary"><span>data-science</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#full-text-searching" class="badge badge-secondary"><span>full-text-searching</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#tutorial" class="badge badge-secondary"><span>tutorial</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#pandas" class="badge badge-secondary"><span>pandas</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#whoosh" class="badge badge-secondary"><span>whoosh</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2020 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
