@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "post",
+        "name" : "Introduction data enrichment based on email addresses and domain names",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "Introduction of data enrichment strategies with in depth look at typical enrichment fields, and how to get that using web scraping",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-08-03 00:00:00 +0000 UTC",
+        "dateModified" : "2020-08-03 00:00:00 +0000 UTC",
+        "url" : "/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/",
+        "wordCount" : "668",
+        "keywords" : [ "web scraping","tutorial","data enrichment","email database","person search engine","Blog" ]
+    }
+</script>
+<title>
+    Introduction data enrichment based on email addresses and domain names &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="Introduction data enrichment based on email addresses and domain names">
+<meta itemprop="description" content="Introduction of data enrichment strategies with in depth look at typical enrichment fields, and how to get that using web scraping">
+
+
+<meta itemprop="datePublished" content="2020-08-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-08-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="668">
+
+
+
+<meta itemprop="keywords" content="web scraping,tutorial,data enrichment,email database,person search engine," />
+
+<meta property="og:title" content="Introduction data enrichment based on email addresses and domain names" />
+<meta property="og:description" content="Introduction of data enrichment strategies with in depth look at typical enrichment fields, and how to get that using web scraping" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/" /><meta property="article:published_time" content="2020-08-03T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-08-03T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction data enrichment based on email addresses and domain names"/>
+<meta name="twitter:description" content="Introduction of data enrichment strategies with in depth look at typical enrichment fields, and how to get that using web scraping"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/books/">Books</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/">How to create pdf documents in python using FPDF library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/">How to do full text searching in Python using Whoosh library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/">Introduction data enrichment based on email addresses and domain names</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): text vectorization and bag of words approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top data science interview questions and answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get started with Git and Github in under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/">Introduction data enrichment based on email addresses and domain names</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            03.08.2020 - 
+            Jay M. Patel -
+            Reading time ~4 Minutes
+        </h6>
+
+        <p class="card-text"><p>Data enrichment is a general term to denote any processes which enhance and enrich your existing database with additional information which can be used to drive your business goals such as marketing, sales and lead generation, customer relations by targeted outreach and preventing customer churn.</p>
+
+<p>Plainly speaking, all you are doing is going out to a third party data vendor and fetching additional data based on some common key. One of the most keys for data enrichment is searching based on email address or company&rsquo;s domain address.</p>
+
+<p>Just giving email address as an input can be enough to get back information such as person&rsquo;s name,age, gender, social media handles such Twitter, Linkedin, short bio, phone numbers, work address, time zone, job title, seniority etc.</p>
+
+<p>You can also get company specific information related to person&rsquo;s employment such as size of company, location, size, stock ticker, postal addresses, etc.</p>
+
+<p>In this post, we will show you data enrichment in action by using freely available public APIs. We will start from scratch and get list of email addresses and names of employees associated with a particular domain address using <a href="https://algorithmia.com/algorithms/specrom/Get_email_addresses_by_domain">Email address database API</a>. Once we have that, we will fetch data from another API which returns results from a <a href="https://algorithmia.com/algorithms/specrom/People_search">person search engine</a> which gets us enriched information such as Linkedin handles, short bio etc.</p>
+
+<p>You will have to register at <a href="https://algorithmia.com/signup">Algorithmia</a> to get the free API keys (no credit card etc. required). You will get about free 10,000 credits when you sign up which should be plenty to call it hundreds of times.</p>
+
+<p>Let&rsquo;s start things off by requesting email addresses associated with the domain address (&ldquo;wsj.com&rdquo;) of Wall Street Journal.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">Algorithmia</span>
+
+<span style="color:#366">input</span> <span style="color:#555">=</span> {
+  <span style="color:#c30">&#34;domains&#34;</span>: <span style="color:#c30">&#34;wsj.com&#34;</span>,
+  <span style="color:#c30">&#34;page&#34;</span>: <span style="color:#c30">&#34;1&#34;</span>
+}
+client <span style="color:#555">=</span> Algorithmia<span style="color:#555">.</span>client(<span style="color:#c30">&#39;YOUR_AlGORITHMIA_KEY&#39;</span>)
+algo <span style="color:#555">=</span> client<span style="color:#555">.</span>algo(<span style="color:#c30">&#39;specrom/Get_email_addresses_by_domain/0.2.3&#39;</span>)
+response_dict <span style="color:#555">=</span> algo<span style="color:#555">.</span>pipe(<span style="color:#366">input</span>)<span style="color:#555">.</span>result
+<span style="color:#069;font-weight:bold">print</span>(response_dict[<span style="color:#c30">&#34;Emails&#34;</span>])</code></pre></div>
+<pre><code>[{'also_extracted_on': 179,
+  'email_address': 'moderator@wsj.com',
+  'first_name': '',
+  'last_name': '',
+  'last_seen_on': '2020-08-01',
+  'url': 'https://www.wsj.com/articles/north-korea-reports-its-first-apparent-covid-19-case-11595722635'},
+ {'also_extracted_on': 165,
+  'email_address': 'petra.sorge@wsj.com',
+  'first_name': 'petra',
+  'last_name': 'sorge',
+  'last_seen_on': '2020-08-01',
+  'url': 'https://www.finanznachrichten.de/nachrichten-2020-07/50251284-umwelthilfe-onlinehandel-an-illegaler-geraete-entsorgung-mitschuldig-015.htm'},
+ {'also_extracted_on': 130,
+  'email_address': 'andreas.kissler@wsj.com',
+  'first_name': 'andreas',
+  'last_name': 'kissler',
+  'last_seen_on': '2020-08-01',
+  'url': 'https://www.finanznachrichten.de/nachrichten-2020-07/50246132-dreyer-haelt-verlaengerung-der-mehrwertsteuersenkung-fuer-moeglich-015.htm'},
+ {'also_extracted_on': 70,
+  'email_address': 'wsj.ltrs@wsj.com',
+  'first_name': 'wsj',
+  'last_name': 'ltrs',
+  'last_seen_on': '2020-07-24',
+  'url': 'http://www.blacks4barack.net/2010/06/watch-presidents-weekly-address.html'},
+ {'also_extracted_on': 63,
+  'email_address': 'dave.sebastian@wsj.com',
+  'first_name': 'dave',
+  'last_name': 'sebastian',
+  'last_seen_on': '2020-08-01',
+  'url': 'https://www.marketwatch.com/story/po-cruises-extends-sailing-pause-in-australia-2020-07-23'},
+ {'also_extracted_on': 40,
+  'email_address': 'matt.grossman@wsj.com',
+  'first_name': 'matt',
+  'last_name': 'grossman',
+  'last_seen_on': '2020-08-01',
+  'url': 'https://www.marketscreener.com/DOW-INC-56112378/news/Dow-Records-2Q-Loss-as-Sales-Fall-Across-Categories-30976109/?utm_medium=RSS&amp;utm_content=20200723'},
+.
+.
+.
+</code></pre>
+
+<p>Let us extract just the first names, last names email addresses and domain address from the above JSON so that we can directly use it as an input to the people search API.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">return_list <span style="color:#555">=</span> []
+<span style="color:#069;font-weight:bold">for</span> res <span style="color:#000;font-weight:bold">in</span> response_dict[<span style="color:#c30">&#34;Emails&#34;</span>]:
+    <span style="color:#069;font-weight:bold">if</span> res[<span style="color:#c30">&#34;first_name&#34;</span>] <span style="color:#555">!=</span> <span style="color:#c30">&#39;&#39;</span>:
+        temp_dict <span style="color:#555">=</span> {}
+        temp_dict[<span style="color:#c30">&#34;emails&#34;</span>] <span style="color:#555">=</span> res[<span style="color:#c30">&#34;email_address&#34;</span>]
+        temp_dict[<span style="color:#c30">&#34;first_name&#34;</span>] <span style="color:#555">=</span> res[<span style="color:#c30">&#34;first_name&#34;</span>]
+        temp_dict[<span style="color:#c30">&#34;last_name&#34;</span>] <span style="color:#555">=</span> res[<span style="color:#c30">&#34;last_name&#34;</span>]
+        temp_dict[<span style="color:#c30">&#34;domain&#34;</span>] <span style="color:#555">=</span> res[<span style="color:#c30">&#34;email_address&#34;</span>]<span style="color:#555">.</span>split(<span style="color:#c30">&#39;@&#39;</span>)[<span style="color:#f60">1</span>]
+        return_list<span style="color:#555">.</span>append(temp_dict)
+        
+return_list</code></pre></div>
+<pre><code>[{'domain': 'wsj.com',
+  'emails': 'petra.sorge@wsj.com',
+  'first_name': 'petra',
+  'last_name': 'sorge'},
+ {'domain': 'wsj.com',
+  'emails': 'andreas.kissler@wsj.com',
+  'first_name': 'andreas',
+  'last_name': 'kissler'},
+ {'domain': 'wsj.com',
+  'emails': 'wsj.ltrs@wsj.com',
+  'first_name': 'wsj',
+  'last_name': 'ltrs'},
+ {'domain': 'wsj.com',
+  'emails': 'dave.sebastian@wsj.com',
+  .
+  .
+  {'domain': 'wsj.com',
+  'emails': 'andrea.thomas@wsj.com',
+  'first_name': 'andrea',
+  'last_name': 'thomas'}]
+</code></pre>
+
+<p>People search API returns five results for a given input; we can enrich our database by specifically extracting linkedin titles, urls etc. Since we are working with email addresses associated with Wall Street Journal, it is also relevant to extract urls from Muckrack which is a journalist database and contains recent news articles by a particular journalist.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">for</span> val <span style="color:#000;font-weight:bold">in</span> return_list[:<span style="color:#f60">5</span>]:
+    
+    <span style="color:#366">input</span> <span style="color:#555">=</span> val
+    client <span style="color:#555">=</span> Algorithmia<span style="color:#555">.</span>client(<span style="color:#c30">&#39;simp/UVi9WzPfbAVafQRi7+aNa61&#39;</span>)
+    algo <span style="color:#555">=</span> client<span style="color:#555">.</span>algo(<span style="color:#c30">&#39;specrom/People_search/0.3.3&#39;</span>)
+    response <span style="color:#555">=</span> algo<span style="color:#555">.</span>pipe(<span style="color:#366">input</span>)<span style="color:#555">.</span>result
+    <span style="color:#09f;font-style:italic">#print(response[&#34;Results&#34;])</span>
+
+    val[<span style="color:#c30">&#34;linkedin_url&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;linkedin_title&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;linkedin_snippet&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;muckrack_url&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;muckrack_title&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;muckrack_snippet&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;bio_url&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;bio_title&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>
+    val[<span style="color:#c30">&#34;bio_snippet&#34;</span>] <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span>        
+
+    <span style="color:#069;font-weight:bold">for</span> result <span style="color:#000;font-weight:bold">in</span> response[<span style="color:#c30">&#34;Results&#34;</span>]:
+            <span style="color:#069;font-weight:bold">if</span> <span style="color:#c30">&#39;linkedin&#39;</span> <span style="color:#000;font-weight:bold">in</span> result[<span style="color:#c30">&#34;url&#34;</span>]:
+                val[<span style="color:#c30">&#34;linkedin_url&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;url&#34;</span>]
+                val[<span style="color:#c30">&#34;linkedin_title&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;title&#34;</span>]
+                val[<span style="color:#c30">&#34;linkedin_snippet&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;snippet&#34;</span>]
+
+            <span style="color:#069;font-weight:bold">if</span> <span style="color:#c30">&#39;muckrack&#39;</span> <span style="color:#000;font-weight:bold">in</span> result[<span style="color:#c30">&#34;url&#34;</span>]:
+                val[<span style="color:#c30">&#34;muckrack_url&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;url&#34;</span>]
+                val[<span style="color:#c30">&#34;muckrack_title&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;title&#34;</span>]
+                val[<span style="color:#c30">&#34;muckrack_snippet&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;snippet&#34;</span>]
+
+            <span style="color:#069;font-weight:bold">if</span> val[<span style="color:#c30">&#34;first_name&#34;</span>] <span style="color:#000;font-weight:bold">in</span> result[<span style="color:#c30">&#34;title&#34;</span>]<span style="color:#555">.</span>lower() <span style="color:#000;font-weight:bold">or</span> val[<span style="color:#c30">&#34;last_name&#34;</span>] <span style="color:#000;font-weight:bold">in</span> result[<span style="color:#c30">&#34;title&#34;</span>]<span style="color:#555">.</span>lower() <span style="color:#000;font-weight:bold">and</span> <span style="color:#c30">&#39;muckrack&#39;</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> result[<span style="color:#c30">&#34;url&#34;</span>]:
+                val[<span style="color:#c30">&#34;bio_url&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;url&#34;</span>]
+                val[<span style="color:#c30">&#34;bio_title&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;title&#34;</span>]
+                val[<span style="color:#c30">&#34;bio_snippet&#34;</span>] <span style="color:#555">=</span> result[<span style="color:#c30">&#34;snippet&#34;</span>]</code></pre></div>
+<p>As a final step, let&rsquo;s load this up on a dataframe.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pandas</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">pd</span>
+<span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">numpy</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">np</span>
+
+df <span style="color:#555">=</span> pd<span style="color:#555">.</span>DataFrame(return_list[:<span style="color:#f60">5</span>])
+df<span style="color:#555">.</span>head()</code></pre></div>
+<figure>
+    <img src="./data-enrichment-images/dataframe-screenshot.PNG"/> 
+</figure>
+
+
+<p>This is just an example of how quickly you can enrich your database and power your sales and marketing strategies.</p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="http://jaympatel.com/categories/#data-science" class="badge badge-primary"><span>data-science</span></a>
+                    
+                
+                
+                    
+                        <a href="http://jaympatel.com/tags/#web-scraping" class="badge badge-secondary"><span>web-scraping</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#tutorial" class="badge badge-secondary"><span>tutorial</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#data-enrichment" class="badge badge-secondary"><span>data-enrichment</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#email-database" class="badge badge-secondary"><span>email-database</span></a>
+                    
+                        <a href="http://jaympatel.com/tags/#person-search-engine" class="badge badge-secondary"><span>person-search-engine</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2020 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction data enrichment based on email addresses and domain names</title>
+      <link>http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/</guid>
+      <description>Data enrichment is a general term to denote any processes which enhance and enrich your existing database with additional information which can be used to drive your business goals such as marketing, sales and lead generation, customer relations by targeted outreach and preventing customer churn.
+Plainly speaking, all you are doing is going out to a third party data vendor and fetching additional data based on some common key. One of the most keys for data enrichment is searching based on email address or company&amp;rsquo;s domain address.</description>
+    </item>
     
     <item>
       <title>How to do full text searching in Python using Whoosh library</title>
