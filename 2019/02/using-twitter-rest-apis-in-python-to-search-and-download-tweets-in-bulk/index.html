@@ -9,7 +9,7 @@
              "@id": "http://jaympatel.com"
         },
         "articleSection" : "post",
-        "name" : "Using Twitter rest APIs in python to search and download tweets in bulk",
+        "name" : "Using Twitter rest APIs in Python to search and download tweets in bulk",
         "headline" : "Data Science consulting, training and speaking",
         "description" : "Using twitter rest APIs to search and download tweets in bulk",
         "inLanguage" : "en",
@@ -22,12 +22,12 @@
         "datePublished": "2019-02-01 00:00:00 +0000 UTC",
         "dateModified" : "2019-02-01 00:00:00 +0000 UTC",
         "url" : "/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/",
-        "wordCount" : "735",
+        "wordCount" : "884",
         "keywords" : [ "machine learning","text mining","Tweepy","language detection","Blog" ]
     }
 </script>
 <title>
-    Using Twitter rest APIs in python to search and download tweets in bulk &ndash; Jay M. Patel
+    Using Twitter rest APIs in Python to search and download tweets in bulk &ndash; Jay M. Patel
 </title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -35,26 +35,26 @@
 
 
 
-<meta itemprop="name" content="Using Twitter rest APIs in python to search and download tweets in bulk">
+<meta itemprop="name" content="Using Twitter rest APIs in Python to search and download tweets in bulk">
 <meta itemprop="description" content="Using twitter rest APIs to search and download tweets in bulk">
 
 
 <meta itemprop="datePublished" content="2019-02-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="735">
+<meta itemprop="wordCount" content="884">
 
 
 
 <meta itemprop="keywords" content="machine learning,text mining,Tweepy,language detection," />
 
-<meta property="og:title" content="Using Twitter rest APIs in python to search and download tweets in bulk" />
+<meta property="og:title" content="Using Twitter rest APIs in Python to search and download tweets in bulk" />
 <meta property="og:description" content="Using twitter rest APIs to search and download tweets in bulk" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/" /><meta property="article:published_time" content="2019-02-01T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2019-02-01T00:00:00&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Using Twitter rest APIs in python to search and download tweets in bulk"/>
+<meta name="twitter:title" content="Using Twitter rest APIs in Python to search and download tweets in bulk"/>
 <meta name="twitter:description" content="Using twitter rest APIs to search and download tweets in bulk"/>
 
 
@@ -116,7 +116,7 @@
                             
                                 <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
                             
-                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a>
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in Python to search and download tweets in bulk</a>
                             
                                 <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
                             
@@ -146,11 +146,11 @@
 <div class="card">
 
     <div class="card-body">
-        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in python to search and download tweets in bulk</a></h1>
+        <h1 class="card-title"><a href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in Python to search and download tweets in bulk</a></h1>
         <h6 class="card-subtitle mb-2 text-muted">
             01.02.2019 - 
             Jay M. Patel -
-            Reading time ~4 Minutes
+            Reading time ~5 Minutes
         </h6>
 
         <p class="card-text">
@@ -207,7 +207,11 @@ df<span style="color:#555">.</span>head()</code></pre></div><div class="highligh
 <span style="color:#f60">4</span>   <span style="color:#99f">@ZRHworker</span> <span style="color:#99f">@British_Airways</span> <span style="color:#99f">@Schmidy_87</span> <span style="color:#99f">@zrh_a...</span>   Stefan Paetow   <span style="color:#f60">2019</span><span style="color:#555">-</span><span style="color:#f60">03</span><span style="color:#555">-</span><span style="color:#f60">06</span> <span style="color:#f60">10</span>:<span style="color:#f60">02</span>:<span style="color:#f60">33</span></code></pre></div>
 <h3 id="language-detection">Language detection</h3>
 
-<p>The tweets downloaded by the code above can be in any language, and before we use this data for further text mining, we should classify it by performing language detection. For this purpose, we will use the library called Langid.</p>
+<p>The tweets downloaded by the code above can be in any language, and before we use this data for further text mining, we should classify it by performing language detection.</p>
+
+<p>In general, language detection is performed by a pretrained text classifier based on either the Naive Bayes algorithm or more modern neural networks. Google’s <a href="https://github.com/google/cld3">compact language detector library</a> is an excellent choice for production-level workloads where you have to analyze hundreds of thousands of documents in less than a few minutes. However, it’s a bit tricky to set up and as a result, a lot of people rely on calling a <a href="https://algorithmia.com/algorithms/specrom/NaturalLanguageDetection">language detection API</a> from third-party providers like Algorithmia which are free to use for hundreds of calls a month (sign up required).</p>
+
+<p>Let’s keep things simple in this example and just use a Python library called Langid which is orders of magnitude slower than the options discussed above but should be OK for us in this example since we are only to analyze about a hundred tweets.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">langid.langid</span> <span style="color:#069;font-weight:bold">import</span> LanguageIdentifier, model
 <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">get_lang</span>(document):
     identifier <span style="color:#555">=</span> LanguageIdentifier<span style="color:#555">.</span>from_modelstring(model, norm_probs<span style="color:#555">=</span>True)
@@ -225,7 +229,9 @@ Out:
 (<span style="color:#f60">45</span>, <span style="color:#f60">4</span>)</code></pre></div>
 <h3 id="getting-sentiments-score-for-tweets">Getting sentiments score for tweets</h3>
 
-<p>We can take df_filtered created in the preceding section and run it through a pretrained sentiments analysis library. For illustration purposes we are using the one present in Textblob, however, I would highly recommend using a more accurate sentiments model such as those in coreNLP or train your own model using Sklearn or Keras.</p>
+<p>We can take df_filtered created in the preceding section and run it through a pretrained sentiments analysis library. For illustration purposes we are using the one present in Textblob library, however, I would highly recommend using a more accurate sentiments model such as those in coreNLP or train your own model using Sklearn or Keras.</p>
+
+<p>Alternately, if you choose to go via the API route, then there is a pretty good <a href="https://algorithmia.com/algorithms/specrom/GetSentimentsScorefromText">sentiments API</a> at Algorithmia.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">textblob</span> <span style="color:#069;font-weight:bold">import</span> TextBlob
 
 <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">get_sentiments</span>(text):
