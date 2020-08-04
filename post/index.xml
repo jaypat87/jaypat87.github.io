@@ -88,7 +88,7 @@ Regular expressions (Regex) and rule based methods Regular expressions (Regex) m
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/</guid>
-      <description>Getting Twitter data Let&amp;rsquo;s use Tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.
+      <description>Getting Twitter data Let&amp;rsquo;s use the Tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.
 Let’s go ahead and get our imports loaded.
 import tweepy import pandas as pd import matplotlib.pyplot as plt import seaborn as sns import numpy as np sns.</description>
     </item>
