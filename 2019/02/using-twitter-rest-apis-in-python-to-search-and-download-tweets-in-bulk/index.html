@@ -22,8 +22,8 @@
         "datePublished": "2019-02-01 00:00:00 +0000 UTC",
         "dateModified" : "2019-02-01 00:00:00 +0000 UTC",
         "url" : "/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/",
-        "wordCount" : "732",
-        "keywords" : [ "machine learning","text mining","tweepy","language detection","Blog" ]
+        "wordCount" : "734",
+        "keywords" : [ "machine learning","text mining","Tweepy","language detection","Blog" ]
     }
 </script>
 <title>
@@ -41,11 +41,11 @@
 
 <meta itemprop="datePublished" content="2019-02-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="732">
+<meta itemprop="wordCount" content="734">
 
 
 
-<meta itemprop="keywords" content="machine learning,text mining,tweepy,language detection," />
+<meta itemprop="keywords" content="machine learning,text mining,Tweepy,language detection," />
 
 <meta property="og:title" content="Using Twitter rest APIs in python to search and download tweets in bulk" />
 <meta property="og:description" content="Using twitter rest APIs to search and download tweets in bulk" />
@@ -157,7 +157,7 @@
 
 <h3 id="getting-twitter-data">Getting Twitter data</h3>
 
-<p>Lets use <code>tweepy</code> package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.</p>
+<p>Let&rsquo;s use Tweepy package in python instead of handling the Twitter API directly. The two things we will do with the package are, authorize ourselves to use the API and then use the cursor to access the twitter search APIs.</p>
 
 <p>Let’s go ahead and get our imports loaded.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">tweepy</span>
@@ -170,16 +170,16 @@ sns<span style="color:#555">.</span><span style="color:#366">set</span>()
 <span style="color:#555">%</span>matplotlib inline</code></pre></div>
 <h4 id="twitter-authorization">Twitter authorization</h4>
 
-<p>To use the Twitter API, you must first register to get an API key. To get tweepy just install it via pip install tweepy. The tweepy documentation is best at explaining how to authenticate, but I’ll go over the basic steps.</p>
+<p>To use the Twitter API, you must first register to get an API key. To get Tweepy just install it via pip install Tweepy. The Tweepy documentation is best at explaining how to authenticate, but I’ll go over the basic steps.</p>
 
-<p>Once you register your app you will receive API keys, next use tweepy to get an OAuthHandler. I have the keys stored in a separate config dict.</p>
+<p>Once you register your app you will receive API keys, next use Tweepy to get an OAuthHandler. I have the keys stored in a separate config dict.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">config <span style="color:#555">=</span> {<span style="color:#c30">&#34;twitterConsumerKey&#34;</span>:<span style="color:#c30">&#34;XXXX&#34;</span>, <span style="color:#c30">&#34;twitterConsumerSecretKey&#34;</span> :<span style="color:#c30">&#34;XXXX&#34;</span>}
 auth <span style="color:#555">=</span> tweepy<span style="color:#555">.</span>OAuthHandler(config[<span style="color:#c30">&#34;twitterConsumerKey&#34;</span>], config[<span style="color:#c30">&#34;twitterConsumerSecretKey&#34;</span>])
 redirect_url <span style="color:#555">=</span> auth<span style="color:#555">.</span>get_authorization_url()
 redirect_url</code></pre></div>
-<p>Now that we’ve given tweepy our keys to generate an OAuthHandler, we will now use the handler to get a redirect URL. Go to the URL from the output in a browser where you can allow your app to authorize to your account so you can get access to the API.</p>
+<p>Now that we’ve given Tweepy our keys to generate an OAuthHandler, we will now use the handler to get a redirect URL. Go to the URL from the output in a browser where you can allow your app to authorize your account so you can get access to the API.</p>
 
-<p>Once you’ve authorized your account with the app, you’ll be given a PIN number. Use that number in tweepy to let it know that you’ve authorized it with the API.</p>
+<p>Once you’ve authorized your account with the app, you’ll be given a PIN number. Use that number in Tweepy to let it know that you’ve authorized it with the API.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pin <span style="color:#555">=</span> <span style="color:#c30">&#34;XXXX&#34;</span>
 auth<span style="color:#555">.</span>get_access_token(pin)</code></pre></div>
 <h3 id="searching-for-tweets">Searching for tweets</h3>
@@ -207,7 +207,7 @@ df<span style="color:#555">.</span>head()</code></pre></div><div class="highligh
 <span style="color:#f60">4</span>   <span style="color:#99f">@ZRHworker</span> <span style="color:#99f">@British_Airways</span> <span style="color:#99f">@Schmidy_87</span> <span style="color:#99f">@zrh_a...</span>   Stefan Paetow   <span style="color:#f60">2019</span><span style="color:#555">-</span><span style="color:#f60">03</span><span style="color:#555">-</span><span style="color:#f60">06</span> <span style="color:#f60">10</span>:<span style="color:#f60">02</span>:<span style="color:#f60">33</span></code></pre></div>
 <h3 id="language-detection">Language detection</h3>
 
-<p>The tweets downloaded by the code above can be in any language, and before we use this data for further text mining, we should classify it by performing language detection. For this purpose, we will use the library <code>langid</code>.</p>
+<p>The tweets downloaded by the code above can be in any language, and before we use this data for further text mining, we should classify it by performing language detection. For this purpose, we will use the library called Langid.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">langid.langid</span> <span style="color:#069;font-weight:bold">import</span> LanguageIdentifier, model
 <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">get_lang</span>(document):
     identifier <span style="color:#555">=</span> LanguageIdentifier<span style="color:#555">.</span>from_modelstring(model, norm_probs<span style="color:#555">=</span>True)
@@ -225,7 +225,7 @@ Out:
 (<span style="color:#f60">45</span>, <span style="color:#f60">4</span>)</code></pre></div>
 <h3 id="getting-sentiments-score-for-tweets">Getting sentiments score for tweets</h3>
 
-<p>We can take df_filtered created in preceding section and run it through a pretrained sentiments analysis library. For illustration purposes we are usng the one present in <code>textblob</code>, however, I would highly recommend using more accurate sentiments model such as those in coreNLP or train your own model using sklearn or keras.</p>
+<p>We can take df_filtered created in the preceding section and run it through a pretrained sentiments analysis library. For illustration purposes we are using the one present in Textblob, however, I would highly recommend using a more accurate sentiments model such as those in coreNLP or train your own model using Sklearn or Keras.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">textblob</span> <span style="color:#069;font-weight:bold">import</span> TextBlob
 
 <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">get_sentiments</span>(text):
@@ -255,7 +255,7 @@ Out:
 </span><span style="color:#a00;background-color:#faa"></span><span style="color:#c30">2   First #British Airways Flight to #Pakistan Wil...   Developing Pakistan     2019-03-06 10:24:43     en  positive    0.150</span><span style="color:#a00;background-color:#faa">
 </span><span style="color:#a00;background-color:#faa"></span><span style="color:#c30">3   I don’t know why he’s not happy. I thought he ...   Joyce Stevenson     2019-03-06 10:24:18     en  negative    -0.200</span><span style="color:#a00;background-color:#faa">
 </span><span style="color:#a00;background-color:#faa"></span><span style="color:#c30">4   Fancy winning a global holiday for you and a f...   Selective Travel Mgt 🌍  2019-03-06 10:23:40     en  positive    0.360</span></code></pre></div>
-<p>Let us plot the sentiments score to see how many negative, neutral and positive tweets people are sending for &ldquo;british airways&rdquo;. You can also save it as a csv file for further processing at a later time.</p>
+<p>Let us plot the sentiments score to see how many negative, neutral, and positive tweets people are sending for “British airways”. You can also save it as a CSV file for further processing at a later time.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">matplotlib.pyplot</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">plt</span>
 <span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">seaborn</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">sns</span>
 
@@ -269,7 +269,7 @@ g<span style="color:#555">.</span>set_ylabel(<span style="color:#c30">&#34;Count
 g<span style="color:#555">.</span>set_xlabel(<span style="color:#c30">&#34;Sentiment %&#34;</span>)</code></pre></div>
 <figure>
     <img src="./twitter-rest-api/image_1.jpg"/> <figcaption>
-            <h4>Figure 1: Sentiments for tweets containing the term british airways</h4>
+            <h4>Figure 1: Sentiments for tweets containing the term British airways</h4>
         </figcaption>
 </figure>
 

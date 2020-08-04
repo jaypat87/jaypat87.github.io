@@ -22,7 +22,7 @@
         "datePublished": "2020-08-03 00:00:00 +0000 UTC",
         "dateModified" : "2020-08-03 00:00:00 +0000 UTC",
         "url" : "/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/",
-        "wordCount" : "668",
+        "wordCount" : "675",
         "keywords" : [ "web scraping","tutorial","data enrichment","email database","person search engine","Blog" ]
     }
 </script>
@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2020-08-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-08-03T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="668">
+<meta itemprop="wordCount" content="675">
 
 
 
@@ -153,19 +153,19 @@
             Reading time ~4 Minutes
         </h6>
 
-        <p class="card-text"><p>Data enrichment is a general term to denote any processes which enhance and enrich your existing database with additional information which can be used to drive your business goals such as marketing, sales and lead generation, customer relations by targeted outreach and preventing customer churn.</p>
+        <p class="card-text"><p>Data enrichment is a general term to denote any processes which enhance and enrich your existing database with additional information that can be used to drive your business goals such as marketing, sales and lead generation, customer relations by targeted outreach, and preventing customer churn.</p>
 
-<p>Plainly speaking, all you are doing is going out to a third party data vendor and fetching additional data based on some common key. One of the most keys for data enrichment is searching based on email address or company&rsquo;s domain address.</p>
+<p>Plainly speaking, all you are doing is going out to a third-party data vendor and fetching additional data based on some common key. One of the most keys for data enrichment is searching based on an email address or company&rsquo;s domain address.</p>
 
-<p>Just giving email address as an input can be enough to get back information such as person&rsquo;s name,age, gender, social media handles such Twitter, Linkedin, short bio, phone numbers, work address, time zone, job title, seniority etc.</p>
+<p>Just giving an email address as an input can be enough to get back information such as a person&rsquo;s name, age, gender, social media handles such Twitter, Linkedin, short bio, phone numbers, work address, time zone, job title, seniority etc.</p>
 
-<p>You can also get company specific information related to person&rsquo;s employment such as size of company, location, size, stock ticker, postal addresses, etc.</p>
+<p>You can also get company-specific information related to a person&rsquo;s employment such as the size of company, location, size, stock ticker, postal addresses, etc.</p>
 
-<p>In this post, we will show you data enrichment in action by using freely available public APIs. We will start from scratch and get list of email addresses and names of employees associated with a particular domain address using <a href="https://algorithmia.com/algorithms/specrom/Get_email_addresses_by_domain">Email address database API</a>. Once we have that, we will fetch data from another API which returns results from a <a href="https://algorithmia.com/algorithms/specrom/People_search">person search engine</a> which gets us enriched information such as Linkedin handles, short bio etc.</p>
+<p>In this post, we will show you data enrichment in action by using freely available public APIs. We will start from scratch and get a list of email addresses and names of employees associated with a particular domain address using the <a href="https://algorithmia.com/algorithms/specrom/Get_email_addresses_by_domain">Email address database API</a>. Once we have that, we will fetch data from another API which returns results from a <a href="https://algorithmia.com/algorithms/specrom/People_search">person search engine</a> that gets us enriched information such as Linkedin handles, short bio ,etc.</p>
 
 <p>You will have to register at <a href="https://algorithmia.com/signup">Algorithmia</a> to get the free API keys (no credit card etc. required). You will get about free 10,000 credits when you sign up which should be plenty to call it hundreds of times.</p>
 
-<p>Let&rsquo;s start things off by requesting email addresses associated with the domain address (&ldquo;wsj.com&rdquo;) of Wall Street Journal.</p>
+<p>Let&rsquo;s start things off by requesting email addresses associated with the domain address (&ldquo;wsj.com&rdquo;) of the Wall Street Journal.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">Algorithmia</span>
 
 <span style="color:#366">input</span> <span style="color:#555">=</span> {
