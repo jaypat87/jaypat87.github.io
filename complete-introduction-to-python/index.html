@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://jaympatel.com"
+        },
+        "articleSection" : "",
+        "name" : "A Complete Introduction to Python 3.X",
+        "headline" : "Data Science consulting, training and speaking",
+        "description" : "An in depth and comprehensive introduction with hands-on approach on the core Python language (3.X)",
+        "inLanguage" : "en",
+        "author" : "Jay M. Patel",
+        "creator" : "Jay M. Patel",
+        "publisher": "Jay M. Patel",
+        "accountablePerson" : "Jay M. Patel",
+        "copyrightHolder" : "Jay M. Patel",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-09-28 00:00:00 +0000 UTC",
+        "dateModified" : "2020-09-28 00:00:00 +0000 UTC",
+        "url" : "/complete-introduction-to-python/",
+        "wordCount" : "6180",
+        "keywords" : [ "Blog" ]
+    }
+</script>
+<title>
+    A Complete Introduction to Python 3.X &ndash; Jay M. Patel
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://jaympatel.com/favicon.ico">
+
+
+
+<meta itemprop="name" content="A Complete Introduction to Python 3.X">
+<meta itemprop="description" content="An in depth and comprehensive introduction with hands-on approach on the core Python language (3.X)">
+
+
+<meta itemprop="datePublished" content="2020-09-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="6180">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta property="og:title" content="A Complete Introduction to Python 3.X" />
+<meta property="og:description" content="An in depth and comprehensive introduction with hands-on approach on the core Python language (3.X)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaympatel.com/complete-introduction-to-python/" /><meta property="article:published_time" content="2020-09-28T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-09-28T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Complete Introduction to Python 3.X"/>
+<meta name="twitter:description" content="An in depth and comprehensive introduction with hands-on approach on the core Python language (3.X)"/>
+
+
+<link rel="alternate" href="http://jaympatel.com/index.xml" type="application/rss+xml" title="Jay M. Patel"/>
+
+
+
+
+<link rel="stylesheet" href="http://jaympatel.com/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="http://jaympatel.com/">Jay M. Patel</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/consulting-services/">Consulting</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="http://jaympatel.com/books/">Books</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Python Intro</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/complete-introduction-to-python/">A Complete Introduction to Python 3.X</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown4" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown4">
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/01/introduction-to-machine-learning-metrics/">Introduction to machine learning metrics</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-web-scraping-in-python-using-beautiful-soup/">Introduction to web scraping in python using Beautiful Soup</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/why-is-web-scraping-essential-and-who-uses-web-scraping/">Why is web scraping essential and who uses web scraping?</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-create-pdf-documents-in-python-using-fpdf-library/">How to create pdf documents in python using FPDF library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/how-to-do-full-text-searching-in-python-using-whoosh-library/">How to do full text searching in Python using Whoosh library</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2020/08/introduction-data-enrichment-based-on-email-addresses-and-domain-names/">Introduction data enrichment based on email addresses and domain names</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/introduction-to-natural-language-processing-rule-based-methods-name-entity-recognition-ner-and-text-classification/">Introduction to natural language processing: rule based methods, name entity recognition (NER), and text classification</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/using-twitter-rest-apis-in-python-to-search-and-download-tweets-in-bulk/">Using Twitter rest APIs in Python to search and download tweets in bulk</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-word-embeddings-words2vec-glove-based-text-vectorization-in-python/">Natural language processing (NLP): word embeddings, words2vec, GloVe based text vectorization in python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-text-vectorization-and-bag-of-words-approach/">Natural language processing (NLP): text vectorization and bag of words approach</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/natural-language-processing-nlp-term-frequency-inverse-document-frequency-tf-idf-based-vectorization-in-python/">Natural language processing (NLP): term frequency - inverse document frequency (Tf-idf) based vectorization in Python</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2019/02/top-data-science-interview-questions-and-answers/">Top data science interview questions and answers</a>
+                            
+                                <a class="dropdown-item text-primary" href="http://jaympatel.com/2018/11/get-started-with-git-and-github-in-under-10-minutes/">Get started with Git and Github in under 10 Minutes</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="http://jaympatel.com/complete-introduction-to-python/">A Complete Introduction to Python 3.X</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            28.09.2020 - 
+            Jay M. Patel -
+            Reading time ~30 Minutes
+        </h6>
+		
+		<aside>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#main-content">Main Content</a>
+<ul>
+<li><a href="#1-0-installation">1.0 Installation</a></li>
+<li><a href="#2-0-hello-world-and-python-syntax">2.0 Hello World! and Python Syntax</a></li>
+<li><a href="#3-0-python-scripts">3.0 Python Scripts</a></li>
+<li><a href="#4-0-python-keywords-and-builtins">4.0 Python Keywords and Builtins</a></li>
+<li><a href="#5-0-data-structures">5.0 Data Structures</a></li>
+<li><a href="#5-1-lists">5.1 Lists</a>
+<ul>
+<li><a href="#5-1-1-list-comprehensions">5.1.1 List Comprehensions</a></li>
+<li><a href="#5-1-2-zip">5.1.2 zip()</a></li>
+<li><a href="#5-1-3-map">5.1.3 map()</a></li>
+</ul></li>
+<li><a href="#5-2-strings">5.2 Strings</a>
+<ul>
+<li><a href="#5-2-1-basic-string-manipulations">5.2.1 Basic String Manipulations</a></li>
+<li><a href="#5-2-2-substring-matching">5.2.2 Substring Matching</a></li>
+<li><a href="#5-2-3-string-formatting">5.2.3 String Formatting</a></li>
+<li><a href="#5-2-4-multiple-string-modifications">5.2.4 Multiple String Modifications</a></li>
+<li><a href="#5-2-5-deep-copy-vs-shallow-copy">5.2.5 Deep Copy vs Shallow Copy</a></li>
+<li><a href="#5-2-6-regular-expressions-regex">5.2.6 Regular Expressions (Regex)</a></li>
+</ul></li>
+<li><a href="#5-3-dictionary-dict">5.3 Dictionary (Dict)</a>
+<ul>
+<li><a href="#5-3-1-zip">5.3.1 zip()</a></li>
+<li><a href="#5-3-2-dict-comprehensions">5.3.2 Dict Comprehensions</a></li>
+</ul></li>
+<li><a href="#5-4-tuples">5.4 Tuples</a></li>
+<li><a href="#5-5-sets">5.5 Sets</a></li>
+<li><a href="#5-6-more-specialized-data-structures">5.6 More Specialized Data Structures</a></li>
+<li><a href="#6-0-operators">6.0 Operators</a>
+<ul>
+<li><a href="#6-1-arithmetic">6.1 Arithmetic</a></li>
+<li><a href="#6-2-comparison">6.2 Comparison</a></li>
+<li><a href="#6-3-identity-and-membership">6.3 Identity and Membership</a></li>
+<li><a href="#6-4-bitwise-operators">6.4 Bitwise Operators</a></li>
+</ul></li>
+<li><a href="#7-0-decision-statements">7.0 Decision Statements</a></li>
+<li><a href="#8-0-loops">8.0 Loops</a>
+<ul>
+<li><a href="#8-1-revisting-list-comprehensions">8.1 Revisting List Comprehensions</a></li>
+<li><a href="#8-2-list-generator-expressions">8.2 List Generator Expressions</a></li>
+<li><a href="#8-3-enumerate">8.3 enumerate</a></li>
+</ul></li>
+<li><a href="#9-0-functions">9.0 Functions</a>
+<ul>
+<li><a href="#9-1-args-and-kwargs-flexible-arguments">9.1 <code>*args</code> and <code>**kwargs</code>: Flexible Arguments</a></li>
+<li><a href="#9-2-lambda-functions">9.2 Lambda Functions</a></li>
+<li><a href="#9-3-scopes-and-namespaces">9.3 Scopes and Namespaces</a></li>
+<li><a href="#9-4-decorators">9.4 Decorators</a></li>
+</ul></li>
+<li><a href="#10-0-catching-errors-and-exceptions">10.0 Catching Errors and Exceptions</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</aside>
+        <p class="card-text">
+
+<h1 id="introduction">Introduction</h1>
+
+<p>This is a first draft of an introductory level tutorial on Python 3.x. It is designed to get a user familiar with core elements of the language in less than one hour without getting bogged down in intricate complexities or edge cases.</p>
+
+<p>This tutorial will NOT cover Numfocus based libraries such as Matplotlib, Numpy, Pandas, scikit-learn, etc.</p>
+
+<p>We will also not get into building blocks of any introductory level computer science class which discusses algorithms, big O notation, most efficient sorting implementations etc., abstract data structures such as stacks, queues,linked lists, hash tables, trees etc.</p>
+
+<p>Python contains complete support for object oriented programming (OOP) but to keep things simple we are going to stick with functional programming style in the examples.</p>
+
+<p>We are also going to stay away from machine learning and data science topics such as natural language processing algorithms etc. but you are encouraged to check out those tutorials by going to the menu and navigating to the tutorial of your choice.</p>
+
+<h2 id="main-content">Main Content</h2>
+
+<h3 id="1-0-installation">1.0 Installation</h3>
+
+<p>The best way to work with Python is installing the <a href="https://www.anaconda.com/products/individual">Anaconda distribution</a> for your programming language. It packages the all the relevant libraries that will be useful not just for introductory level discussion on Python but will serve you well even when you move to advanced data science and programming use cases. We will be assuming that you are running Python 3.x for rest of this tutorial series.</p>
+
+<h3 id="2-0-hello-world-and-python-syntax">2.0 Hello World! and Python Syntax</h3>
+
+<p>Once you have anaconda installed, let us take it for a spin by calling Python interpreter from your bash or command line.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; python
+Python <span style="color:#f60">3</span>.6.4 |Anaconda, Inc.| <span style="color:#555">(</span>default, Jan <span style="color:#f60">16</span> <span style="color:#f60">2018</span>, <span style="color:#f60">10</span>:22:32<span style="color:#555">)</span> <span style="color:#555">[</span>MSC v.1900 <span style="color:#f60">64</span> bit <span style="color:#555">(</span>AMD64<span style="color:#555">)]</span> on win32
+Type <span style="color:#c30">&#34;help&#34;</span>, <span style="color:#c30">&#34;copyright&#34;</span>, <span style="color:#c30">&#34;credits&#34;</span> or <span style="color:#c30">&#34;license&#34;</span> <span style="color:#069;font-weight:bold">for</span> more information.
+&gt;&gt;&gt;</code></pre></div>
+<p>You can alternately start the ipython as shown below. This gives access to many more features than the plan python interpreter. Visually, the major difference is <code>&gt;&gt;&gt;</code> for python interpreter vs <code>[]</code> for the ipython.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; ipython
+Python <span style="color:#f60">3</span>.6.4 |Anaconda, Inc.| <span style="color:#555">(</span>default, Jan <span style="color:#f60">16</span> <span style="color:#f60">2018</span>, <span style="color:#f60">10</span>:22:32<span style="color:#555">)</span> <span style="color:#555">[</span>MSC v.1900 <span style="color:#f60">64</span> bit <span style="color:#555">(</span>AMD64<span style="color:#555">)]</span>
+Type <span style="color:#c30">&#39;copyright&#39;</span>, <span style="color:#c30">&#39;credits&#39;</span> or <span style="color:#c30">&#39;license&#39;</span> <span style="color:#069;font-weight:bold">for</span> more information
+IPython <span style="color:#f60">6</span>.2.1 -- An enhanced Interactive Python. Type <span style="color:#c30">&#39;?&#39;</span> <span style="color:#069;font-weight:bold">for</span> help.
+
+In <span style="color:#555">[</span><span style="color:#f60">1</span><span style="color:#555">]</span>:</code></pre></div>
+<p>Python has incredibly simple syntax and the major difference for someone coming over from C based languages is that semicolons arent required for single statements on one line.</p>
+
+<p>The hello world statement is very simple:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#39;hello world!&#39;</span>)
+<span style="color:#09f;font-style:italic">#Output:</span>
+hello world<span style="color:#a00;background-color:#faa">!</span></code></pre></div>
+<p>The only exception to this is if you need to write multiple statements on one line</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#555">=</span> <span style="color:#f60">1</span>; y <span style="color:#555">=</span> <span style="color:#f60">2</span>; <span style="color:#069;font-weight:bold">print</span>(x <span style="color:#555">+</span> y)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">3</span></code></pre></div>
+<p>Indentations serve the same purpose as curly brackets &ldquo;{&rdquo; for marking end of for/while loops or if/elseif/else statements. If you need one expression to span multiple lines, than you can use either parentheses &ldquo;()&rdquo;, brackets &ldquo;[]&ldquo;, or curly &ldquo;{}&rdquo; braces.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x1, x2, x3, x4 <span style="color:#555">=</span> <span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">4</span>
+
+X <span style="color:#555">=</span> (x1 <span style="color:#555">+</span> x2 <span style="color:#555">+</span>
+     x3 <span style="color:#555">+</span> x4)
+     
+<span style="color:#069;font-weight:bold">print</span> (X)
+
+testlist <span style="color:#555">=</span> [<span style="color:#f60">1</span>,
+            <span style="color:#f60">2</span>,
+            <span style="color:#f60">3</span>]
+<span style="color:#069;font-weight:bold">print</span> (testlist)
+<span style="color:#09f;font-style:italic"># Output</span>
+<span style="color:#f60">10</span>
+[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>]</code></pre></div>
+<p>For simple expressions such as print or function calls, you can put a compound statement on same line after the colon</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#555">=</span> <span style="color:#f60">3</span>, <span style="color:#f60">2</span>
+<span style="color:#069;font-weight:bold">if</span> x <span style="color:#555">&gt;</span> y: <span style="color:#069;font-weight:bold">print</span>(x)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">3</span></code></pre></div>
+<h3 id="3-0-python-scripts">3.0 Python Scripts</h3>
+
+<p>We can run more complicated Python scripts by saving the code to file, and execute it all at once. By convention, Python scripts are saved in files with a <em>.py</em> extension. For example, let&rsquo;s create a script called <em>test.py</em> which contains the following:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic"># file: test.py</span>
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;Running test.py file&#34;</span>)
+x <span style="color:#555">=</span> <span style="color:#f60">5</span>
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;Result is&#34;</span>, <span style="color:#f60">200</span> <span style="color:#555">*</span> x)</code></pre></div>
+<p>To run this file, we make sure it is in the current directory and type <code>python</code> <em><code>filename</code></em> at the command prompt:</p>
+
+<pre><code>$ python test.py
+&quot;Running test.py file&quot;
+Result is 1000
+</code></pre>
+
+<p>If you prefer a line by line code execution, than you should check out <a href="https://jupyter.org/">Jupyter notebooks</a> which will allow you to thoroughly test your code and interactively work with output (even plots and charts) from right in your browser. Anaconda distribution already includes a Jupyter notebook so starting a new instance is as simple as calling <code>jupyter notebook</code> from your command line or bash.</p>
+
+<h3 id="4-0-python-keywords-and-builtins">4.0 Python Keywords and Builtins</h3>
+
+<p>python only has a handful of keywords, and they can be shown by the command below:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">keyword</span>
+<span style="color:#069;font-weight:bold">print</span>(keyword<span style="color:#555">.</span>kwlist)
+<span style="color:#09f;font-style:italic"># Output</span>
+
+[<span style="color:#c30">&#39;False&#39;</span>, <span style="color:#c30">&#39;None&#39;</span>, <span style="color:#c30">&#39;True&#39;</span>, <span style="color:#c30">&#39;and&#39;</span>, <span style="color:#c30">&#39;as&#39;</span>, <span style="color:#c30">&#39;assert&#39;</span>, <span style="color:#c30">&#39;break&#39;</span>, <span style="color:#c30">&#39;class&#39;</span>, <span style="color:#c30">&#39;continue&#39;</span>, <span style="color:#c30">&#39;def&#39;</span>, <span style="color:#c30">&#39;del&#39;</span>, <span style="color:#c30">&#39;elif&#39;</span>, <span style="color:#c30">&#39;else&#39;</span>, <span style="color:#c30">&#39;except&#39;</span>, <span style="color:#c30">&#39;finally&#39;</span>, <span style="color:#c30">&#39;for&#39;</span>, <span style="color:#c30">&#39;from&#39;</span>, <span style="color:#c30">&#39;global&#39;</span>, <span style="color:#c30">&#39;if&#39;</span>, <span style="color:#c30">&#39;import&#39;</span>, <span style="color:#c30">&#39;in&#39;</span>, <span style="color:#c30">&#39;is&#39;</span>, <span style="color:#c30">&#39;lambda&#39;</span>, <span style="color:#c30">&#39;nonlocal&#39;</span>, <span style="color:#c30">&#39;not&#39;</span>, <span style="color:#c30">&#39;or&#39;</span>, <span style="color:#c30">&#39;pass&#39;</span>, <span style="color:#c30">&#39;raise&#39;</span>, <span style="color:#c30">&#39;return&#39;</span>, <span style="color:#c30">&#39;try&#39;</span>, <span style="color:#c30">&#39;while&#39;</span>, <span style="color:#c30">&#39;with&#39;</span>, <span style="color:#c30">&#39;yield&#39;</span>]</code></pre></div>
+<p>The Python interpreter has a number of functions and types built into it that are always available.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">builtins</span>
+<span style="color:#366">dir</span>(__builtins__)
+<span style="color:#09f;font-style:italic"># Output:</span>
+[<span style="color:#c30">&#39;ArithmeticError&#39;</span>, <span style="color:#c30">&#39;AssertionError&#39;</span>, <span style="color:#c30">&#39;AttributeError&#39;</span>, <span style="color:#c30">&#39;BaseException&#39;</span>, <span style="color:#c30">&#39;BlockingIOError&#39;</span>, <span style="color:#c30">&#39;BrokenPipeError&#39;</span>, <span style="color:#c30">&#39;BufferError&#39;</span>, <span style="color:#c30">&#39;BytesWarning&#39;</span>, <span style="color:#c30">&#39;ChildProcessError&#39;</span>, <span style="color:#c30">&#39;ConnectionAbortedError&#39;</span>, <span style="color:#c30">&#39;ConnectionError&#39;</span>, <span style="color:#c30">&#39;ConnectionRefusedError&#39;</span>, <span style="color:#c30">&#39;ConnectionResetError&#39;</span>, <span style="color:#c30">&#39;DeprecationWarning&#39;</span>, <span style="color:#c30">&#39;EOFError&#39;</span>, <span style="color:#c30">&#39;Ellipsis&#39;</span>, <span style="color:#c30">&#39;EnvironmentError&#39;</span>, <span style="color:#c30">&#39;Exception&#39;</span>, <span style="color:#c30">&#39;False&#39;</span>, <span style="color:#c30">&#39;FileExistsError&#39;</span>, <span style="color:#c30">&#39;FileNotFoundError&#39;</span>, <span style="color:#c30">&#39;FloatingPointError&#39;</span>, <span style="color:#c30">&#39;FutureWarning&#39;</span>, <span style="color:#c30">&#39;GeneratorExit&#39;</span>, <span style="color:#c30">&#39;IOError&#39;</span>, <span style="color:#c30">&#39;ImportError&#39;</span>, <span style="color:#c30">&#39;ImportWarning&#39;</span>, <span style="color:#c30">&#39;IndentationError&#39;</span>, <span style="color:#c30">&#39;IndexError&#39;</span>, <span style="color:#c30">&#39;InterruptedError&#39;</span>, <span style="color:#c30">&#39;IsADirectoryError&#39;</span>, <span style="color:#c30">&#39;KeyError&#39;</span>, <span style="color:#c30">&#39;KeyboardInterrupt&#39;</span>, <span style="color:#c30">&#39;LookupError&#39;</span>, <span style="color:#c30">&#39;MemoryError&#39;</span>, <span style="color:#c30">&#39;ModuleNotFoundError&#39;</span>, <span style="color:#c30">&#39;NameError&#39;</span>, <span style="color:#c30">&#39;None&#39;</span>, <span style="color:#c30">&#39;NotADirectoryError&#39;</span>, <span style="color:#c30">&#39;NotImplemented&#39;</span>, <span style="color:#c30">&#39;NotImplementedError&#39;</span>, <span style="color:#c30">&#39;OSError&#39;</span>, <span style="color:#c30">&#39;OverflowError&#39;</span>, <span style="color:#c30">&#39;PendingDeprecationWarning&#39;</span>, <span style="color:#c30">&#39;PermissionError&#39;</span>, <span style="color:#c30">&#39;ProcessLookupError&#39;</span>, <span style="color:#c30">&#39;RecursionError&#39;</span>, <span style="color:#c30">&#39;ReferenceError&#39;</span>, <span style="color:#c30">&#39;ResourceWarning&#39;</span>, <span style="color:#c30">&#39;RuntimeError&#39;</span>, <span style="color:#c30">&#39;RuntimeWarning&#39;</span>, <span style="color:#c30">&#39;StopAsyncIteration&#39;</span>, <span style="color:#c30">&#39;StopIteration&#39;</span>, <span style="color:#c30">&#39;SyntaxError&#39;</span>, <span style="color:#c30">&#39;SyntaxWarning&#39;</span>, <span style="color:#c30">&#39;SystemError&#39;</span>, <span style="color:#c30">&#39;SystemExit&#39;</span>, <span style="color:#c30">&#39;TabError&#39;</span>, <span style="color:#c30">&#39;TimeoutError&#39;</span>, <span style="color:#c30">&#39;True&#39;</span>, <span style="color:#c30">&#39;TypeError&#39;</span>, <span style="color:#c30">&#39;UnboundLocalError&#39;</span>, <span style="color:#c30">&#39;UnicodeDecodeError&#39;</span>, <span style="color:#c30">&#39;UnicodeEncodeError&#39;</span>, <span style="color:#c30">&#39;UnicodeError&#39;</span>, <span style="color:#c30">&#39;UnicodeTranslateError&#39;</span>, <span style="color:#c30">&#39;UnicodeWarning&#39;</span>, <span style="color:#c30">&#39;UserWarning&#39;</span>, <span style="color:#c30">&#39;ValueError&#39;</span>, <span style="color:#c30">&#39;Warning&#39;</span>, <span style="color:#c30">&#39;WindowsError&#39;</span>, <span style="color:#c30">&#39;ZeroDivisionError&#39;</span>, <span style="color:#c30">&#39;__IPYTHON__&#39;</span>, <span style="color:#c30">&#39;__build_class__&#39;</span>, <span style="color:#c30">&#39;__debug__&#39;</span>, <span style="color:#c30">&#39;__doc__&#39;</span>, <span style="color:#c30">&#39;__import__&#39;</span>, <span style="color:#c30">&#39;__loader__&#39;</span>, <span style="color:#c30">&#39;__name__&#39;</span>, <span style="color:#c30">&#39;__package__&#39;</span>, <span style="color:#c30">&#39;__spec__&#39;</span>, <span style="color:#c30">&#39;abs&#39;</span>, <span style="color:#c30">&#39;all&#39;</span>, <span style="color:#c30">&#39;any&#39;</span>, <span style="color:#c30">&#39;ascii&#39;</span>, <span style="color:#c30">&#39;bin&#39;</span>, <span style="color:#c30">&#39;bool&#39;</span>, <span style="color:#c30">&#39;bytearray&#39;</span>, <span style="color:#c30">&#39;bytes&#39;</span>, <span style="color:#c30">&#39;callable&#39;</span>, <span style="color:#c30">&#39;chr&#39;</span>, <span style="color:#c30">&#39;classmethod&#39;</span>, <span style="color:#c30">&#39;compile&#39;</span>, <span style="color:#c30">&#39;complex&#39;</span>, <span style="color:#c30">&#39;copyright&#39;</span>, <span style="color:#c30">&#39;credits&#39;</span>, <span style="color:#c30">&#39;delattr&#39;</span>, <span style="color:#c30">&#39;dict&#39;</span>, <span style="color:#c30">&#39;dir&#39;</span>, <span style="color:#c30">&#39;display&#39;</span>, <span style="color:#c30">&#39;divmod&#39;</span>, <span style="color:#c30">&#39;enumerate&#39;</span>, <span style="color:#c30">&#39;eval&#39;</span>, <span style="color:#c30">&#39;exec&#39;</span>, <span style="color:#c30">&#39;filter&#39;</span>, <span style="color:#c30">&#39;float&#39;</span>, <span style="color:#c30">&#39;format&#39;</span>, <span style="color:#c30">&#39;frozenset&#39;</span>, <span style="color:#c30">&#39;get_ipython&#39;</span>, <span style="color:#c30">&#39;getattr&#39;</span>, <span style="color:#c30">&#39;globals&#39;</span>, <span style="color:#c30">&#39;hasattr&#39;</span>, <span style="color:#c30">&#39;hash&#39;</span>, <span style="color:#c30">&#39;help&#39;</span>, <span style="color:#c30">&#39;hex&#39;</span>, <span style="color:#c30">&#39;id&#39;</span>, <span style="color:#c30">&#39;input&#39;</span>, <span style="color:#c30">&#39;int&#39;</span>, <span style="color:#c30">&#39;isinstance&#39;</span>, <span style="color:#c30">&#39;issubclass&#39;</span>, <span style="color:#c30">&#39;iter&#39;</span>, <span style="color:#c30">&#39;len&#39;</span>, <span style="color:#c30">&#39;license&#39;</span>, <span style="color:#c30">&#39;list&#39;</span>, <span style="color:#c30">&#39;locals&#39;</span>, <span style="color:#c30">&#39;map&#39;</span>, <span style="color:#c30">&#39;max&#39;</span>, <span style="color:#c30">&#39;memoryview&#39;</span>, <span style="color:#c30">&#39;min&#39;</span>, <span style="color:#c30">&#39;next&#39;</span>, <span style="color:#c30">&#39;object&#39;</span>, <span style="color:#c30">&#39;oct&#39;</span>, <span style="color:#c30">&#39;open&#39;</span>, <span style="color:#c30">&#39;ord&#39;</span>, <span style="color:#c30">&#39;pow&#39;</span>, <span style="color:#c30">&#39;print&#39;</span>, <span style="color:#c30">&#39;property&#39;</span>, <span style="color:#c30">&#39;range&#39;</span>, <span style="color:#c30">&#39;repr&#39;</span>, <span style="color:#c30">&#39;reversed&#39;</span>, <span style="color:#c30">&#39;round&#39;</span>, <span style="color:#c30">&#39;set&#39;</span>, <span style="color:#c30">&#39;setattr&#39;</span>, <span style="color:#c30">&#39;slice&#39;</span>, <span style="color:#c30">&#39;sorted&#39;</span>, <span style="color:#c30">&#39;staticmethod&#39;</span>, <span style="color:#c30">&#39;str&#39;</span>, <span style="color:#c30">&#39;sum&#39;</span>, <span style="color:#c30">&#39;super&#39;</span>, <span style="color:#c30">&#39;tuple&#39;</span>, <span style="color:#c30">&#39;type&#39;</span>, <span style="color:#c30">&#39;vars&#39;</span>, <span style="color:#c30">&#39;zip&#39;</span>]</code></pre></div>
+<p>Compared to other programming languages, it is surprising how limited the number of reserved keywords are for Python especially considering that these terms encompass everything from data structures, iterators, decision statements, generators, semantics operators,exceptions and errors etc.</p>
+
+<p>We will now individually go through each aspect of Python and use example code to demonstrate syntax.</p>
+
+<h3 id="5-0-data-structures">5.0 Data Structures</h3>
+
+<p>Python has <strong>boolean</strong>, <strong>numerical</strong> types such as <code>int</code>, <code>float</code> and <code>complex</code>. There is a data class called <code>decimal</code> for user alterable precision (defaulting to 28 places) rather than hardware based binary floating point in <code>float</code>.  Python also has <strong>sequences</strong> such as strings, lists, tuples byte array, bytes (only available in python 3.X; a sequence of integers in the range of 0-255), <strong>sets</strong>, and <strong>mappings</strong> such as dictionaries dicts.</p>
+
+<p>In this section, we will introduce data structures available in Python.</p>
+
+<h3 id="5-1-lists">5.1 Lists</h3>
+
+<p><strong>List</strong> are the basic <em>ordered</em> and <em>mutable</em> data collection type in Python.
+They can be defined/initialized with comma-separated values between square brackets <code>[]</code>, it can contain items of different types like dicts but usually has ones of same type only. Like all built in data types, List can be indexed and sliced too, and negative index numbers mean that you slice data from left instead of right and all slice operations return new list.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">SampleList<span style="color:#555">=</span>[<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>,<span style="color:#f60">5</span>]
+<span style="color:#069;font-weight:bold">print</span> (SampleList)
+<span style="color:#069;font-weight:bold">print</span> (SampleList[<span style="color:#f60">1</span>])
+<span style="color:#069;font-weight:bold">print</span> (SampleList[<span style="color:#f60">2</span>:])
+<span style="color:#069;font-weight:bold">print</span> (SampleList[<span style="color:#555">-</span><span style="color:#f60">2</span>:])
+<span style="color:#069;font-weight:bold">print</span> (SampleList[:<span style="color:#555">-</span><span style="color:#f60">2</span>])
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">4</span>, <span style="color:#f60">5</span>]
+<span style="color:#f60">2</span>
+[<span style="color:#f60">3</span>, <span style="color:#f60">4</span>, <span style="color:#f60">5</span>]
+[<span style="color:#f60">4</span>, <span style="color:#f60">5</span>]
+[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>]</code></pre></div>
+<p><strong>Indexing, Slicing, and Offsetting</strong><br />
+Python provides access to elements in compound types through indexing for single elements, and slicing for multiple elements. As we&rsquo;ll see, both are indicated by a square-bracket syntax. Suppose we return to our list of the first several primes:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> [<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]</code></pre></div>
+<p>Python uses zero-based indexing, so we can access the first and second element in using the following syntax. Elements at the end of the list can be accessed with negative numbers, starting from -1:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">print</span>(L[<span style="color:#f60">0</span>])
+<span style="color:#069;font-weight:bold">print</span>(L[<span style="color:#f60">1</span>])
+<span style="color:#069;font-weight:bold">print</span>(L[<span style="color:#555">-</span><span style="color:#f60">1</span>])
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">2</span>
+<span style="color:#f60">3</span>
+<span style="color:#f60">11</span></code></pre></div>
+<p>The left offset is taken to be the lower bound (inclusive), and the right is the upper bound (noninclusive). That is, Python fetches all items from the lower bound up to but not including the upper bound, and returns a new object containing the fetched items. If omitted, the left and right bounds default to 0 and the length of the object you are slicing, respectively.</p>
+
+<p>S[:] fetches items at offsets 0 through the end—this effectively performs a toplevel copy of S.</p>
+
+<p>Indexing is a means of fetching a single value from the list, slicing is a means of accessing multiple values in sub-lists. It uses a colon to indicate the start point (inclusive) and end point (non-inclusive) of the sub-array. For example, to get the first three elements of the list, we can write:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">print</span>(L[<span style="color:#f60">0</span>:<span style="color:#f60">3</span>])
+
+<span style="color:#09f;font-style:italic"># same as </span>
+
+<span style="color:#069;font-weight:bold">print</span>(L[:<span style="color:#f60">3</span>])
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>]
+[<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>]</code></pre></div>
+<p>Similarly, if we leave out the last index, it defaults to the length of the list. Thus, the last three elements can be accessed as follows:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L[<span style="color:#555">-</span><span style="color:#f60">3</span>:]
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]</code></pre></div>
+<p>Finally, it is possible to specify a third integer that represents the step size; for example, to select every second element of the list, we can write:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L[::<span style="color:#f60">2</span>]  
+
+<span style="color:#09f;font-style:italic"># equivalent to </span>
+
+L[<span style="color:#f60">0</span>:<span style="color:#366">len</span>(L):<span style="color:#f60">2</span>]
+
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">2</span>, <span style="color:#f60">5</span>, <span style="color:#f60">11</span>]</code></pre></div>
+<p><strong>A particularly useful version of this is to specify a negative step, which will reverse the array.</strong> A simple way to insert single or multipleelements into the list <strong>without</strong> deleting existing element at that index is by using <code>L[1:1]</code>. You can also delete elements from a list by simply assigning it to an empty list.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L[::<span style="color:#555">-</span><span style="color:#f60">1</span>]
+
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">11</span>, <span style="color:#f60">7</span>, <span style="color:#f60">5</span>, <span style="color:#f60">3</span>, <span style="color:#f60">2</span>]
+
+<span style="color:#09f;font-style:italic"># deletion at index 1</span>
+L <span style="color:#555">=</span> [<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]
+<span style="color:#069;font-weight:bold">print</span>(L)
+L[<span style="color:#f60">1</span>:<span style="color:#f60">2</span>]<span style="color:#555">=</span>[]
+<span style="color:#069;font-weight:bold">print</span>(L)
+
+<span style="color:#09f;font-style:italic"># Inserting two elements at index 1</span>
+L[<span style="color:#f60">1</span>:<span style="color:#f60">1</span>] <span style="color:#555">=</span> [<span style="color:#f60">200</span>, <span style="color:#f60">300</span>]
+<span style="color:#069;font-weight:bold">print</span>(L)
+<span style="color:#09f;font-style:italic">#Output</span>
+
+[<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]
+[<span style="color:#f60">2</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]
+[<span style="color:#f60">2</span>, <span style="color:#f60">200</span>, <span style="color:#f60">300</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>]</code></pre></div>
+<p>List has methods such as L.sort(key, reverse) (key is attribute to to sorted against and reverse=false (ascending) is default) which modify list in place; i.e. a statement such as L=L.sort() will return None rather than the list. if you need an iterable object, than use sorted(iterable, key, reverse). For sorting based on standard lower case character, set the key = str.lower</p>
+
+<p>The other methods include:</p>
+
+<ul>
+<li><code>L.reverse()</code> reverses the order of the list</li>
+<li><code>L.count(value)</code> counts the number of occurances of the value</li>
+<li><code>X in L</code> checks if element X is present in list L, returns true or false.</li>
+</ul>
+
+<p><strong>adding values</strong></p>
+
+<ul>
+<li><code>L.append(value)</code> adds a value to the end of the list</li>
+<li><code>L.extend ([x1, x2, x3..])</code> adds multiple values to the end of the list</li>
+<li><code>L.insert(index, value)</code> adds a value at a particular index</li>
+</ul>
+
+<p><strong>delete</strong></p>
+
+<ul>
+<li><code>L.pop()</code> removes the value from the end of the list at offset -1 (also called top of the stack) and returns that value; it can accept index number for a value other than default</li>
+<li><code>L.remove(value)</code> removes a first matching value from the list</li>
+<li><code>del L[index]</code> deletes a value at a specificed index.</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> [<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>,<span style="color:#f60">5</span>]
+L<span style="color:#555">.</span>sort(reverse <span style="color:#555">=</span> True)
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;the reversed sorted list is: &#34;</span>, L)
+L<span style="color:#555">=</span>L<span style="color:#555">.</span>sort(reverse <span style="color:#555">=</span> True)
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#34;assigning L=L.sort will result in:&#34;</span>, L)
+L <span style="color:#555">=</span> [<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>,<span style="color:#f60">5</span>]
+L<span style="color:#555">=</span><span style="color:#366">sorted</span>(L, reverse <span style="color:#555">=</span> True)
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;the reversed sorted list is:&#34;</span>, L)
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#34;L.pop() will return this value(default index is -1):&#34;</span>, L<span style="color:#555">.</span>pop())
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#34;L.pop(1) will return this value:&#34;</span>, L<span style="color:#555">.</span>pop(<span style="color:#f60">1</span>))
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#34;the list after pop(-1) and pop(1) is:&#34;</span>, L)
+L<span style="color:#555">.</span>reverse()
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;The list after reverse is:&#34;</span>, L)
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;is 3 in the list:&#34;</span>, <span style="color:#f60">3</span> <span style="color:#000;font-weight:bold">in</span> L)
+<span style="color:#09f;font-style:italic">#Output</span>
+the <span style="color:#366">reversed</span> <span style="color:#366">sorted</span> <span style="color:#366">list</span> <span style="color:#000;font-weight:bold">is</span>:  [<span style="color:#f60">5</span>, <span style="color:#f60">4</span>, <span style="color:#f60">3</span>, <span style="color:#f60">2</span>, <span style="color:#f60">1</span>]
+assigning L<span style="color:#555">=</span>L<span style="color:#555">.</span>sort will result <span style="color:#000;font-weight:bold">in</span>: None
+the <span style="color:#366">reversed</span> <span style="color:#366">sorted</span> <span style="color:#366">list</span> <span style="color:#000;font-weight:bold">is</span>: [<span style="color:#f60">5</span>, <span style="color:#f60">4</span>, <span style="color:#f60">3</span>, <span style="color:#f60">2</span>, <span style="color:#f60">1</span>]
+L<span style="color:#555">.</span>pop() will <span style="color:#069;font-weight:bold">return</span> this value(default index <span style="color:#000;font-weight:bold">is</span> <span style="color:#555">-</span><span style="color:#f60">1</span>): <span style="color:#f60">1</span>
+L<span style="color:#555">.</span>pop(<span style="color:#f60">1</span>) will <span style="color:#069;font-weight:bold">return</span> this value: <span style="color:#f60">4</span>
+the <span style="color:#366">list</span> after pop(<span style="color:#555">-</span><span style="color:#f60">1</span>) <span style="color:#000;font-weight:bold">and</span> pop(<span style="color:#f60">1</span>) <span style="color:#000;font-weight:bold">is</span>: [<span style="color:#f60">5</span>, <span style="color:#f60">3</span>, <span style="color:#f60">2</span>]
+The <span style="color:#366">list</span> after reverse <span style="color:#000;font-weight:bold">is</span>: [<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>]
+<span style="color:#000;font-weight:bold">is</span> <span style="color:#f60">3</span> <span style="color:#000;font-weight:bold">in</span> the <span style="color:#366">list</span>: True</code></pre></div>
+<h4 id="5-1-1-list-comprehensions">5.1.1 List Comprehensions</h4>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ex <span style="color:#555">=</span> [c <span style="color:#555">*</span> <span style="color:#f60">2</span> <span style="color:#069;font-weight:bold">for</span> c <span style="color:#000;font-weight:bold">in</span> <span style="color:#c30">&#39;python&#39;</span>]
+ex
+<span style="color:#09f;font-style:italic"># Output</span>
+[<span style="color:#c30">&#39;pp&#39;</span>, <span style="color:#c30">&#39;yy&#39;</span>, <span style="color:#c30">&#39;tt&#39;</span>, <span style="color:#c30">&#39;hh&#39;</span>, <span style="color:#c30">&#39;oo&#39;</span>, <span style="color:#c30">&#39;nn&#39;</span>]</code></pre></div>
+<p>This is same as:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ex <span style="color:#555">=</span> []
+<span style="color:#069;font-weight:bold">for</span> c <span style="color:#000;font-weight:bold">in</span> <span style="color:#c30">&#39;python&#39;</span>: <span style="color:#09f;font-style:italic"># List comprehension equivalent</span>
+    ex<span style="color:#555">.</span>append(c <span style="color:#555">*</span> <span style="color:#f60">2</span>)
+ex
+<span style="color:#09f;font-style:italic">#Output</span>
+
+[<span style="color:#c30">&#39;pp&#39;</span>, <span style="color:#c30">&#39;yy&#39;</span>, <span style="color:#c30">&#39;tt&#39;</span>, <span style="color:#c30">&#39;hh&#39;</span>, <span style="color:#c30">&#39;oo&#39;</span>, <span style="color:#c30">&#39;nn&#39;</span>]</code></pre></div>
+<h4 id="5-1-2-zip">5.1.2 zip()</h4>
+
+<p>refer to dicts section to see how to zip and unzip multiple lists/dicts/tuples into one.</p>
+
+<h4 id="5-1-3-map">5.1.3 map()</h4>
+
+<p><code>map()</code> is an iterable object used to apply functions (incl. lambdas) to sequences. In the example below, map is applying the function <code>round()</code> to the list L.</p>
+
+<p>Since <code>map()</code> is an iterable, you&rsquo;ll have to coerce it into a list if you want to generate the entire sequence.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> [<span style="color:#555">-</span><span style="color:#f60">3.2</span>, <span style="color:#555">-</span><span style="color:#f60">2.8</span>, <span style="color:#555">-</span><span style="color:#f60">1.3</span>, <span style="color:#f60">0</span>, <span style="color:#f60">1.6</span>, <span style="color:#f60">2.9</span>]
+L2 <span style="color:#555">=</span> <span style="color:#366">map</span>(<span style="color:#366">round</span>, L)
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#39;the map object is:&#39;</span>, L2)
+L2 <span style="color:#555">=</span> <span style="color:#366">list</span>(<span style="color:#366">map</span>(<span style="color:#366">round</span>, L))
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#39;L2 is:&#39;</span>, L2)
+<span style="color:#09f;font-style:italic">#Output</span>
+
+the <span style="color:#366">map</span> <span style="color:#366">object</span> <span style="color:#000;font-weight:bold">is</span>: <span style="color:#555">&lt;</span><span style="color:#366">map</span> <span style="color:#366">object</span> at <span style="color:#f60">0x00000213586D9400</span><span style="color:#555">&gt;</span>
+L2 <span style="color:#000;font-weight:bold">is</span>: [<span style="color:#555">-</span><span style="color:#f60">3</span>, <span style="color:#555">-</span><span style="color:#f60">3</span>, <span style="color:#555">-</span><span style="color:#f60">1</span>, <span style="color:#f60">0</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>]</code></pre></div>
+<p>We have left out discussions on <code>filter()</code>, list generators etc. but for now this is sufficient for introducing a related data type called strings.</p>
+
+<h3 id="5-2-strings">5.2 Strings</h3>
+
+<p><strong>Strings</strong> are immutable and can be enclosed in single quotes &lsquo; or double quotes &ldquo;&rdquo; and give the same result. A sting has to quoted in double quote if it contains a single quote as part of text and vice versa. Strings can also be indexed and sliced like lists.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">word<span style="color:#555">=</span><span style="color:#c30">&#39;analytics&#39;</span>
+<span style="color:#069;font-weight:bold">print</span> (word[<span style="color:#f60">0</span>])
+<span style="color:#09f;font-style:italic">#Output</span>
+a</code></pre></div>
+<h4 id="5-2-1-basic-string-manipulations">5.2.1 Basic String Manipulations</h4>
+
+<p>These include things like converting to ints, lists, modifying cases, finding substrings etc.</p>
+
+<p><strong>Converting strings to int and list and vice versa</strong>
+Strings can be converted to integers and vice versa by simply calling <code>int()</code> or <code>str()</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">int100<span style="color:#555">=</span> <span style="color:#366">int</span> (<span style="color:#c30">&#39;100&#39;</span>) 
+str100 <span style="color:#555">=</span> <span style="color:#366">str</span> (<span style="color:#f60">100</span>)
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">type</span>(int100))
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">type</span>(str100))
+X <span style="color:#555">=</span> <span style="color:#c30">&#39;python&#39;</span>
+X <span style="color:#555">=</span> <span style="color:#366">list</span> (X)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">class</span> <span style="color:#a00;background-color:#faa">&#39;</span><span style="color:#0a8;font-weight:bold">int</span><span style="color:#c30">&#39;&gt;</span><span style="color:#a00;background-color:#faa">
+</span><span style="color:#a00;background-color:#faa"></span><span style="color:#c30">&lt;class &#39;</span><span style="color:#366">str</span><span style="color:#c30">&#39;&gt;</span></code></pre></div>
+<p>You can also use <code>repr</code> to <strong>convert int to a string</strong> which can be run directly on the terminal.</p>
+
+<pre><code>repr100= repr(100)
+print(type(repr100))
+#output
+&lt;class 'str'&gt;
+</code></pre>
+
+<p>You can convert a immutable string to a mutable list by simply calling <code>list (X)</code>; make modifications you want, and convert it back to a string using <code>''.join(X)</code></p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">X <span style="color:#555">=</span> <span style="color:#c30">&#39;python&#39;</span>
+X <span style="color:#555">=</span> <span style="color:#366">list</span> (X)
+<span style="color:#069;font-weight:bold">print</span> (X)
+X<span style="color:#555">.</span>append (<span style="color:#c30">&#39; 3.x&#39;</span>)
+<span style="color:#069;font-weight:bold">print</span> (X)
+stringX <span style="color:#555">=</span> <span style="color:#c30">&#39;&#39;</span><span style="color:#555">.</span>join(X)
+<span style="color:#069;font-weight:bold">print</span> (stringX)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#c30">&#39;p&#39;</span>, <span style="color:#c30">&#39;y&#39;</span>, <span style="color:#c30">&#39;t&#39;</span>, <span style="color:#c30">&#39;h&#39;</span>, <span style="color:#c30">&#39;o&#39;</span>, <span style="color:#c30">&#39;n&#39;</span>]
+[<span style="color:#c30">&#39;p&#39;</span>, <span style="color:#c30">&#39;y&#39;</span>, <span style="color:#c30">&#39;t&#39;</span>, <span style="color:#c30">&#39;h&#39;</span>, <span style="color:#c30">&#39;o&#39;</span>, <span style="color:#c30">&#39;n&#39;</span>, <span style="color:#c30">&#39; 3.x&#39;</span>]
+python <span style="color:#f60">3.</span>x</code></pre></div>
+<p><strong>character code conversions to integer code</strong> can be performed by <code>ord</code>; the reverse operation is performed by <code>chr</code></p>
+
+<pre><code>print(ord ('j'))
+print(chr(106))
+
+106
+j
+</code></pre>
+
+<p>strings can be modified by X.replace(&lsquo;original&rsquo;, &lsquo;replacement&rsquo;) where X is the original string. The other string functions are X.swapcase(), X.find(), X.lower() etc.</p>
+
+<pre><code>X = 'firsttest'
+Y=X.replace('first','second')
+print(Y)
+print (X)
+
+# Note that X.replace returns new object and does not modify X in place, as an example, printing X below will print original string
+
+X = 'firsttest'
+X.replace('first','second')
+print(X)
+#Output
+secondtest
+firsttest
+firsttest
+
+</code></pre>
+
+<h4 id="5-2-2-substring-matching">5.2.2 Substring Matching</h4>
+
+<p>This can be accomplished by either using <code>in</code> operator or using the <code>S.find()</code> method.</p>
+
+<p><strong><code>S1.find(S2)</code></strong> allows an user to pass a second string S2 as an argument, if S2 substring match is not found in S1,then it returns a -1, otherwise it returns the lowest index in the string where substring S2 is found <a href="https://docs.python.org/release/3.1.3/library/stdtypes.html#str.find">(more info)</a>.</p>
+
+<p><strong><code>S1.index(S2)</code></strong> is similar to <code>find</code> however, when it cant find a match, it raises a <code>ValueError</code> instead of returning -1.</p>
+
+<p><code>S.rfind()</code> and <code>S.rindex()</code> methods works similarly, however it searches for the first occurrence from the end rather than the beginning of the string.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">isIn</span>(string_1, string_2): <span style="color:#09f;font-style:italic">#This is the function that returns true/false</span>
+
+    
+    <span style="color:#069;font-weight:bold">if</span> (string_1<span style="color:#555">.</span>find(string_2)) <span style="color:#555">!=</span> <span style="color:#555">-</span><span style="color:#f60">1</span> <span style="color:#000;font-weight:bold">or</span> (string_2<span style="color:#555">.</span>find(string_1)) <span style="color:#555">!=</span> <span style="color:#555">-</span><span style="color:#f60">1</span>:
+        is_in <span style="color:#555">=</span> True
+    <span style="color:#069;font-weight:bold">else</span>:
+        is_in <span style="color:#555">=</span> False
+
+    <span style="color:#069;font-weight:bold">return</span>(is_in)
+
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#39;a program to check for common string&#39;</span>)
+a <span style="color:#555">=</span> <span style="color:#366">input</span>(<span style="color:#c30">&#39;enter a word: &#39;</span>)
+b <span style="color:#555">=</span> <span style="color:#366">input</span>(<span style="color:#c30">&#39;enter a word: &#39;</span>)
+
+
+z <span style="color:#555">=</span> isIn(a,b)
+<span style="color:#069;font-weight:bold">print</span>(z)
+<span style="color:#09f;font-style:italic">#Output</span>
+a program to check <span style="color:#069;font-weight:bold">for</span> common string
+enter a word: at
+enter a word: bat
+True</code></pre></div>
+<p>More examples</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#555">=</span> <span style="color:#c30">&#39;bat&#39;</span>
+b <span style="color:#555">=</span> <span style="color:#c30">&#39;bat2&#39;</span>
+c<span style="color:#555">=</span>a<span style="color:#555">.</span>find(b)
+
+d<span style="color:#555">=</span>b<span style="color:#555">.</span>find(a)
+
+<span style="color:#069;font-weight:bold">if</span> d <span style="color:#555">!=-</span><span style="color:#f60">1</span> <span style="color:#000;font-weight:bold">or</span> c <span style="color:#555">!=</span> <span style="color:#555">-</span><span style="color:#f60">1</span>:
+    is_in <span style="color:#555">=</span> True
+<span style="color:#069;font-weight:bold">else</span>:
+    is_in <span style="color:#555">=</span> False
+<span style="color:#09f;font-style:italic"># check out this for more info on print statement formatting  https://stackoverflow.com/questions/17153779/how-can-i-print-variable-and-string-on-same-line-in-python</span>
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;is substring b found in a:</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#34;</span>, is_in)
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#c30">&#34;it is found at index: &#34;</span> <span style="color:#555">+</span> <span style="color:#366">str</span>(c) <span style="color:#555">+</span> <span style="color:#c30">&#34;or&#34;</span> <span style="color:#555">+</span> <span style="color:#366">str</span>(d))
+
+<span style="color:#09f;font-style:italic">#Output</span>
+
+<span style="color:#000;font-weight:bold">is</span> substring b found <span style="color:#000;font-weight:bold">in</span> a:
+ True
+it <span style="color:#000;font-weight:bold">is</span> found at index: <span style="color:#555">-</span><span style="color:#f60">1</span>or0</code></pre></div>
+<p>For the special case of checking for a substring at the beginning or end of a string, Python provides the <code>startswith()</code> and <code>endswith()</code> methods.</p>
+
+<h4 id="5-2-3-string-formatting">5.2.3 String Formatting</h4>
+
+<p>Checking if a given string is <strong>uppercase or lowercase</strong> can be accomplished by <code>S.isupper()</code> and <code>S.islower</code>. It <strong>does not</strong> accept any arguments and returns true or false if all characters are upper or lower.</p>
+
+<p>If you want to test if only a subset of the string (or just one character) is uppercase or no, you can combine use the index such as <code>S[1:3].isupper()</code> or just <code>S[2].isupper()</code></p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">S <span style="color:#555">=</span> <span style="color:#c30">&#39;DataAnalytics&#39;</span>
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;String&#34;</span>, S <span style="color:#555">+</span> <span style="color:#c30">&#34; is upper case:&#34;</span>, S<span style="color:#555">.</span>isupper())
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;First letter (index 0) of string&#34;</span>, S <span style="color:#555">+</span> <span style="color:#c30">&#34; is uppercase:&#34;</span>, S[<span style="color:#f60">0</span>]<span style="color:#555">.</span>isupper())
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;Letters 1-3 of&#34;</span>, S <span style="color:#555">+</span> <span style="color:#c30">&#34; is lowercase:&#34;</span>, S[<span style="color:#f60">1</span>:<span style="color:#f60">3</span>]<span style="color:#555">.</span>islower())
+<span style="color:#09f;font-style:italic">#Output</span>
+String DataAnalytics <span style="color:#000;font-weight:bold">is</span> upper case: False
+First letter (index <span style="color:#f60">0</span>) of string DataAnalytics <span style="color:#000;font-weight:bold">is</span> uppercase: True
+Letters <span style="color:#f60">1</span><span style="color:#555">-</span><span style="color:#f60">3</span> of DataAnalytics <span style="color:#000;font-weight:bold">is</span> lowercase: True</code></pre></div>
+<p><code>X.rstrip('arg')</code> removes characters from the right based on the argument (a string specifying the set of characters to be removed), if arg is empty, it removes whitespaces at the end of the string. we can use it to remove newline characters <code>X.rstrip('\n')</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">X <span style="color:#555">=</span> <span style="color:#c30">&#39;python 3.x is better than 2.x!&#39;</span>
+
+<span style="color:#069;font-weight:bold">print</span> (X<span style="color:#555">.</span>rstrip(<span style="color:#c30">&#39;!&#39;</span>))
+<span style="color:#069;font-weight:bold">print</span>(X<span style="color:#555">.</span>rstrip())
+<span style="color:#09f;font-style:italic">#Output</span>
+python <span style="color:#f60">3.</span>x <span style="color:#000;font-weight:bold">is</span> better than <span style="color:#f60">2.</span>x
+python <span style="color:#f60">3.</span>x <span style="color:#000;font-weight:bold">is</span> better than <span style="color:#f60">2.</span>x<span style="color:#a00;background-color:#faa">!</span></code></pre></div>
+<p><strong>keyword</strong> and <strong>positional</strong> formating can also be done by <strong><code>.format()</code></strong> method.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic">#by keyword using format</span>
+
+x <span style="color:#555">=</span> <span style="color:#c30">&#39;These are {number} examples in {name}&#39;</span><span style="color:#555">.</span>format(number <span style="color:#555">=</span> <span style="color:#f60">2</span>, name <span style="color:#555">=</span> <span style="color:#c30">&#39;python&#39;</span>)
+<span style="color:#069;font-weight:bold">print</span>(x)
+
+<span style="color:#09f;font-style:italic">#by position using format</span>
+
+y <span style="color:#555">=</span> <span style="color:#c30">&#39;These are {0} examples in {1}&#39;</span><span style="color:#555">.</span>format(<span style="color:#f60">2</span>,<span style="color:#c30">&#39;python&#39;</span>)
+<span style="color:#069;font-weight:bold">print</span>(y)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+These are <span style="color:#f60">2</span> examples <span style="color:#000;font-weight:bold">in</span> python
+These are <span style="color:#f60">2</span> examples <span style="color:#000;font-weight:bold">in</span> python</code></pre></div>
+<p>For numerical inputs, you can include format codes which control how the value is converted to a string. For example, to print a number as a floating point with three digits after the decimal point, you can use the following.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pi <span style="color:#555">=</span> <span style="color:#f60">3.14159</span>
+
+<span style="color:#c30">&#34;pi = {0:.3f}&#34;</span><span style="color:#555">.</span>format(pi)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#c30">&#39;pi = 3.142&#39;</span></code></pre></div>
+<p>As before, here the &ldquo;0&rdquo; refers to the index of the value to be inserted. The &ldquo;:&rdquo; marks that format codes will follow. The &ldquo;.3f&rdquo; encodes the desired precision: three digits beyond the decimal point, floating-point format.</p>
+
+<p>This style of format specification is very flexible, and the examples here barely scratch the surface of the formatting options available. For more information on the syntax of these format strings, see the Format Specification section of Python&rsquo;s online documentation.</p>
+
+<h4 id="5-2-4-multiple-string-modifications">5.2.4 Multiple String Modifications</h4>
+
+<p>In the example shown below, %d and %s are used to substitute a decimal number and string respectively <strong>by position</strong>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#c30">&#39;These are </span><span style="color:#a00">%d</span><span style="color:#c30"> examples in </span><span style="color:#a00">%s</span><span style="color:#c30">&#39;</span> <span style="color:#555">%</span> (<span style="color:#f60">2</span>, <span style="color:#c30">&#39;python&#39;</span>)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#c30">&#39;These are 2 examples in python&#39;</span></code></pre></div>
+<p>We can also use <strong>dictionary based formatting to do the keyword based formatting</strong>.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#555">=</span> <span style="color:#c30">&#39;These are </span><span style="color:#a00">%(number)d</span><span style="color:#c30"> examples in </span><span style="color:#a00">%(name)s</span><span style="color:#c30">&#39;</span><span style="color:#555">%</span>{<span style="color:#c30">&#39;number&#39;</span>: <span style="color:#f60">2</span>, <span style="color:#c30">&#39;name&#39;</span>:<span style="color:#c30">&#39;python&#39;</span>}
+<span style="color:#069;font-weight:bold">print</span>(x)
+<span style="color:#09f;font-style:italic">#Output</span>
+
+These are <span style="color:#f60">2</span> examples <span style="color:#000;font-weight:bold">in</span> python</code></pre></div>
+<p>We can also separate the values dictionary and join them like shown below</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#555">=</span> <span style="color:#c30">&#39;These are </span><span style="color:#a00">%(number)d</span><span style="color:#c30"> examples in </span><span style="color:#a00">%(name)s</span><span style="color:#c30">&#39;</span>
+values <span style="color:#555">=</span> {<span style="color:#c30">&#39;number&#39;</span>: <span style="color:#f60">2</span>, <span style="color:#c30">&#39;name&#39;</span>:<span style="color:#c30">&#39;python&#39;</span>}
+<span style="color:#069;font-weight:bold">print</span> (x <span style="color:#555">%</span> values)
+
+<span style="color:#09f;font-style:italic">#Output</span>
+These are <span style="color:#f60">2</span> examples <span style="color:#000;font-weight:bold">in</span> python</code></pre></div>
+<h4 id="5-2-5-deep-copy-vs-shallow-copy">5.2.5 Deep Copy vs Shallow Copy</h4>
+
+<p>Assignment statements in Python do not copy objects, they create bindings between a target and an object. In case of shallow copy, a reference of object is copied in other object. It means that any changes made to a copy of object do reflect in the original object. For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. This module provides generic shallow and deep copy operations.</p>
+
+<p>The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances). A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.</p>
+
+<p>copy.copy(x)</p>
+
+<pre><code>Return a shallow copy of x.
+</code></pre>
+
+<p>Shallow copy of a list will not result in copying over the changes from the old list into the new one if you are just appending the original list; however, for nested objects the changes will be copied over.  In essence, a shallow copy is only one level deep.</p>
+
+<p>A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.</p>
+
+<p>copy.deepcopy(x)</p>
+
+<pre><code>Return a deep copy of x.
+</code></pre>
+
+<p>This creates a fully independent clone of the original object and all of its children.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">copy</span>
+<span style="color:#09f;font-style:italic"># shallow copy example</span>
+old_l <span style="color:#555">=</span> [[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>]]
+new_l <span style="color:#555">=</span> copy<span style="color:#555">.</span>copy(old_l)
+<span style="color:#069;font-weight:bold">print</span> (old_l)
+<span style="color:#069;font-weight:bold">print</span> (new_l)
+<span style="color:#09f;font-style:italic"># shallow copy will not change wrt original list if old list is appended</span>
+old_l<span style="color:#555">.</span>append([<span style="color:#f60">11</span>,<span style="color:#f60">1</span>])
+<span style="color:#069;font-weight:bold">print</span> (old_l)
+<span style="color:#069;font-weight:bold">print</span> (new_l)
+<span style="color:#09f;font-style:italic"># however, the shallow copy does change if edits are made to nested object</span>
+old_l[<span style="color:#f60">1</span>][<span style="color:#f60">1</span>]<span style="color:#555">=</span><span style="color:#f60">1110</span>
+<span style="color:#069;font-weight:bold">print</span> (old_l)
+<span style="color:#069;font-weight:bold">print</span> (new_l)
+<span style="color:#09f;font-style:italic"># Output</span>
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>]]
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>]]
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>], [<span style="color:#f60">11</span>, <span style="color:#f60">1</span>]]
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>]]
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">1110</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>], [<span style="color:#f60">11</span>, <span style="color:#f60">1</span>]]
+[[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>, <span style="color:#f60">6</span>], [<span style="color:#f60">7</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>]]</code></pre></div>
+<h4 id="5-2-6-regular-expressions-regex">5.2.6 Regular Expressions (Regex)</h4>
+
+<p>This is a vast topic better suitable to be discussed in a separate more detailed article, but let us go through a very simple regex use case.</p>
+
+<p><strong>More info on Regex</strong></p>
+
+<ul>
+<li><p><a href="https://docs.python.org/3/howto/regex.html">python&rsquo;s official Howto guide</a></p></li>
+
+<li><p><a href="https://docs.python.org/3/library/re.html">python&rsquo;s re package documentation</a></p></li>
+</ul>
+
+<p>If you plan to reuse regex expression than you should first compile it into an object using <code>re.compile()</code></p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">re</span>
+x <span style="color:#555">=</span> <span style="color:#c30">&#39;Regular expressions are really more efficient and flexible compared to str methods&#39;</span>
+
+regex <span style="color:#555">=</span> re<span style="color:#555">.</span><span style="color:#366">compile</span>(<span style="color:#c30">&#39;\s+&#39;</span>)
+<span style="color:#069;font-weight:bold">print</span>(regex<span style="color:#555">.</span>split(x))
+
+<span style="color:#09f;font-style:italic"># this is same as str.split method</span>
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34; The result from x.split() is:</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#34;</span>, x<span style="color:#555">.</span>split())
+
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#c30">&#39;Regular&#39;</span>, <span style="color:#c30">&#39;expressions&#39;</span>, <span style="color:#c30">&#39;are&#39;</span>, <span style="color:#c30">&#39;really&#39;</span>, <span style="color:#c30">&#39;more&#39;</span>, <span style="color:#c30">&#39;efficient&#39;</span>, <span style="color:#c30">&#39;and&#39;</span>, <span style="color:#c30">&#39;flexible&#39;</span>, <span style="color:#c30">&#39;compared&#39;</span>, <span style="color:#c30">&#39;to&#39;</span>, <span style="color:#c30">&#39;str&#39;</span>, <span style="color:#c30">&#39;methods&#39;</span>]
+ The result <span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">x.split</span>() <span style="color:#000;font-weight:bold">is</span>:
+ [<span style="color:#c30">&#39;Regular&#39;</span>, <span style="color:#c30">&#39;expressions&#39;</span>, <span style="color:#c30">&#39;are&#39;</span>, <span style="color:#c30">&#39;really&#39;</span>, <span style="color:#c30">&#39;more&#39;</span>, <span style="color:#c30">&#39;efficient&#39;</span>, <span style="color:#c30">&#39;and&#39;</span>, <span style="color:#c30">&#39;flexible&#39;</span>, <span style="color:#c30">&#39;compared&#39;</span>, <span style="color:#c30">&#39;to&#39;</span>, <span style="color:#c30">&#39;str&#39;</span>, <span style="color:#c30">&#39;methods&#39;</span>]</code></pre></div>
+<h3 id="5-3-dictionary-dict">5.3 Dictionary (Dict)</h3>
+
+<p><strong>Dictionary or Dicts</strong> are associative arrays or hash maps which are initialized by curly brackets &ldquo;{}&rdquo; and colons are used to separate keys and values. Unlike sequences which are indexed by a range of numbers, dicts are indexed by keys which are immutable type such as strings or numbers or even tuples (if they only contain strings and numbers).</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">SampleDict<span style="color:#555">=</span>{<span style="color:#c30">&#39;a&#39;</span> : [<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>], <span style="color:#c30">&#39;b&#39;</span>:[<span style="color:#f60">4</span>,<span style="color:#f60">5</span>]}
+<span style="color:#069;font-weight:bold">print</span> (SampleDict)
+<span style="color:#069;font-weight:bold">print</span>(SampleDict[<span style="color:#c30">&#39;a&#39;</span>])
+<span style="color:#09f;font-style:italic">#output</span>
+{<span style="color:#c30">&#39;a&#39;</span>: [<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>], <span style="color:#c30">&#39;b&#39;</span>: [<span style="color:#f60">4</span>, <span style="color:#f60">5</span>]}
+[<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>]</code></pre></div>
+<p>Keep in mind that dictionaries do not maintain any sense of order for the input parameters; this is by design.
+This lack of ordering allows dictionaries to be implemented very efficiently, so that random element access is very fast, regardless of the size of the dictionary (if you&rsquo;re curious how this works, read about the concept of a <em>hash table</em>).
+The <a href="https://docs.python.org/3/library/stdtypes.html">python documentation</a> has a complete list of the methods available for dictionaries.</p>
+
+<h4 id="5-3-1-zip">5.3.1 zip()</h4>
+
+<p>You can <strong><code>zip()</code></strong> two lists and pass it to a dict call to generate a dict. <code>zip()</code> returns an iterable object in python 3.X, and hence we will have to wrap it in a <code>list()</code> call to view the results. Apart from dicts and lists, <code>zip()</code> can also be used to join together tuples.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L<span style="color:#555">=</span> <span style="color:#366">zip</span>([<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>], [<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>])
+<span style="color:#069;font-weight:bold">print</span> (L)
+L<span style="color:#555">=</span> <span style="color:#366">list</span>(<span style="color:#366">zip</span>([<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>], [<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>])) 
+<span style="color:#069;font-weight:bold">print</span> (L)
+d<span style="color:#555">=</span> <span style="color:#366">dict</span>(L)
+<span style="color:#069;font-weight:bold">print</span> (d)
+T <span style="color:#555">=</span> <span style="color:#366">tuple</span>(<span style="color:#366">zip</span>((<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>), (<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)))
+<span style="color:#069;font-weight:bold">print</span>(T)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#555">&lt;</span><span style="color:#366">zip</span> <span style="color:#366">object</span> at <span style="color:#f60">0x00000193BB360208</span><span style="color:#555">&gt;</span>
+[(<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#f60">1</span>), (<span style="color:#c30">&#39;b&#39;</span>, <span style="color:#f60">2</span>), (<span style="color:#c30">&#39;c&#39;</span>, <span style="color:#f60">3</span>)]
+{<span style="color:#c30">&#39;a&#39;</span>: <span style="color:#f60">1</span>, <span style="color:#c30">&#39;b&#39;</span>: <span style="color:#f60">2</span>, <span style="color:#c30">&#39;c&#39;</span>: <span style="color:#f60">3</span>}
+((<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#f60">1</span>), (<span style="color:#c30">&#39;b&#39;</span>, <span style="color:#f60">2</span>), (<span style="color:#c30">&#39;c&#39;</span>, <span style="color:#f60">3</span>))</code></pre></div>
+<p>You can also <strong>unzip</strong> a list/dict/tuple into a <strong>tuple</strong> syntax below.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic">#unzipping a list</span>
+
+L1, L2 <span style="color:#555">=</span> <span style="color:#366">zip</span>(<span style="color:#555">*</span>L)
+<span style="color:#069;font-weight:bold">print</span>(L1)
+<span style="color:#069;font-weight:bold">print</span>(L2)
+<span style="color:#09f;font-style:italic">#zip(*zip(X, Y))</span>
+
+<span style="color:#09f;font-style:italic"># unzipping a dict</span>
+
+keys, values <span style="color:#555">=</span> <span style="color:#366">zip</span>(<span style="color:#555">*</span>d<span style="color:#555">.</span>items())
+<span style="color:#069;font-weight:bold">print</span>(keys)
+<span style="color:#069;font-weight:bold">print</span>(values)
+<span style="color:#09f;font-style:italic">#Output</span>
+(<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>)
+(<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)
+(<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>)
+(<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)</code></pre></div>
+<h4 id="5-3-2-dict-comprehensions">5.3.2 Dict Comprehensions</h4>
+
+<p>The same thing can be accomplished by <strong>dict comprehensions</strong></p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">D <span style="color:#555">=</span> {x: y <span style="color:#069;font-weight:bold">for</span> (x, y) <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">zip</span>([<span style="color:#c30">&#39;a&#39;</span>, <span style="color:#c30">&#39;b&#39;</span>, <span style="color:#c30">&#39;c&#39;</span>], [<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>])}
+<span style="color:#069;font-weight:bold">print</span> (D)
+<span style="color:#09f;font-style:italic">#Output</span>
+
+{<span style="color:#c30">&#39;a&#39;</span>: <span style="color:#f60">1</span>, <span style="color:#c30">&#39;b&#39;</span>: <span style="color:#f60">2</span>, <span style="color:#c30">&#39;c&#39;</span>: <span style="color:#f60">3</span>}</code></pre></div>
+<p>Alternate way to create dicts from three different lists</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L1<span style="color:#555">=</span> [<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>,<span style="color:#f60">5</span>,]
+L2<span style="color:#555">=</span> [<span style="color:#f60">6</span>,<span style="color:#f60">7</span>,<span style="color:#f60">8</span>,<span style="color:#f60">9</span>,<span style="color:#f60">10</span>]
+L3<span style="color:#555">=</span> [<span style="color:#c30">&#39;a&#39;</span>,<span style="color:#c30">&#39;b&#39;</span>,<span style="color:#c30">&#39;c&#39;</span>,<span style="color:#c30">&#39;d&#39;</span>, <span style="color:#c30">&#39;e&#39;</span>]
+D <span style="color:#555">=</span> {}
+<span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span> (<span style="color:#366">len</span>(L3)):
+    D[L3[n]] <span style="color:#555">=</span> [L1[n],L2[n]]
+
+<span style="color:#09f;font-style:italic"># We can also use functions such as sum on lists opened by accesing dict&#39;s keys</span>
+
+<span style="color:#366">sum</span>(D[L3[<span style="color:#f60">0</span>]])
+<span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#39;The sum is </span><span style="color:#a00">%d</span><span style="color:#c30"> and the D is&#39;</span> <span style="color:#555">%</span>x,D)
+<span style="color:#09f;font-style:italic">#Output</span>
+The <span style="color:#366">sum</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#f60">15</span> <span style="color:#000;font-weight:bold">and</span> the D <span style="color:#000;font-weight:bold">is</span> {<span style="color:#c30">&#39;a&#39;</span>: [<span style="color:#f60">1</span>, <span style="color:#f60">6</span>], <span style="color:#c30">&#39;b&#39;</span>: [<span style="color:#f60">2</span>, <span style="color:#f60">7</span>], <span style="color:#c30">&#39;c&#39;</span>: [<span style="color:#f60">3</span>, <span style="color:#f60">8</span>], <span style="color:#c30">&#39;d&#39;</span>: [<span style="color:#f60">4</span>, <span style="color:#f60">9</span>], <span style="color:#c30">&#39;e&#39;</span>: [<span style="color:#f60">5</span>, <span style="color:#f60">10</span>]}</code></pre></div>
+<p>Other dict methods:</p>
+
+<ul>
+<li><p><code>D.get('key', returnvalue)</code>: if a given key is not found than it will return None as default; you can optionally specify return value.</p></li>
+
+<li><p><code>D.copy()</code>: Dict copy method</p></li>
+
+<li><p><code>Len(D)</code></p></li>
+</ul>
+
+<p>Adding values</p>
+
+<ul>
+<li><code>D.update()</code></li>
+</ul>
+
+<p>Deleting values</p>
+
+<ul>
+<li><code>D.pop()</code></li>
+</ul>
+
+<h3 id="5-4-tuples">5.4 Tuples</h3>
+
+<p>Tuples are immutable data types which can be accessed by index number. Parentheses are not necassary but should be used for extra clarity. For initializing a tuple with no elements, <code>()</code> is used and for creating a tuple with one element, a trailing comma is used. The length of the tuple is given by <code>len()</code> function.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">SampleTuple<span style="color:#555">=</span>(<span style="color:#f60">1</span>,<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>,<span style="color:#f60">5</span>)
+<span style="color:#069;font-weight:bold">print</span> (SampleTuple)
+<span style="color:#069;font-weight:bold">print</span> (SampleTuple[<span style="color:#f60">2</span>])
+SampleOneTuple<span style="color:#555">=</span><span style="color:#f60">8</span>,
+<span style="color:#069;font-weight:bold">print</span> (<span style="color:#366">len</span>(SampleOneTuple))
+<span style="color:#09f;font-style:italic">#Output</span>
+(<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">4</span>, <span style="color:#f60">5</span>)
+<span style="color:#f60">3</span>
+<span style="color:#f60">1</span></code></pre></div>
+<p><strong>Tuple assignments</strong> can be performed by:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a,b <span style="color:#555">=</span> <span style="color:#f60">1</span>,<span style="color:#f60">2</span><span style="color:#555">+</span><span style="color:#f60">1</span>
+
+<span style="color:#09f;font-style:italic"># is same as tuple</span>
+
+<span style="color:#09f;font-style:italic"># (a,b) = (1,2+1)</span>
+
+<span style="color:#069;font-weight:bold">print</span> (a)
+
+<span style="color:#069;font-weight:bold">print</span> (b)
+
+
+<span style="color:#09f;font-style:italic"># and this ASSIGNS</span>
+
+<span style="color:#09f;font-style:italic"># a = c and b = d+e</span>
+
+<span style="color:#09f;font-style:italic"># Output</span>
+<span style="color:#f60">1</span>
+<span style="color:#f60">3</span></code></pre></div>
+<h3 id="5-5-sets">5.5 Sets</h3>
+
+<p><strong>Set</strong> is an unordered collection of unique elements, like a dict but with keys ony. It can be created by either curly braces or by <code>set()</code> function.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">testset<span style="color:#555">=</span><span style="color:#366">set</span>([<span style="color:#f60">2</span>, <span style="color:#f60">2</span>, <span style="color:#f60">2</span>, <span style="color:#f60">1</span>, <span style="color:#f60">1</span>, <span style="color:#f60">3</span>, <span style="color:#f60">3</span>])
+<span style="color:#069;font-weight:bold">print</span> (testset)
+
+{<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>}</code></pre></div>
+<h3 id="5-6-more-specialized-data-structures">5.6 More Specialized Data Structures</h3>
+
+<p>Python contains several other data structures that you might find useful; these can generally be found in the built-in <code>collections</code> module.
+The collections module is fully-documented in <a href="https://docs.python.org/3/library/collections.html">Python&rsquo;s online documentation</a>, and you can read more about the various objects available there.</p>
+
+<p>In particular, I&rsquo;ve found the following very useful on occasion:</p>
+
+<ul>
+<li><code>collections.namedtuple</code>: Like a tuple, but each value has a name</li>
+<li><code>collections.defaultdict</code>: Like a dictionary, but unspecified keys have a user-specified default value</li>
+<li><code>collections.OrderedDict</code>: Like a dictionary, but the order of keys is maintained</li>
+</ul>
+
+<p>Once you&rsquo;ve seen the standard built-in collection types, the use of these extended functionalities is very intuitive, and I&rsquo;d suggest <a href="https://docs.python.org/3/library/collections.html">reading about their use</a>.</p>
+
+<h3 id="6-0-operators">6.0 Operators</h3>
+
+<p>These are class of special symbols that allow you to make arthmetic assignments, boolean operations, assign variables etc. The symbols itself are not special at all; it is your &ldquo;normal&rdquo; mathematical symbols such as =,+,-, etc., Python&rsquo;s syntax is intuituve enough that you will be able to use it without much discussion; hence we will write them up in table form.</p>
+
+<h4 id="6-1-arithmetic">6.1 Arithmetic</h4>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>a + b</code></td>
+<td>Addition</td>
+<td>Sum of <code>a</code> and <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a - b</code></td>
+<td>Subtraction</td>
+<td>Difference of <code>a</code> and <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a * b</code></td>
+<td>Multiplication</td>
+<td>Product of <code>a</code> and <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a / b</code></td>
+<td>True division</td>
+<td>Quotient of <code>a</code> and <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a // b</code></td>
+<td>Floor division</td>
+<td>Quotient of <code>a</code> and <code>b</code>, removing fractional parts</td>
+</tr>
+
+<tr>
+<td><code>a % b</code></td>
+<td>Modulus</td>
+<td>Integer remainder after division of <code>a</code> by <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a ** b</code></td>
+<td>Exponentiation</td>
+<td><code>a</code> raised to the power of <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>-a</code></td>
+<td>Negation</td>
+<td>The negative of <code>a</code></td>
+</tr>
+
+<tr>
+<td><code>+a</code></td>
+<td>Unary plus</td>
+<td><code>a</code> unchanged (rarely used)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="6-2-comparison">6.2 Comparison</h4>
+
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>a == b</code></td>
+<td><code>a</code> equal to <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a &lt; b</code></td>
+<td><code>a</code> less than <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a &lt;= b</code></td>
+<td><code>a</code> less than or equal to <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a != b</code></td>
+<td><code>a</code> not equal to <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a &gt; b</code></td>
+<td><code>a</code> greater than <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a &gt;= b</code></td>
+<td><code>a</code> greater than or equal to <code>b</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="6-3-identity-and-membership">6.3 Identity and Membership</h4>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>a is b</code></td>
+<td>True if <code>a</code> and <code>b</code> are identical objects</td>
+</tr>
+
+<tr>
+<td><code>a is not b</code></td>
+<td>True if <code>a</code> and <code>b</code> are not identical objects</td>
+</tr>
+
+<tr>
+<td><code>a in b</code></td>
+<td>True if <code>a</code> is a member of <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a not in b</code></td>
+<td>True if <code>a</code> is not a member of <code>b</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="6-4-bitwise-operators">6.4 Bitwise Operators</h4>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>a &amp; b</code></td>
+<td>Bitwise AND</td>
+<td>Bits defined in both <code>a</code> and <code>b</code></td>
+</tr>
+
+<tr>
+<td><code>a &#124; b</code></td>
+<td>Bitwise OR</td>
+<td>Bits defined in <code>a</code> or <code>b</code> or both</td>
+</tr>
+
+<tr>
+<td><code>a ^ b</code></td>
+<td>Bitwise XOR</td>
+<td>Bits defined in <code>a</code> or <code>b</code> but not both</td>
+</tr>
+
+<tr>
+<td><code>a &lt;&lt; b</code></td>
+<td>Bit shift left</td>
+<td>Shift bits of <code>a</code> left by <code>b</code> units</td>
+</tr>
+
+<tr>
+<td><code>a &gt;&gt; b</code></td>
+<td>Bit shift right</td>
+<td>Shift bits of <code>a</code> right by <code>b</code> units</td>
+</tr>
+
+<tr>
+<td><code>~a</code></td>
+<td>Bitwise NOT</td>
+<td>Bitwise negation of <code>a</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="7-0-decision-statements">7.0 Decision Statements</h3>
+
+<p>Like most programming languages, Python contains if-else based decision statements.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">if</span> <span style="color:#c30">&#34;data&#34;</span> <span style="color:#000;font-weight:bold">in</span> text:
+    <span style="color:#069;font-weight:bold">print</span>(text)
+<span style="color:#069;font-weight:bold">else</span>:
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;no&#34;</span>)</code></pre></div>
+<p>We can use elif for testing multiple conditions.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#555">=</span> <span style="color:#f60">15</span>
+
+<span style="color:#069;font-weight:bold">if</span> x <span style="color:#555">==</span> <span style="color:#f60">0</span>:
+    <span style="color:#069;font-weight:bold">print</span>(x, <span style="color:#c30">&#34;is zero&#34;</span>)
+<span style="color:#069;font-weight:bold">elif</span> x <span style="color:#555">&gt;</span> <span style="color:#f60">0</span>:
+    <span style="color:#069;font-weight:bold">print</span>(x, <span style="color:#c30">&#34;is +ve&#34;</span>)
+<span style="color:#069;font-weight:bold">elif</span> x <span style="color:#555">&lt;</span> <span style="color:#f60">0</span>:
+    <span style="color:#069;font-weight:bold">print</span>(x, <span style="color:#c30">&#34;is -ve&#34;</span>)
+<span style="color:#069;font-weight:bold">else</span>:
+    <span style="color:#069;font-weight:bold">print</span>(x, <span style="color:#c30">&#34;some other error&#34;</span>)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">15</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#555">+</span>ve</code></pre></div>
+<p>We can evaluate nonboolean types as Booleans intuitively. For example, if response is a string entered by a user, and we want to condition a behavior on this being a nonempty string, we may write</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">if</span> response:
+<span style="color:#09f;font-style:italic"># as a shorthand for the equivalent,</span>
+<span style="color:#069;font-weight:bold">if</span> response <span style="color:#555">!=</span> :</code></pre></div>
+<h3 id="8-0-loops">8.0 Loops</h3>
+
+<p>There are two types of loops available in Python, the <code>while</code> loop and the <code>for</code> loop.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">while</span> True:
+    <span style="color:#069;font-weight:bold">pass</span></code></pre></div>
+<p>We can use the <code>break</code> is used for exiting nearest enclosing loop and <code>continue</code> is used to jump to top of nearest enclosing loop</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">while</span> True:
+    <span style="color:#069;font-weight:bold">if</span> exittest(): 
+        <span style="color:#069;font-weight:bold">break</span>
+
+<span style="color:#069;font-weight:bold">while</span> True:
+    <span style="color:#069;font-weight:bold">if</span> skiptest(): 
+        <span style="color:#069;font-weight:bold">continue</span></code></pre></div>
+<p>The <code>for</code> loop is more commonly used and you can combine it with the <code>range</code> function to iterate through a predetermined number of iterations.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">5</span>):
+    <span style="color:#069;font-weight:bold">print</span>(i, end<span style="color:#555">=</span><span style="color:#c30">&#39; &#39;</span>)
+    
+<span style="color:#09f;font-style:italic"># Output:</span>
+<span style="color:#f60">0</span> <span style="color:#f60">1</span> <span style="color:#f60">2</span> <span style="color:#f60">3</span> <span style="color:#f60">4</span> </code></pre></div>
+<p>The loop-else combination is kind of like a nobreak statement: the else block is executed only if the loop ends on its own, without encountering a break statement; this can be perfectly illustrated using a <code>for</code> loop.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> []
+nmax <span style="color:#555">=</span> <span style="color:#f60">10</span>
+
+<span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">2</span>, nmax):
+    <span style="color:#069;font-weight:bold">for</span> factor <span style="color:#000;font-weight:bold">in</span> L:
+        <span style="color:#069;font-weight:bold">if</span> n <span style="color:#555">%</span> factor <span style="color:#555">==</span> <span style="color:#f60">0</span>:
+            <span style="color:#069;font-weight:bold">break</span>
+    <span style="color:#069;font-weight:bold">else</span>: <span style="color:#09f;font-style:italic"># no break</span>
+        L<span style="color:#555">.</span>append(n)
+<span style="color:#069;font-weight:bold">print</span>(L)
+<span style="color:#09f;font-style:italic"># Output</span>
+[<span style="color:#f60">2</span>, <span style="color:#f60">3</span>, <span style="color:#f60">5</span>, <span style="color:#f60">7</span>]</code></pre></div>
+<p>The range() function can be used to generate a list of sequences and has two sets of parameters.</p>
+
+<ul>
+<li><p>range(stop): Number of integers (whole numbers) to generate, starting from zero. eg. range(3) == [0, 1, 2].</p></li>
+
+<li><p>range([start], stop[, step]), start: Starting number of the sequence. stop: Generate numbers up to, but not including this number. step: Difference between each number in the sequence.</p></li>
+</ul>
+
+<h4 id="8-1-revisting-list-comprehensions">8.1 Revisting List Comprehensions</h4>
+
+<p>List comprehensions are simply a way to compress a list-building for-loop into a single short, readable line. For example, here is a loop that constructs a list of the first 12 square integers:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> []
+<span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">12</span>):
+    L<span style="color:#555">.</span>append(n <span style="color:#555">**</span> <span style="color:#f60">2</span>)
+<span style="color:#069;font-weight:bold">print</span>(L)
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">0</span>, <span style="color:#f60">1</span>, <span style="color:#f60">4</span>, <span style="color:#f60">9</span>, <span style="color:#f60">16</span>, <span style="color:#f60">25</span>, <span style="color:#f60">36</span>, <span style="color:#f60">49</span>, <span style="color:#f60">64</span>, <span style="color:#f60">81</span>, <span style="color:#f60">100</span>, <span style="color:#f60">121</span>]</code></pre></div>
+<p>The list comprehension equivalent of this is the following:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[n <span style="color:#555">**</span> <span style="color:#f60">2</span> <span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">12</span>)]
+<span style="color:#09f;font-style:italic">#Output</span>
+
+[<span style="color:#f60">0</span>, <span style="color:#f60">1</span>, <span style="color:#f60">4</span>, <span style="color:#f60">9</span>, <span style="color:#f60">16</span>, <span style="color:#f60">25</span>, <span style="color:#f60">36</span>, <span style="color:#f60">49</span>, <span style="color:#f60">64</span>, <span style="color:#f60">81</span>, <span style="color:#f60">100</span>, <span style="color:#f60">121</span>]</code></pre></div>
+<h4 id="8-2-list-generator-expressions">8.2 List Generator Expressions</h4>
+
+<p>Representative generator expression is shown below. Note that the syntax is similar to list comprehensions except that it uses parentheses instead of square brackets used by list comprehensions.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(n <span style="color:#555">**</span> <span style="color:#f60">2</span> <span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">12</span>))
+<span style="color:#09f;font-style:italic">#Output:</span>
+<span style="color:#555">&lt;</span>generator <span style="color:#366">object</span> <span style="color:#555">&lt;</span>genexpr<span style="color:#555">&gt;</span> at <span style="color:#f60">0x00000246B36FAE08</span><span style="color:#555">&gt;</span></code></pre></div>
+<p>Notice that printing the generator expression does not print the contents; one way to print the contents of a generator expression is to pass it to the <code>list</code> constructor:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">G <span style="color:#555">=</span> (n <span style="color:#555">**</span> <span style="color:#f60">2</span> <span style="color:#069;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#f60">12</span>))
+<span style="color:#366">list</span>(G)
+<span style="color:#09f;font-style:italic">#Output</span>
+[<span style="color:#f60">0</span>, <span style="color:#f60">1</span>, <span style="color:#f60">4</span>, <span style="color:#f60">9</span>, <span style="color:#f60">16</span>, <span style="color:#f60">25</span>, <span style="color:#f60">36</span>, <span style="color:#f60">49</span>, <span style="color:#f60">64</span>, <span style="color:#f60">81</span>, <span style="color:#f60">100</span>, <span style="color:#f60">121</span>]</code></pre></div>
+<h4 id="8-3-enumerate">8.3 enumerate</h4>
+
+<p>Often you need to iterate not only the values in an array, but also keep track of the index. You might be tempted to do things this way:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#555">=</span> [<span style="color:#f60">2</span>, <span style="color:#f60">4</span>, <span style="color:#f60">6</span>, <span style="color:#f60">8</span>, <span style="color:#f60">10</span>]
+<span style="color:#069;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#366">len</span>(L)):
+    <span style="color:#069;font-weight:bold">print</span>(i, L[i])
+<span style="color:#09f;font-style:italic">#Output</span>
+
+<span style="color:#f60">0</span> <span style="color:#f60">2</span>
+<span style="color:#f60">1</span> <span style="color:#f60">4</span>
+<span style="color:#f60">2</span> <span style="color:#f60">6</span>
+<span style="color:#f60">3</span> <span style="color:#f60">8</span>
+<span style="color:#f60">4</span> <span style="color:#f60">10</span></code></pre></div>
+<p>Although this does work, Python provides a cleaner syntax using the <code>enumerate</code> iterator:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">for</span> i, val <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">enumerate</span>(L):
+    <span style="color:#069;font-weight:bold">print</span>(i, val)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">0</span> <span style="color:#f60">2</span>
+<span style="color:#f60">1</span> <span style="color:#f60">4</span>
+<span style="color:#f60">2</span> <span style="color:#f60">6</span>
+<span style="color:#f60">3</span> <span style="color:#f60">8</span>
+<span style="color:#f60">4</span> <span style="color:#f60">10</span></code></pre></div>
+<h3 id="9-0-functions">9.0 Functions</h3>
+
+<p>Functions in Python are simply defined by <code>def</code> and <code>return</code> keyword as shown below. It takes in three values a,b and c and simply returns the sum. Notice how we have supplied a default value for c but nothing for a and b.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">f</span>(a, b, c<span style="color:#555">=</span><span style="color:#f60">1</span>):
+  x <span style="color:#555">=</span> a<span style="color:#555">+</span>b<span style="color:#555">+</span>c
+  <span style="color:#069;font-weight:bold">return</span> (x)
+<span style="color:#069;font-weight:bold">print</span>(f (<span style="color:#f60">0</span>,b<span style="color:#555">=</span><span style="color:#f60">0</span>))
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">1</span></code></pre></div>
+<p>I think you must have noticed how we can specify function arguments based on position or keyword. If you want to force <strong>keyword assignments</strong> rather than <strong>positional assignments</strong>, the syntax is</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">f</span>(<span style="color:#555">*</span>, a, b, c<span style="color:#555">=</span><span style="color:#f60">1</span>):
+  x <span style="color:#555">=</span> a<span style="color:#555">+</span>b<span style="color:#555">+</span>c
+  <span style="color:#069;font-weight:bold">return</span> (x)
+
+f (a<span style="color:#555">=</span><span style="color:#f60">0</span>,b<span style="color:#555">=</span><span style="color:#f60">0</span>)
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">1</span></code></pre></div>
+<p>keyword-only arguments are coded as named arguments that appear after *args in the arguments list. All such arguments must be passed using keyword syntax. For example, in the following, a may be passed by name or position, x collects any extra positional arguments, and b, c must be passed by keyword only</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">f</span>(a, <span style="color:#555">*</span>x, b, c<span style="color:#555">=</span><span style="color:#f60">1</span>):
+  x <span style="color:#555">=</span> a<span style="color:#555">+</span>b<span style="color:#555">+</span>c
+  <span style="color:#069;font-weight:bold">return</span> (x)
+
+f (<span style="color:#f60">0</span>,b<span style="color:#555">=</span><span style="color:#f60">0</span>,c<span style="color:#555">=</span><span style="color:#f60">1</span>)</code></pre></div>
+<p>Note: Function do not require a return statement; you can choose to write a function which simply prints a value on the console; however, for most cases, it will be a good idea to always include a return statement.</p>
+
+<h4 id="9-1-args-and-kwargs-flexible-arguments">9.1 <code>*args</code> and <code>**kwargs</code>: Flexible Arguments</h4>
+
+<p>Sometimes you might wish to write a function in which you don&rsquo;t initially know how many arguments the user will pass.
+In this case, you can use the special form <code>*args</code> and <code>**kwargs</code> to catch all arguments that are passed.
+Here is an example:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">catch_all</span>(<span style="color:#555">*</span>args, <span style="color:#555">**</span>kwargs):
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;args =&#34;</span>, args)
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;kwargs = &#34;</span>, kwargs)
+    
+catch_all(<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>, a<span style="color:#555">=</span><span style="color:#f60">4</span>, b<span style="color:#555">=</span><span style="color:#f60">5</span>)
+catch_all(<span style="color:#c30">&#39;a&#39;</span>, keyword<span style="color:#555">=</span><span style="color:#f60">2</span>)
+<span style="color:#09f;font-style:italic"># Output</span>
+args <span style="color:#555">=</span> (<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)
+kwargs <span style="color:#555">=</span>  {<span style="color:#c30">&#39;a&#39;</span>: <span style="color:#f60">4</span>, <span style="color:#c30">&#39;b&#39;</span>: <span style="color:#f60">5</span>}
+
+args <span style="color:#555">=</span> (<span style="color:#c30">&#39;a&#39;</span>,)
+kwargs <span style="color:#555">=</span>  {<span style="color:#c30">&#39;keyword&#39;</span>: <span style="color:#f60">2</span>}</code></pre></div>
+<p>Here it is not the names args and kwargs that are important, but the * characters preceding them. args and kwargs are just the variable names often used by convention, short for &ldquo;arguments&rdquo; and &ldquo;keyword arguments&rdquo;. The operative difference is the asterisk characters: a single * before a variable means &ldquo;expand this as a tuple&rdquo;, while a double ** before a variable means &ldquo;dictionnary of named arguments&rdquo;. In fact, this syntax can be used not only with the function definition, but with the function call as well!</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">inputs <span style="color:#555">=</span> (<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)
+keywords <span style="color:#555">=</span> {<span style="color:#c30">&#39;pi&#39;</span>: <span style="color:#f60">3.14</span>}
+
+catch_all(<span style="color:#555">*</span>inputs, <span style="color:#555">**</span>keywords)
+<span style="color:#09f;font-style:italic">#Output</span>
+args <span style="color:#555">=</span> (<span style="color:#f60">1</span>, <span style="color:#f60">2</span>, <span style="color:#f60">3</span>)
+kwargs <span style="color:#555">=</span>  {<span style="color:#c30">&#39;pi&#39;</span>: <span style="color:#f60">3.14</span>}</code></pre></div>
+<p>*args and ** kwargs can be used with named arguments too. The priority of evaluation is that explicit arguments get values first and then everything else is passed to *args and than to **kwargs.</p>
+
+<p>In the example below, you can see that we since a, b were named arguments but only a was passed explicitly, so the value 2 from the tuple *args was evaluated as being b.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">foo</span>(a, b, <span style="color:#555">*</span>args, <span style="color:#555">**</span>kwargs):
+    <span style="color:#069;font-weight:bold">print</span> (a, b, args, kwargs)
+ 
+foo(<span style="color:#f60">1</span>, <span style="color:#555">*</span>(<span style="color:#f60">2</span>,<span style="color:#f60">3</span>,<span style="color:#f60">4</span>), <span style="color:#555">**</span>{<span style="color:#c30">&#39;5&#39;</span>:<span style="color:#f60">5</span>})
+
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#f60">1</span> <span style="color:#f60">2</span> (<span style="color:#f60">3</span>, <span style="color:#f60">4</span>) {<span style="color:#c30">&#39;5&#39;</span>: <span style="color:#f60">5</span>}</code></pre></div>
+<h4 id="9-2-lambda-functions">9.2 Lambda Functions</h4>
+
+<p>Earlier we quickly covered the most common way of defining functions, the <code>def</code> statement.
+You&rsquo;ll likely come across another way of defining short, one-off functions with the <code>lambda</code> statement.
+It looks something like this:</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">add <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">lambda</span> x, y: x <span style="color:#555">+</span> y
+add(<span style="color:#f60">1</span>, <span style="color:#f60">2</span>)
+<span style="color:#09f;font-style:italic"># Output</span>
+<span style="color:#f60">3</span></code></pre></div>
+<p>This lambda function is roughly equivalent to</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">add</span>(x, y):
+    <span style="color:#069;font-weight:bold">return</span> x <span style="color:#555">+</span> y</code></pre></div>
+<h4 id="9-3-scopes-and-namespaces">9.3 Scopes and Namespaces</h4>
+
+<p>If a variable is assigned inside a def statement then it is local to that function.
+If a variable is assigned in an enclosing def statement then it is nonlocal to nested functions.
+If a variable is assigned outside all def statements then it is global to the entire file.</p>
+
+<p>You can assign a variable with global scope by using <code>global</code> statement; in the example shown below the value of x is dependent on when the function is called.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#555">=</span> <span style="color:#c30">&#39;old&#39;</span>
+<span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">function</span>():
+    <span style="color:#069;font-weight:bold">global</span> x 
+    x <span style="color:#555">=</span> <span style="color:#c30">&#39;new&#39;</span>
+    
+<span style="color:#069;font-weight:bold">print</span> (x)
+function()
+<span style="color:#069;font-weight:bold">print</span> (x)
+<span style="color:#09f;font-style:italic">#Output</span>
+old
+new</code></pre></div>
+<p><code>nonlocal</code> variable must only be defined in local nested function otherwise it gives an error.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">f</span>():
+    nonlocal x
+    <span style="color:#069;font-weight:bold">print</span>(x)
+    
+x <span style="color:#555">=</span> <span style="color:#c30">&#34;old&#34;</span>
+f()
+<span style="color:#09f;font-style:italic">#Output</span>
+  File <span style="color:#c30">&#34;&lt;ipython-input-3-a60803635d03&gt;&#34;</span>, line <span style="color:#f60">2</span>
+    nonlocal x
+    <span style="color:#555">^</span>
+<span style="color:#c00;font-weight:bold">SyntaxError</span>: no binding <span style="color:#069;font-weight:bold">for</span> nonlocal <span style="color:#c30">&#39;x&#39;</span> found</code></pre></div>
+<p>However, this same function works fine when we change x into global variable.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">f</span>():
+    <span style="color:#069;font-weight:bold">global</span> x
+    <span style="color:#069;font-weight:bold">print</span>(x)
+    
+x <span style="color:#555">=</span> <span style="color:#c30">&#34;old&#34;</span>
+f()
+<span style="color:#09f;font-style:italic">#Output</span>
+old</code></pre></div>
+<h4 id="9-4-decorators">9.4 Decorators</h4>
+
+<p>Decorators are functions returning another function, usually applied as a function transformation using the @wrapper syntax. So they accept functions or methods as arguments, and return a new &ldquo;decorated&rdquo; function/method. We will not discuss it here since its really an advanced topic but you are encouraged to check it out in the official Python documentation.</p>
+
+<h3 id="10-0-catching-errors-and-exceptions">10.0 Catching Errors and Exceptions</h3>
+
+<p>You can catch errors and exceptions in Python using the try-except-else-finally code blocks as shown below. Note: the only else and finally statements are not necassary and you can use none, either or both of it based on your need.</p>
+
+<p>The code present in try block is executed first; if it fails than the except clause is executed. else statements are executed if try block code succeeds and finally statement is always executed no matter if try block succeeds or fails.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">try</span>:
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;try dividing by zero&#34;</span>)
+    <span style="color:#f60">100</span><span style="color:#555">/</span><span style="color:#f60">0</span>
+    
+<span style="color:#069;font-weight:bold">except</span> <span style="color:#c00;font-weight:bold">Exception</span> <span style="color:#069;font-weight:bold">as</span> E:
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;this happens when try block fails, the exception raised is:&#34;</span>)
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">str</span>(E))
+<span style="color:#069;font-weight:bold">else</span>:
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;this happens only if try block suceeds&#34;</span>)
+<span style="color:#069;font-weight:bold">finally</span>:
+    <span style="color:#069;font-weight:bold">print</span>(<span style="color:#c30">&#34;this always gets executed&#34;</span>)
+    
+<span style="color:#09f;font-style:italic">#Output</span>
+<span style="color:#069;font-weight:bold">try</span> dividing by zero
+this happens when <span style="color:#069;font-weight:bold">try</span> block fails, the exception raised <span style="color:#000;font-weight:bold">is</span>:
+division by zero
+this always gets executed</code></pre></div></p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                
+            
+        </small>
+    </div>
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaympatel-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"dc0e71605accedbfb964771bb","lid":"85de677fcd","uniqueMethods":true}) })</script>
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>Jay M. Patel</h5>
+                &copy; 2020 Jay M. Patel                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="http://jaympatel.com/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="http://jaympatel.com/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5bc6fd9061d0b770925179cb/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+<script src="http://jaympatel.com/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131371986-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

@@ -7,15 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Fri, 28 Dec 2018 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>A Complete Introduction to Python 3.X</title>
+      <link>http://jaympatel.com/complete-introduction-to-python/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/complete-introduction-to-python/</guid>
+      <description>Introduction This is a first draft of an introductory level tutorial on Python 3.x. It is designed to get a user familiar with core elements of the language in less than one hour without getting bogged down in intricate complexities or edge cases.
+This tutorial will NOT cover Numfocus based libraries such as Matplotlib, Numpy, Pandas, scikit-learn, etc.
+We will also not get into building blocks of any introductory level computer science class which discusses algorithms, big O notation, most efficient sorting implementations etc.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://jaympatel.com/about/</link>
-      <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0530</pubDate>
       
       <guid>http://jaympatel.com/about/</guid>
       <description>My name is Jay M. Patel and I am a fulltime freelance software developer and data scientist specializing in data mining, web crawling/scraping, natural language processing (NLP) projects. Please check out my consulting page for details on how to hire me for your project.
@@ -25,7 +36,7 @@ I worked at US Environmental Protection Agency (US EPA) for about five years bef
     <item>
       <title>Consulting</title>
       <link>http://jaympatel.com/consulting-services/</link>
-      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/consulting-services/</guid>
       <description>As a full stack software developer and data scientist, my focus is solving problems and getting data driven insights for your business needs.
@@ -36,12 +47,12 @@ Once I have the data we need, I&amp;rsquo;ll use the most appropriate and state 
     <item>
       <title>Books</title>
       <link>http://jaympatel.com/books/</link>
-      <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0530</pubDate>
       
       <guid>http://jaympatel.com/books/</guid>
       <description>Getting Structured Data from Internet: Web Scraping and Rest APIs ISBN-10: [TBA]
 ISBN-13: [TBA]
-Paperback: est. 2019
+Paperback: est. 2020
   Leanpub
 About the Book
 This book will teach you web scraping to quickly get unlimited amounts of free data available on the web in structured format. You&amp;rsquo;ll learn Python scripts to not only to access free APIs to get structured data from websites such as Twitter, but you&amp;rsquo;ll also learn to scrape data from any HTML and Javascript page and convert that into Excel, CSV or SQL database of your choice.</description>
