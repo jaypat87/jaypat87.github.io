@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Jay M. Patel</copyright>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaympatel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Detailed Overview of Pandas</title>
+      <link>http://jaympatel.com/working-with-pandas/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaympatel.com/working-with-pandas/</guid>
+      <description>Introduction This is a first draft of an introductory level tutorial on using Pandas library (versions higher than 0.20) in Python 3.X. We have already covered core Python language in our one hour Python tutorial.
+We are also going to stay away from machine learning and data science topics such as natural language processing algorithms etc. but you are encouraged to check out those tutorials by going to the menu and navigating to the tutorial of your choice.</description>
+    </item>
     
     <item>
       <title>A Complete Introduction to Python 3.X</title>
@@ -19,8 +29,7 @@
       
       <guid>http://jaympatel.com/complete-introduction-to-python/</guid>
       <description>Introduction This is a first draft of an introductory level tutorial on Python 3.x. It is designed to get a user familiar with core elements of the language in less than one hour without getting bogged down in intricate complexities or edge cases.
-This tutorial will NOT cover Numfocus based libraries such as Matplotlib, Numpy, Pandas, scikit-learn, etc.
-We will also not get into building blocks of any introductory level computer science class which discusses algorithms, big O notation, most efficient sorting implementations etc.</description>
+This tutorial will NOT cover Numfocus based libraries such as Matplotlib, Numpy, Pandas, scikit-learn, etc. You can check out our Pandas tutorial for more information on Pandas and Numpy.</description>
     </item>
     
     <item>
