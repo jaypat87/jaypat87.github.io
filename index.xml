@@ -59,12 +59,12 @@ Once I have the data we need, I&amp;rsquo;ll use the most appropriate and state 
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0530</pubDate>
       
       <guid>http://jaympatel.com/books/</guid>
-      <description>Getting Structured Data from Internet: Web Scraping and Rest APIs ISBN-10: [TBA]
-ISBN-13: [TBA]
-Paperback: est. 2020
-  Leanpub
+      <description>Getting Structured Data from the Internet: Running Web Crawlers/Scrapers on a Big Data Production Scale ISBN-10: 1484265750
+ISBN-13: 978-1484265758
+Paperback: Nov 2020
+  Apress | Amazon
 About the Book
-This book will teach you web scraping to quickly get unlimited amounts of free data available on the web in structured format. You&amp;rsquo;ll learn Python scripts to not only to access free APIs to get structured data from websites such as Twitter, but you&amp;rsquo;ll also learn to scrape data from any HTML and Javascript page and convert that into Excel, CSV or SQL database of your choice.</description>
+ Shows you how to process web crawls from Common Crawl, one of the largest publicly available web crawl datasets (petabyte scale) indexing over 25 billion web pages ever month. Takes you from developing a simple Python-based web scraper on your personal computer to a distributed crawler with multiple nodes running on the cloud.</description>
     </item>
     
     <item>
