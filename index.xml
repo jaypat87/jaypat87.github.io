@@ -35,17 +35,17 @@ This tutorial will NOT cover Numfocus based libraries such as Matplotlib, Numpy,
     <item>
       <title>About</title>
       <link>http://jaympatel.com/about/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0530</pubDate>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0530</pubDate>
       
       <guid>http://jaympatel.com/about/</guid>
-      <description>My name is Jay M. Patel and I am a fulltime freelance software developer and data scientist specializing in data mining, web crawling/scraping, natural language processing (NLP) projects. Please check out my consulting page for details on how to hire me for your project.
-I worked at US Environmental Protection Agency (US EPA) for about five years before quitting in 2018 to do consulting fulltime and bootstrap my startup, Specrom Analytics, which applies AI algorithms for marketing, social listening and creating alternative financial datasets.</description>
+      <description>My name is Jay M. Patel and I am a software developer and data scientist specializing in data mining, web crawling/scraping, natural language processing (NLP) projects. Please check out my consulting page for details on how to hire me for your project.
+I worked at US Environmental Protection Agency (US EPA) for about five years before quitting in 2018 to open my startup, Specrom Analytics, which applies AI algorithms for marketing, social listening and creating alternative financial datasets.</description>
     </item>
     
     <item>
       <title>Consulting</title>
       <link>http://jaympatel.com/consulting-services/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://jaympatel.com/consulting-services/</guid>
       <description>As a full stack software developer and data scientist, my focus is solving problems and getting data driven insights for your business needs.
@@ -230,11 +230,11 @@ Git basics You can create a local Git repository on your computer by either:
       <description>jay@jaympatel.com | jaypatel87@gmail.com
 LINKEDIN: https://www.linkedin.com/in/jay-m-patel-engg
 HOMEPAGE: http://www.jaympatel.com
-Click here for latest PDF version
 PROFILE:
  Data scientist with over five year&amp;rsquo;s experience in data analytics, machine learning, statistics and text mining.
- I have coauthored 1 book, 10 papers, 26 conference presentations and am passionate about explaining data science to non-technical business audiences.
- Frequent speaker at data science events hosted by Federal community of practice (CoP) as part of DigitalGov initiative.</description>
+ I have coauthored 3 books, 10 papers, 26 conference presentations and am passionate about explaining data science to non-technical business audiences.
+ Frequent speaker at data science events hosted by Federal community of practice (CoP) as part of DigitalGov initiative.
+  TECHNICAL SKILLS:</description>
     </item>
     
   </channel>
